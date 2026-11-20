@@ -1,0 +1,102 @@
+{
+  "project": "demo-test",
+  "title": "THE STONE AND THE RIVER",
+  "title_fa": "سنگ و رود",
+  "logline": "A tiny test film: how a river carves a stone.",
+  "mode": "hybrid",
+  "pipeline": "documentary",
+  "target": { "duration_s": 45, "aspect": "16:9", "resolution": "720p", "fps": 30 },
+  "language": { "narration": "en", "subtitle": "fa" },
+  "style": {
+    "style_prompt": "hand-painted cinematic documentary style, visible impasto brushwork, warm ochre and amber palette, soft golden hour light, painterly texture, no text, no watermark",
+    "palette": "ochre-amber",
+    "grade": "warm filmic"
+  },
+  "characters": [
+    {
+      "id": "wanderer",
+      "name": "The Wanderer",
+      "attributes": "weathered man in his 50s, salt-and-pepper beard, indigo wool cloak, leather satchel",
+      "sheet_prompt": "character reference sheet, front and side view, neutral studio light, weathered man in his 50s, salt-and-pepper beard, indigo wool cloak, leather satchel"
+    }
+  ],
+  "shots": [
+    {
+      "id": "S01",
+      "act": "COLD OPEN",
+      "beat": "hook",
+      "narration": "Every stone you see beside a river was shaped by patience.",
+      "subtitle": "هر سنگی که کنار رود می‌بینی، با صبر ساخته شده است.",
+      "visual": {
+        "cinematography": "slow aerial establishing shot, gentle drift forward",
+        "subject": "sun-scorched river valley with scattered amber stones",
+        "action": "water glides over ancient carved stones",
+        "context": "golden hour, distant hills",
+        "style_ambiance": ""
+      },
+      "keyframe": { "composition": "wide establishing composition, horizon on lower third", "extra": "" },
+      "source": "video",
+      "motion": "zoom-in",
+      "keep_clip_audio": "duck",
+      "transition_out": "crossfade",
+      "first_last_frame": null,
+      "title_overlay": true
+    },
+    {
+      "id": "S02",
+      "act": "ACT 1",
+      "beat": "world of the subject",
+      "narration": "The river never hurries, yet everything it touches is changed.",
+      "subtitle": "رود عجله ندارد، اما هر چه لمس می‌کند را دگرگون می‌کند.",
+      "visual": {
+        "cinematography": "medium shot, slow pan right",
+        "subject": "the wanderer — weathered man in his 50s, salt-and-pepper beard, indigo wool cloak, leather satchel — kneeling at the bank",
+        "action": "he lifts a smooth stone and turns it in the light",
+        "context": "soft forest riverbank at golden hour",
+        "style_ambiance": ""
+      },
+      "keyframe": { "composition": "medium shot, subject on left third", "extra": "" },
+      "source": "image",
+      "motion": "pan-right",
+      "keep_clip_audio": "duck",
+      "transition_out": "crossfade",
+      "first_last_frame": null,
+      "title_overlay": false
+    },
+    {
+      "id": "S03",
+      "act": "PAYLOAD",
+      "beat": "closing line",
+      "narration": "Patience is the quietst force in the world.",
+      "subtitle": "صبر، خاموش‌ترین نیروی جهان است.",
+      "silence_after": 1.0,
+      "visual": {
+        "cinematography": "extreme close-up, static",
+        "subject": "a single river-worn stone in an open palm",
+        "action": "water droplets fall and shimmer",
+        "context": "backlit by low sun, dark background",
+        "style_ambiance": ""
+      },
+      "keyframe": { "composition": "extreme close-up, center frame", "extra": "" },
+      "source": "image",
+      "motion": "zoom-in",
+      "keep_clip_audio": "duck",
+      "transition_out": "fade-black",
+      "first_last_frame": null,
+      "title_overlay": false
+    }
+  ],
+  "audio": {
+    "voice": "jam",
+    "speed": 0.95,
+    "narration_wpm": 130,
+    "music": { "enabled": true, "plan": "generated", "mood": "ambient pad root+fifth", "volume_db": -23 }
+  },
+  "credits": [
+    { "role": "WRITTEN & DIRECTED BY", "name": "GLM" },
+    { "role": "PRODUCTION DESIGN BY", "name": "Nano Banana" },
+    { "role": "CINEMATOGRAPHY BY", "name": "Veo 3.1 · Google Flow" },
+    { "role": "EDITED WITH", "name": "Gemini Omni Flash" },
+    { "role": "MADE WITH", "name": "Film Studio Skill" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "بادگیرها",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1792073873,
+  "id": "2026101522175019ea3cf24b344bd9",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026101522175019ea3cf24b344bd9",
+  "usage": {
+    "completion_tokens": 5,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1311,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1316
+  }
+}

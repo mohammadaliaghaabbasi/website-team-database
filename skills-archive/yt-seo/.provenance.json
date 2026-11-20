@@ -1,0 +1,8 @@
+{
+ "repo": "Jakeschincariol/youtube-agent-skill",
+ "sha": "a2feb2104981a375ffd4f87ee04f4f5344ac43c6",
+ "license": "MIT",
+ "installed_at": "2026-10-29",
+ "via": "manual-vet (skill-hunter round 3)",
+ "note": "پایتون stdlib خالص، آفلاین، بدون API یوتیوب؛ وابستگی متقابل پوشه‌ای (deadair/hooks.json) — همه ۱۱ اسکیل با هم نصب شدند"
+}

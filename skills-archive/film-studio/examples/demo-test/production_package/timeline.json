@@ -1,0 +1,89 @@
+{
+  "project": "demo-test",
+  "title": "THE STONE AND THE RIVER",
+  "title_fa": "سنگ و رود",
+  "mode": "hybrid",
+  "fps": 30,
+  "resolution": "720p",
+  "aspect": "16:9",
+  "lead": 0.6,
+  "tail": 0.8,
+  "fade": 0.8,
+  "items": [
+    {
+      "id": "S01",
+      "type": "video",
+      "src": "assets/clips/S01.mp4",
+      "narration_src": "assets/voice/S01.wav",
+      "duration": 8.0,
+      "start": 0.0,
+      "motion": "zoom-in",
+      "keep_clip_audio": "duck",
+      "transition_out": "crossfade",
+      "subtitle": "هر سنگی که کنار رود می‌بینی، با صبر ساخته شده است.",
+      "subtitle_dur": 5.08,
+      "silence_after": 0.0,
+      "title_overlay": true
+    },
+    {
+      "id": "S02",
+      "type": "image",
+      "src": "assets/images/S02.png",
+      "narration_src": "assets/voice/S02.wav",
+      "duration": 6.02,
+      "start": 7.2,
+      "motion": "pan-right",
+      "keep_clip_audio": "duck",
+      "transition_out": "crossfade",
+      "subtitle": "رود عجله ندارد، اما هر چه لمس می‌کند را دگرگون می‌کند.",
+      "subtitle_dur": 4.62,
+      "silence_after": 0.0,
+      "title_overlay": false
+    },
+    {
+      "id": "S03",
+      "type": "image",
+      "src": "assets/images/S03.png",
+      "narration_src": "assets/voice/S03.wav",
+      "duration": 6.09,
+      "start": 12.42,
+      "motion": "zoom-in",
+      "keep_clip_audio": "duck",
+      "transition_out": "fade-black",
+      "subtitle": "صبر، خاموش‌ترین نیروی جهان است.",
+      "subtitle_dur": 3.69,
+      "silence_after": 1.0,
+      "title_overlay": false
+    }
+  ],
+  "credits": [
+    {
+      "role": "WRITTEN & DIRECTED BY",
+      "name": "GLM"
+    },
+    {
+      "role": "PRODUCTION DESIGN BY",
+      "name": "Nano Banana"
+    },
+    {
+      "role": "CINEMATOGRAPHY BY",
+      "name": "Veo 3.1 · Google Flow"
+    },
+    {
+      "role": "EDITED WITH",
+      "name": "Gemini Omni Flash"
+    },
+    {
+      "role": "MADE WITH",
+      "name": "Film Studio Skill"
+    }
+  ],
+  "credits_start": 18.51,
+  "total": 28.51,
+  "music": {
+    "enabled": true,
+    "plan": "generated",
+    "mood": "ambient pad root+fifth",
+    "volume_db": -23
+  }
+}

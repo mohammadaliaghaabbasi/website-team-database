@@ -1,0 +1,54 @@
+{
+  "project": "demo-test",
+  "title": "TEST FILM",
+  "title_fa": "فیلم آزمایشی",
+  "mode": "hybrid",
+  "pipeline": "documentary",
+  "target": {
+    "duration_s": 90,
+    "aspect": "16:9"
+  },
+  "created_at": "2026-10-15T14:57:47.844005+00:00",
+  "updated_at": "2026-10-15T14:57:47.844005+00:00",
+  "stages": {
+    "intake": "completed",
+    "research": "pending",
+    "concept": "pending",
+    "screenplay": "pending",
+    "shot_list": "pending",
+    "assets": "pending",
+    "assembly": "pending",
+    "qc": "pending",
+    "deliver": "pending"
+  },
+  "decision_log": [
+    {
+      "category": "mode_selection",
+      "subject": "Execution mode",
+      "options_considered": [
+        "google-suite",
+        "in-house",
+        "hybrid"
+      ],
+      "selected": "hybrid",
+      "rejected_because": "user tool stack / request routing",
+      "confidence": 0.8,
+      "at": "2026-10-15T14:57:47.844005+00:00"
+    },
+    {
+      "category": "pipeline_selection",
+      "subject": "Production pipeline",
+      "options_considered": [
+        "documentary",
+        "cinematic",
+        "explainer",
+        "short-form",
+        "montage"
+      ],
+      "selected": "documentary",
+      "rejected_because": "genre fit",
+      "confidence": 0.8,
+      "at": "2026-10-15T14:57:47.844005+00:00"
+    }
+  ]
+}

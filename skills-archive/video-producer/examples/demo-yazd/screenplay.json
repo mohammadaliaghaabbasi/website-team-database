@@ -1,0 +1,53 @@
+{
+  "project": "demo-yazd",
+  "title": "THE WIND CATCHERS",
+  "title_fa": "بادگیرها",
+  "style_prompt": "cinematic painted documentary style, hand-painted gouache texture, warm ochre and amber palette of Persian desert architecture, soft golden hour light, atmospheric haze, high detail, no text, no watermark",
+  "voice": "jam",
+  "speed": 0.95,
+  "music": {
+    "enabled": true,
+    "root_hz": 110,
+    "volume_db": -23
+  },
+  "scenes": [
+    {
+      "narration": "In the deserts of central Iran, summer temperatures climb past forty degrees. Yet for three thousand years, the people of Yazd stayed cool without a single machine.",
+      "subtitle": "در کویرهای مرکزی ایران، دمای تابستان از چهل درجه هم می‌گذرد؛ اما مردم یزد سه هزار سال بدون هیچ ماشینی خنک ماندند.",
+      "visual_prompt": "aerial view over an ancient adobe desert city at golden hour, dozens of rectangular wind towers rising from flat rooftops, long soft shadows, distant hazy mountains",
+      "motion": "zoom-in",
+      "title_overlay": true
+    },
+    {
+      "narration": "Their secret stands on the rooftops: the badgir, the wind catcher. A tower with open vents, built to face the slightest breeze from any direction.",
+      "subtitle": "رازشان روی پشت‌بام‌ها ایستاده است: بادگیر؛ برجی با دهانه‌های باز که برای رویارویی با ملایم‌ترین باد، از هر سو ساخته شده.",
+      "visual_prompt": "low angle view of a tall traditional Persian wind catcher tower made of mud brick, vertical slots and wooden beams against a clear warm sky, intricate brick texture",
+      "motion": "pan-right"
+    },
+    {
+      "narration": "Inside, the tower opens into narrow channels. Moving air rushes across shaded water and stone, cooling as it sinks, then pours gently into the rooms below.",
+      "subtitle": "در درون، برج به کانال‌های باریک می‌رسد؛ هوای در حالِ حرکت از سایه‌ی آب و سنگ می‌گذرد، خنک می‌شود و آرام به اتاق‌های زیرین سرازیر می‌شود.",
+      "visual_prompt": "cutaway illustration of a wind catcher interior shaft with cool blue airflow streams descending into a serene domed room with a small turquoise water pool",
+      "motion": "zoom-out"
+    },
+    {
+      "narration": "Around it grew a city of thick mud walls and narrow shaded lanes: Yazd, one of the oldest continuously inhabited cities on Earth.",
+      "subtitle": "گرد آن، شهری از دیوارهای کلفتِ کاهگلی و کوچه‌های باریک و سایه‌دار رویید: یزد، یکی از کهن‌ترین شهرهای همواره مسکونی زمین.",
+      "visual_prompt": "narrow shaded Persian alley between high mud-brick walls, warm afternoon light rays falling from above, arched passageways, quiet and timeless atmosphere",
+      "motion": "zoom-in"
+    },
+    {
+      "narration": "Its people solved comfort by working with the sky, not against it. Perhaps that is what a truly intelligent building still means.",
+      "subtitle": "مردمش آسایش را با همکاریِ آسمان پیدا کردند، نه با جنگ با آن. شاید ساختمانِ واقعاً هوشمند هنوز همین معنا را داشته باشد.",
+      "visual_prompt": "sunset silhouette of a wind catcher skyline over old rooftops, deep orange and violet sky, a few birds in flight, serene and monumental mood",
+      "motion": "pan-left"
+    }
+  ],
+  "credits": [
+    { "role": "WRITTEN & DIRECTED BY", "name": "Super Z · GLM" },
+    { "role": "PAINTED IN CODE BY", "name": "Z-AI Image" },
+    { "role": "VOICE BY", "name": "Z-AI TTS · Jam" },
+    { "role": "MUSIC BY", "name": "Synth Engine" },
+    { "role": "MADE WITH", "name": "Video Producer Skill" }
+  ]
+}

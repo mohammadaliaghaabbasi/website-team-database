@@ -1,0 +1,55 @@
+{
+  "file": "/home/z/my-project/skills/film-studio/examples/demo-test/output/final.mp4",
+  "probe": {
+    "duration": 27.733333,
+    "video": "h264",
+    "audio": "aac",
+    "w": 1280,
+    "h": 720,
+    "fps": "30/1"
+  },
+  "loudness": {
+    "mean_db": -26.4,
+    "max_db": -17.4
+  },
+  "frames": [
+    {
+      "t": 1.5,
+      "name": "title",
+      "file": "/home/z/my-project/skills/film-studio/examples/demo-test/artifacts/qc_title.jpg"
+    },
+    {
+      "t": 9.71,
+      "name": "mid",
+      "file": "/home/z/my-project/skills/film-studio/examples/demo-test/artifacts/qc_mid.jpg"
+    },
+    {
+      "t": 18.03,
+      "name": "late",
+      "file": "/home/z/my-project/skills/film-studio/examples/demo-test/artifacts/qc_late.jpg"
+    },
+    {
+      "t": 21.51,
+      "name": "credits",
+      "file": "/home/z/my-project/skills/film-studio/examples/demo-test/artifacts/qc_credits.jpg"
+    },
+    {
+      "t": 26.73,
+      "name": "end",
+      "file": "/home/z/my-project/skills/film-studio/examples/demo-test/artifacts/qc_end.jpg"
+    }
+  ],
+  "passes": [
+    "duration 27.7s ≈ plan 28.51s",
+    "codec h264/aac",
+    "audio stream present",
+    "frame title @ 1.5s",
+    "frame mid @ 9.7s",
+    "frame late @ 18.0s",
+    "frame credits @ 21.5s",
+    "frame end @ 26.7s",
+    "peak -17.4dB, mean -26.4dB"
+  ],
+  "findings": [],
+  "verdict": "PASS"
+}

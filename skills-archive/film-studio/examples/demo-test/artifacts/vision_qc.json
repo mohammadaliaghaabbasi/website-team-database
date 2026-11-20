@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1) **Yes**, the Persian subtitle is rendered correctly. The letters are properly connected, the text direction is Right-to-Left (RTL), and it is fully readable. It translates to: \"Rory, I'm sorry, but this is my last chance, I have to go.\"\n\n2) **Yes**, the image quality is OK. The text is sharp and clear against the background.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1792077272,
+  "id": "202610152314303cea6a2d58a5447b",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610152314303cea6a2d58a5447b",
+  "usage": {
+    "completion_tokens": 81,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1098,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1179
+  }
+}

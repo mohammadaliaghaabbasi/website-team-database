@@ -1,0 +1,2933 @@
+[
+ {
+  "role": "مدیر پروژه دیجیتال",
+  "roleEn": "Digital Project Manager",
+  "section": "مرحله ۱ — استراتژی و مدیریت",
+  "mission": "هماهنگی کل چرخه ساخت سایت از نیازمندی تا انتشار و نگهداشت",
+  "skills": [
+   "تخمین زمان و بودجه با روش‌های Agile",
+   "مدیریت اسپرینت و رترواسپکتیو",
+   "ابزارهای Kaban و برد تسک",
+   "مستندسازی تصمیمات و ADR",
+   "مدیریت ریسک و وابستگی‌ها",
+   "ارتباط مؤثر با ذی‌نفعان"
+  ],
+  "stack": [
+   {
+    "name": "Outline (دانش‌نامه تیم)",
+    "repo": "outline/outline"
+   },
+   {
+    "name": "Mermaid (دیاگرام فرآیند)",
+    "repo": "mermaid-js/mermaid"
+   }
+  ],
+  "practice": [
+   {
+    "name": "GitHub Projects",
+    "url": "github.com/features/issues",
+    "note": "برد کانبان و اسپرینت داخل گیت‌هاب"
+   },
+   {
+    "name": "OpenProject",
+    "url": "openproject.org",
+    "note": "مدیریت پروژه متن‌باز"
+   },
+   {
+    "name": "Excalidraw",
+    "url": "excalidraw.com",
+    "note": "وایت‌برد نقشه راه و رترو"
+   }
+  ],
+  "path": [
+   "یادگیری Scrum و Kanban (۱ ماه)",
+   "راه‌اندازی برد پروژه و مستندات تیم (۱ ماه)",
+   "مدیریت نخستین پروژه کوچک ۳-نفره (۳ ماه)",
+   "اخذ گواهی PMP یا CSM (اختیاری)"
+  ],
+  "interview": "پروژه‌ای ۲ هفته‌ای از برنامه عقب افتاده؛ سه عضو تیم منتظر تسک هستند. چه اقداماتی به ترتیب انجام می‌دهید؟"
+ },
+ {
+  "role": "مدیر محصول",
+  "roleEn": "Product Owner",
+  "section": "مرحله ۱ — استراتژی و مدیریت",
+  "mission": "تعیین چه چیزی ساخته شود و با چه اولویتی — مالک Backlog",
+  "skills": [
+   "نوشتن User Story و معیار پذیرش",
+   "اولویت‌بندی با RICE و MoSCoW",
+   "تحلیل داده محصول",
+   "ساخت MVP و آزمون فرضیه",
+   "مدیریت انتظارات ذی‌نفعان",
+   "نقشه راه محصول"
+  ],
+  "stack": [
+   {
+    "name": "PostHog (تحلیل محصول)",
+    "repo": "posthog/posthog"
+   },
+   {
+    "name": "Appsmith (پنل داخلی)",
+    "repo": "appsmithorg/appsmith"
+   }
+  ],
+  "practice": [
+   {
+    "name": "PostHog",
+    "url": "posthog.com",
+    "note": "فیچر فلگ و تحلیل رفتار کاربر"
+   },
+   {
+    "name": "DrawDB",
+    "url": "drawdb.app",
+    "note": "طراحی فلوچارت فرآیند محصول"
+   }
+  ],
+  "path": [
+   "یادگیری چارچوب‌های اولویت‌بندی (۱ ماه)",
+   "نوشتن ۲۰ User Story واقعی (۱ ماه)",
+   "ساخت MVP با فرم نظرسنجی و Landing (۲ ماه)",
+   "تحلیل داده و تکرار محصول (مداوم)"
+  ],
+  "interview": "چگونه تصمیم می‌گیرید کدام فیچر برای نسخه اول سایت انتخاب شود؟ روش RICE را روی یک مثال توضیح دهید."
+ },
+ {
+  "role": "تحلیلگر کسب‌وکار",
+  "roleEn": "Business Analyst",
+  "section": "مرحله ۱ — استراتژی و مدیریت",
+  "mission": "ترجمه نیاز کسب‌وکار به مستندات فنی قابل اجرا برای تیم توسعه",
+  "skills": [
+   "تحلیل و مدل‌سازی فرآیند (BPMN)",
+   "نوشتن SRS و مستندات نیازمندی",
+   "مصاحبه با ذی‌نفعان",
+   "تحلیل فاصله (Gap Analysis)",
+   "مدیریت تغییر نیازمندی‌ها",
+   "اسناد قابلیت نگهداشت"
+  ],
+  "stack": [
+   {
+    "name": "Mermaid (دیاگرام BPMN)",
+    "repo": "mermaid-js/mermaid"
+   },
+   {
+    "name": "PlantUML (یو‌ام‌ال)",
+    "repo": "plantuml/plantuml"
+   },
+   {
+    "name": "DBML (مدل داده)",
+    "repo": "dbdiagram-io/dbml"
+   }
+  ],
+  "practice": [
+   {
+    "name": "PlantUML Web",
+    "url": "plantuml.com",
+    "note": "نوشتن دیاگرام فرآیند به کد"
+   },
+   {
+    "name": "DrawDB",
+    "url": "drawdb.app",
+    "note": "طراحی ERD و فلوچارت"
+   },
+   {
+    "name": "Balsamiq trial",
+    "url": "balsamiq.com",
+    "note": "ماکاپ سریع مستندات"
+   }
+  ],
+  "path": [
+   "یادگیری نمادهای BPMN و UML (۱ ماه)",
+   "مستندسازی یک فرآیند واقعی کسب‌وکار (۱ ماه)",
+   "مصاحبه با ۵ ذی‌نفع و استخراج نیاز (۲ ماه)",
+   "تسلط بر SRS و مدیریت تغییر (۲ ماه)"
+  ],
+  "interview": "ذی‌نفعی نیاز متناقض با تیم فنی مطرح می‌کند. چطور بدون آسیب به رابطه آن را مدیریت می‌کنید؟"
+ },
+ {
+  "role": "مشاور استراتژی دیجیتال",
+  "roleEn": "Digital Strategy Consultant",
+  "section": "مرحله ۱ — استراتژی و مدیریت",
+  "mission": "تعیین مسیر درآمد و رشد سایت هم‌راستا با اهداف کسب‌وکار",
+  "skills": [
+   "طراحی مدل درآمدی (اشتراک/تبلیغ/فروش)",
+   "تحلیل بازار و جایگاه‌یابی",
+   "تعریف KPI های شمال",
+   "استراتژی قیمت‌گذاری",
+   "تحلیل SWOT دیجیتال",
+   "طراحی قیف فروش"
+  ],
+  "stack": [
+   {
+    "name": "PostHog (کشف رفتار)",
+    "repo": "posthog/posthog"
+   },
+   {
+    "name": "Umami (آمار سبک)",
+    "repo": "umami-software/umami"
+   }
+  ],
+  "practice": [
+   {
+    "name": "GA4 Demo Account",
+    "url": "analytics.google.com",
+    "note": "حساب دمو با داده واقعی"
+   },
+   {
+    "name": "Looker Studio",
+    "url": "lookerstudio.google.com",
+    "note": "ساخت داشبورد KPI"
+   }
+  ],
+  "path": [
+   "مطالعه مدل‌های درآمدی وب (۱ ماه)",
+   "تحلیل ۵ سایت موفق حوزه هدف (۱ ماه)",
+   "تعریف KPI و داشبورد برای یک کسب‌وکار واقعی (۲ ماه)"
+  ],
+  "interview": "سایتی ترافیک بالا اما نرخ تبدیل ۰/۲٪ دارد. چه فرضیه‌هایی مطرح و چگونه آزمایش می‌کنید؟"
+ },
+ {
+  "role": "پژوهشگر تجربه کاربر",
+  "roleEn": "UX Researcher",
+  "section": "مرحله ۲ — تحقیق کاربر",
+  "mission": "کشف نیاز و رفتار واقعی کاربران با روش‌های علمی پژوهش",
+  "skills": [
+   "مصاحبه عمیق و کاردسورتینگ",
+   "طراحی پرسشنامه و تحلیل آماری",
+   "ساخت پرسونا",
+   "تست استفاده‌پذیری THINK ALOUD",
+   "تحقیق ثانویه و رقبا",
+   "ترجمه یافته‌ها به بینش طراحی"
+  ],
+  "stack": [
+   {
+    "name": "Formbricks (نظرسنجی درون‌محصولی)",
+    "repo": "formbricks/formbricks"
+   },
+   {
+    "name": "Umami (تحلیل ناشناس)",
+    "repo": "umami-software/umami"
+   },
+   {
+    "name": "Matomo",
+    "repo": "matomo-org/matomo"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Microsoft Clarity",
+    "url": "clarity.microsoft.com",
+    "note": "ضبط جلسه و هیت‌مپ رایگان"
+   },
+   {
+    "name": "Google Forms",
+    "url": "forms.google.com",
+    "note": "پرسشنامه پرسونا"
+   },
+   {
+    "name": "Hotjar free",
+    "url": "hotjar.com",
+    "note": "هیت‌مپ رفتار کاربر"
+   }
+  ],
+  "path": [
+   "یادگیری روش‌های پژوهش کیفی (۱ ماه)",
+   "اجرای ۵ مصاحبه کاربر واقعی (۱ ماه)",
+   "تحلیل داده و ساخت پرسونا (۱ ماه)",
+   "گزارش بینش و ارائه به تیم طراحی (مداوم)"
+  ],
+  "interview": "چه زمانی بین مصاحبه کیفی و نظرسنجی کمّی یکی را انتخاب می‌کنید؟ برای هر کدام یک سناریو بگویید."
+ },
+ {
+  "role": "معمار اطلاعات",
+  "roleEn": "Information Architect",
+  "section": "مرحله ۲ — تحقیق کاربر",
+  "mission": "ساختاردهی محتوا و ناوبری سایت برای یافتن آسان اطلاعات",
+  "skills": [
+   "کاردسورتینگ و تکسونومی",
+   "طراحی سایت‌مپ و ناوبری",
+   "لیبل‌گذاری و الگوی نام‌گذاری",
+   "فلو کاربر (User Flow)",
+   "بهینه‌سازی جستجوی درون‌سایتی",
+   "دسترس‌پذیری ساختار"
+  ],
+  "stack": [
+   {
+    "name": "Excalidraw (فلو)",
+    "repo": "excalidraw/excalidraw"
+   },
+   {
+    "name": "DrawDB (ساختار)",
+    "repo": "drawdb-io/drawdb"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Optimal Workshop trial",
+    "url": "optimalworkshop.com",
+    "note": "کاردسورتینگ آنلاین"
+   },
+   {
+    "name": "tldraw",
+    "url": "tldraw.com",
+    "note": "بوم فلو کاربر"
+   },
+   {
+    "name": "Penpot",
+    "url": "penpot.app",
+    "note": "وایرفریم ساختار"
+   }
+  ],
+  "path": [
+   "یادگیری اصول IA و تکسونومی (۱ ماه)",
+   "اجرای کاردسورتینگ با ۱۵ کاربر (۱ ماه)",
+   "طراحی سایت‌مپ کامل یک سایت واقعی (۱ ماه)",
+   "تست ناوبری و تکرار (مداوم)"
+  ],
+  "interview": "کاربران در آزمون درخت، مسیر اشتباهی برای یافتن محصول می‌روند. چگونه ساختار را اصلاح می‌کنید؟"
+ },
+ {
+  "role": "تستر استفاده‌پذیری",
+  "roleEn": "Usability Tester",
+  "section": "مرحله ۲ — تحقیق کاربر",
+  "mission": "ارزیابی سیستماتیک سایت با کاربران واقعی پیش از انتشار",
+  "skills": [
+   "طراحی سناریو و تسک تست",
+   "روش Think-Aloud و ثبت مشاهده",
+   "تحلیل HEURISTIC نیلسن",
+   "متریک‌های SUS و NPS",
+   "گزارش‌دهی یافته‌ها با اولویت",
+   "تست دورکاری مودریت‌نشده"
+  ],
+  "stack": [
+   {
+    "name": "Umami (تحلیل رفتار)",
+    "repo": "umami-software/umami"
+   },
+   {
+    "name": "PostHog (ضبط جلسه)",
+    "repo": "posthog/posthog"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Microsoft Clarity",
+    "url": "clarity.microsoft.com",
+    "note": "مشاهده رفتار واقعی کاربران"
+   },
+   {
+    "name": "Hotjar",
+    "url": "hotjar.com",
+    "note": "ضبط جلسه و نظرسنجی"
+   }
+  ],
+  "path": [
+   "یادگیری ۱۰ اصل هیوریستیک نیلسن (۲ هفته)",
+   "ارزیابی کارشناسی ۳ سایت معروف (۱ ماه)",
+   "اجرای تست با ۵ کاربر واقعی (۱ ماه)",
+   "نوشتن گزارش حرفه‌ای و پیگیری اصلاح (مداوم)"
+  ],
+  "interview": "در تست استفاده‌پذیری، کاربری نتواند سبد خرید را پیدا کند اما انصراف دهد. یافته‌ را چطور گزارش می‌کنید؟"
+ },
+ {
+  "role": "طراح هویت بصری",
+  "roleEn": "Brand Identity Designer",
+  "section": "مرحله ۳ — برندینگ",
+  "mission": "خلق چهره منحصربه‌فرد برند: لوگو، رنگ، تایپوگرافی",
+  "skills": [
+   "طراحی لوگو با اصول گرید",
+   "انتخاب پالت رنگی و روانشناسی رنگ",
+   "جفت‌فونت فارسی/لاتین",
+   "ساخت برندبوک",
+   "طراحی الگوهای گرافیکی",
+   "کاربردپذیری برند در دیجیتال"
+  ],
+  "stack": [
+   {
+    "name": "Excalidraw (اسکچ)",
+    "repo": "excalidraw/excalidraw"
+   },
+   {
+    "name": "P5.js (ژنراتیو آرت)",
+    "repo": "processing/p5.js"
+   },
+   {
+    "name": "Fontsource (فونت وب)",
+    "repo": "fontsource/fontsource"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Coolors",
+    "url": "coolors.co",
+    "note": "تولید پالت رنگی"
+   },
+   {
+    "name": "Google Fonts",
+    "url": "fonts.google.com",
+    "note": "جست‌وجوی فونت وب"
+   },
+   {
+    "name": "Penpot",
+    "url": "penpot.app",
+    "note": "طراحی وکتور لوگو"
+   }
+  ],
+  "path": [
+   "مطالعه روانشناسی رنگ و تایپوگرافی فارسی (۱ ماه)",
+   "تحلیل ۱۰ برند موفق حوزه هدف (۲ هفته)",
+   "طراحی هویت کامل یک برند فرضی (۲ ماه)",
+   "ساخت پورتفولیو برندینگ (۱ ماه)"
+  ],
+  "interview": "برندی می‌گوید «لوگوی ما باید همه چیز درباره کسب‌وکارمان بگوید». چگونه پاسخ می‌دهید؟"
+ },
+ {
+  "role": "طراح فونت",
+  "roleEn": "Type Designer",
+  "section": "مرحله ۳ — برندینگ",
+  "mission": "طراحی حروف و فونت اختصاصی برای هویت منحصربه‌فرد",
+  "skills": [
+   "طراحی حروف روی گرید",
+   "کشیدگی و نقطه‌گذاری فارسی",
+   "کERNING و متریک",
+   "تولید فونت وب (WOFF2)",
+   "ساخت وزن‌های متنوع",
+   "خوانایی در اندازه‌های ریز"
+  ],
+  "stack": [
+   {
+    "name": "Fontmake (ساخت فونت)",
+    "repo": "googlefonts/fontmake"
+   },
+   {
+    "name": "Fontra (ویرایش فونت)",
+    "repo": "googlefonts/fontra"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Fontra",
+    "url": "fontra.org",
+    "note": "ویرایشگر فونت وب"
+   },
+   {
+    "name": "Google Fonts",
+    "url": "fonts.google.com",
+    "note": "مطالعه فونت‌های متن‌باز"
+   },
+   {
+    "name": "Fontsource",
+    "url": "fontsource.org",
+    "note": "بسته‌بندی فونت وب"
+   }
+  ],
+  "path": [
+   "یادگیری آناتومی حروف فارسی (۲ ماه)",
+   "طراحی الفبای کامل یک وزن (۳ ماه)",
+   "تبدیل به فونت وب قابل استفاده (۱ ماه)",
+   "طراحی وزن دوم و خانواده (۶ ماه)"
+  ],
+  "interview": "چرا فونت اختصاصی برای یک برند منطقی است اما برای استارتاپ کوچک معمولاً نه؟"
+ },
+ {
+  "role": "طراح تجربه کاربری",
+  "roleEn": "UX Designer",
+  "section": "مرحله ۴ — طراحی UX",
+  "mission": "طراحی مسیر روان و لذت‌بخش کاربر برای رسیدن به هدف",
+  "skills": [
+   "وایرفریم و پروتوتایپ",
+   "طراحی User Flow و Journey Map",
+   "الگوهای طراحی UI Pattern",
+   "طراحی فرم و کاهش اصطکاک",
+   "موبایل-فرست و ریسپانسیو",
+   "همکاری با پژوهشگر و UI"
+  ],
+  "stack": [
+   {
+    "name": "Penpot (طراحی متن‌باز)",
+    "repo": "penpot/penpot"
+   },
+   {
+    "name": "Excalidraw (وایرفریم)",
+    "repo": "excalidraw/excalidraw"
+   },
+   {
+    "name": "Style Dictionary (توکن)",
+    "repo": "style-dictionary/style-dictionary"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Penpot",
+    "url": "penpot.app",
+    "note": "وایرفریم و پروتوتایپ رایگان"
+   },
+   {
+    "name": "tldraw",
+    "url": "tldraw.com",
+    "note": "بوم طراحی فلو"
+   },
+   {
+    "name": "Coolors",
+    "url": "coolors.co",
+    "note": "پالت هماهنگ"
+   }
+  ],
+  "path": [
+   "یادگیری فرآیند طراحی دوتایی (۱ ماه)",
+   "وایرفریم‌سازی ۵ صفحه یک سایت واقعی (۱ ماه)",
+   "پروتوتایپ کلیک‌خور و تست با کاربر (۱ ماه)",
+   "تسلط بر دیزاین سیستم (۲ ماه)"
+  ],
+  "interview": "دو الگوی متفاوت برای صفحه پرداخت طراحی کنید و بگویید کدام را برای فروشگاه لباس انتخاب می‌کنید و چرا."
+ },
+ {
+  "role": "طراح تعامل",
+  "roleEn": "Interaction Designer",
+  "section": "مرحله ۴ — طراحی UX",
+  "mission": "طراحی رفتار سیستم در پاسخ به عمل کاربر",
+  "skills": [
+   "طراحی حالت‌های خالی و خطا",
+   "میکرواینترکشن و بازخورد",
+   "انیمیشن معنادار UI",
+   "طراحی درگ‌انددراپ",
+   "گشتالت در تعامل",
+   "دسترس‌پذیری تعامل"
+  ],
+  "stack": [
+   {
+    "name": "Motion (انیمیشن)",
+    "repo": "motion-dev/motion"
+   },
+   {
+    "name": "React Aria (دسترس‌پذیری)",
+    "repo": "adobe/react-spectrum"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Motion Docs",
+    "url": "motion.dev",
+    "note": "مستندات تعاملی انیمیشن"
+   },
+   {
+    "name": "Storybook",
+    "url": "storybook.js.org",
+    "note": "مرور حالت‌های کامپوننت"
+   }
+  ],
+  "path": [
+   "مطالعه الگوهای تعامل موبایل و وب (۱ ماه)",
+   "طراحی حالت‌های کامل یک فرم (۲ هفته)",
+   "پیاده‌سازی میکرواینترکشن با Motion (۱ ماه)",
+   "تست تعامل با کاربران (مداوم)"
+  ],
+  "interview": "کاربر دکمه خرید را دوبار می‌زند چون بازخوردی نمی‌بیند. راه‌حل طراحی شما چیست؟"
+ },
+ {
+  "role": "طراح دسترس‌پذیری",
+  "roleEn": "Accessibility Specialist",
+  "section": "مرحله ۴ — طراحی UX",
+  "mission": "تضمین استفاده همه — از کم‌بینا تا حرکت‌محدود — از سایت",
+  "skills": [
+   "استاندارد WCAG 2.2",
+   "سیمانتیک HTML و ARIA",
+   "کنتراست و اندازه هدف لمس",
+   "ناوبری کیبورد و فوکوس",
+   "خوانندگان صفحه (Screen Reader)",
+   "تست با کاربران دارای معلولیت"
+  ],
+  "stack": [
+   {
+    "name": "React Spectrum (کامپوننت a11y)",
+    "repo": "adobe/react-spectrum"
+   },
+   {
+    "name": "Radix (پایه a11y)",
+    "repo": "radix-ui/primitives"
+   }
+  ],
+  "practice": [
+   {
+    "name": "WebAIM WAVE",
+    "url": "wave.webaim.org",
+    "note": "ارزیابی آنلاین دسترس‌پذیری"
+   },
+   {
+    "name": "NVDA Screen Reader",
+    "url": "nvaccess.org",
+    "note": "خواننده صفحه رایگان"
+   },
+   {
+    "name": "Lighthouse a11y",
+    "url": "developers.google.com/web/tools/lighthouse",
+    "note": "ممیزی دسترس‌پذیری"
+   }
+  ],
+  "path": [
+   "مطالعه WCAG 2.2 سطح AA (۱ ماه)",
+   "ارزیابی ۵ سایت با WAVE (۲ هفته)",
+   "رفع ۲۰ مشکل دسترس‌پذیری یک سایت واقعی (۱ ماه)",
+   "تست با NVDA و کیبورد (مداوم)"
+  ],
+  "interview": "سایتی فرم را با label پنهان و placeholder تنها منتشر کرده. چه مشکلاتی ایجاد می‌کند و چگونه رفع می‌کنید؟"
+ },
+ {
+  "role": "طراح رابط کاربری",
+  "roleEn": "UI Designer",
+  "section": "مرحله ۵ — طراحی UI",
+  "mission": "طراحی ظاهر نهایی سایت: رنگ، تایپ، کامپوننت و جزئیات",
+  "skills": [
+   "تایپوگرافی وب و سلسله‌مراتب",
+   "پالت رنگی و کنتراست",
+   "طراحی Grid و فاصله‌گذاری",
+   "طراحی State های کامپوننت",
+   "آیکون‌کشی و تصویرسازی",
+   "آماده‌سازی Design Handoff"
+  ],
+  "stack": [
+   {
+    "name": "Storybook (مستندات کامپوننت)",
+    "repo": "storybookjs/storybook"
+   },
+   {
+    "name": "Chakra UI (کامپوننت)",
+    "repo": "chakra-ui/chakra-ui"
+   },
+   {
+    "name": "Material UI",
+    "repo": "mui/material-ui"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Penpot",
+    "url": "penpot.app",
+    "note": "طراحی UI متن‌باز"
+   },
+   {
+    "name": "Storybook",
+    "url": "storybook.js.org",
+    "note": "کتابخانه کامپوننت زنده"
+   },
+   {
+    "name": "Google Fonts Icons",
+    "url": "fonts.google.com/icons",
+    "note": "آیکون‌های استاندارد"
+   }
+  ],
+  "path": [
+   "یادگیری اصول تایپوگرافی و رنگ (۱ ماه)",
+   "بازطراحی UI سه سایت معروف (۱ ماه)",
+   "طراحی کامل ۸ صفحه یک محصول (۲ ماه)",
+   "ساخت دیزاین سیستم شخصی (۲ ماه)"
+  ],
+  "interview": "دیزاینر UX فلو را تحویل داده. فرآیند شما از فلو تا فایل نهایی تحویل به برنامه‌نویس چگونه است؟"
+ },
+ {
+  "role": "متخصص دیزاین سیستم",
+  "roleEn": "Design System Engineer",
+  "section": "مرحله ۵ — طراحی UI",
+  "mission": "ساخت کتابخانه یکپارچه کامپوننت برای مقیاس‌پذیری طراحی",
+  "skills": [
+   "توکن‌های طراحی (رنگ/فاصله/تایپ)",
+   "مستندسازی کامپوننت",
+   "نسخه‌بندی و تغییرات",
+   "هماهنگی طراحی-کد",
+   "دسترس‌پذیری در مقیاس",
+   "حکمرانی دیزاین سیستم"
+  ],
+  "stack": [
+   {
+    "name": "Style Dictionary",
+    "repo": "style-dictionary/style-dictionary"
+   },
+   {
+    "name": "Storybook",
+    "repo": "storybookjs/storybook"
+   },
+   {
+    "name": "Radix Primitives",
+    "repo": "radix-ui/primitives"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Storybook",
+    "url": "storybook.js.org",
+    "note": "ساخت DS با مستندات زنده"
+   },
+   {
+    "name": "Style Dictionary",
+    "url": "styledictionary.com",
+    "note": "مدیریت توکن چندپلتفرمی"
+   }
+  ],
+  "path": [
+   "یادگیری معماری توکن‌ها (۱ ماه)",
+   "ساخت DS کوچک با ۱۵ کامپوننت (۲ ماه)",
+   "اتصال توکن‌ها به کد با Style Dictionary (۱ ماه)",
+   "نسخه‌بندی و مستندسازی عمومی (مداوم)"
+  ],
+  "interview": "تیم‌ها کامپوننت سفارشی خارج از دیزاین سیستم می‌سازند. چگونه انضباط را برقرار می‌کنید؟"
+ },
+ {
+  "role": "موشن دیزاینر",
+  "roleEn": "Motion Designer",
+  "section": "مرحله ۵ — طراحی UI",
+  "mission": "جان‌بخشی به رابط با انیمیشن‌های معنادار و هدفمند",
+  "skills": [
+   "اصول انیمیشن دیزنی در UI",
+   "Timing و Easing",
+   "انیمیشن لودینگ و انتقال صفحه",
+   "SVG و Lottie",
+   "انیمیشن RTL فارسی",
+   "بهینه‌سازی کارایی انیمیشن"
+  ],
+  "stack": [
+   {
+    "name": "Motion",
+    "repo": "motion-dev/motion"
+   },
+   {
+    "name": "React Three Fiber (سه‌بعدی)",
+    "repo": "pmndrs/react-three-fiber"
+   },
+   {
+    "name": "Theatre.js",
+    "repo": "theatre-js/theatre"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Motion",
+    "url": "motion.dev",
+    "note": "تمرین تعاملی انیمیشن"
+   },
+   {
+    "name": "LottieFiles",
+    "url": "lottiefiles.com",
+    "note": "انیمیشن‌های آماده Lottie"
+   }
+  ],
+  "path": [
+   "مطالعه اصول موشن (۱ ماه)",
+   "ساخت ۱۰ میکرواینترکشن (۱ ماه)",
+   "طراحی انیمیشن Onboarding کامل (۱ ماه)",
+   "یادگیری وب سه‌بعدی با R3F (۲ ماه)"
+  ],
+  "interview": "انیمیشنی زیبا اما کند دارید و مدیر محصول نگران سرعت سایت است. چه مصالحه‌ای پیشنهاد می‌دهید؟"
+ },
+ {
+  "role": "کپی‌رایتر وب",
+  "roleEn": "Web Copywriter",
+  "section": "مرحله ۶ — تولید محتوا",
+  "mission": "نوشتن متن‌های صفحه که بفروشند و رتبه بگیرند",
+  "skills": [
+   "نوشتن Headline و CTA",
+   "روایت برند و لحن (Tone of Voice)",
+   "ساختار هرم وارونه",
+   "نوشتن فرم و پیام خطا",
+   "A/B تست متن",
+   "سئو-نویسی بدون牺牲 خوانایی"
+  ],
+  "stack": [
+   {
+    "name": "Ghost (نشر محتوا)",
+    "repo": "tryghost/ghost"
+   },
+   {
+    "name": "Monaco (ادیتور)",
+    "repo": "microsoft/monaco-editor"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Hemingway",
+    "url": "hemingwayapp.com",
+    "note": "ساده‌سازی و خوانایی"
+   },
+   {
+    "name": "ChatGPT/Claude",
+    "url": "chat.openai.com",
+    "note": "ایده‌پردازی و پیش‌نویس"
+   }
+  ],
+  "path": [
+   "مطالعه کلاسیک‌های کپی‌رایتینگ (۱ ماه)",
+   "نوشتن ۱۰ لندینگ واقعی/فرضی (۲ ماه)",
+   "A/B تست سرتیترها (۱ ماه)",
+   "تخصصی‌شدن در یک صنعت (مداوم)"
+  ],
+  "interview": "برای صفحه اصلی یک استارتاپ فین‌تک، سه سرتیتر متفاوت با زوایای روانی مختلف بنویسید."
+ },
+ {
+  "role": "مدیر محتوا",
+  "roleEn": "Content Manager",
+  "section": "مرحله ۶ — تولید محتوا",
+  "mission": "برنامه‌ریزی، تقویم و انتشار محتوای مستمر سایت",
+  "skills": [
+   "تقویم محتوایی",
+   "مدیریت تیم نویسنده",
+   "سئو کلاستر محتوا",
+   "CMS و گردش کار انتشار",
+   "آنالیز عملکرد محتوا",
+   "بازنویسی و به‌روزرسانی"
+  ],
+  "stack": [
+   {
+    "name": "Strapi",
+    "repo": "strapi/strapi"
+   },
+   {
+    "name": "Directus",
+    "repo": "directus/directus"
+   },
+   {
+    "name": "Ghost",
+    "repo": "tryghost/ghost"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Strapi Cloud",
+    "url": "strapi.io",
+    "note": "دموی هدلس CMS"
+   },
+   {
+    "name": "Obsidian",
+    "url": "obsidian.md",
+    "note": "تقویم و ایده‌های محتوا"
+   }
+  ],
+  "path": [
+   "یادگیری اصول ادیتوری (۱ ماه)",
+   "ساخت تقویم سه‌ماهه محتوا (۲ هفته)",
+   "مدیریت انتشار ۲۰ محتوا (۲ ماه)",
+   "تحلیل و بازنویسی بر پایه داده (مداوم)"
+  ],
+  "interview": "ترافیک ۳۰٪ مقالات قدیمی سایت افت کرده. استراتژی به‌روزرسانی محتوای شما چیست؟"
+ },
+ {
+  "role": "عکاس و فیلم‌ساز محصول",
+  "roleEn": "Product Photographer",
+  "section": "مرحله ۶ — تولید محتوا",
+  "mission": "تولید تصاویر و ویدیوی حرفه‌ای محصول و فضای برند",
+  "skills": [
+   "عکاسی محصول با نورپردازی",
+   "رتوش و رنگ‌بندی",
+   "ویدیو معرفی محصول",
+   "موشن‌گرافیک تبلیغاتی",
+   "بهینه‌سازی رسانه برای وب",
+   "آرشیو و نام‌گذاری دارایی‌ها"
+  ],
+  "stack": [
+   {
+    "name": "Immich (آرشیو هوشمند)",
+    "repo": "immich-app/immich"
+   },
+   {
+    "name": "PhotoPrism",
+    "repo": "photoprism/photoprism"
+   },
+   {
+    "name": "Sharp (بهینه‌سازی)",
+    "repo": "lovell/sharp"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Immich demo",
+    "url": "demo.immich.app",
+    "note": "تجربه آرشیو AI"
+   },
+   {
+    "name": "GIMP",
+    "url": "gimp.org",
+    "note": "ویرایش تصویر متن‌باز"
+   },
+   {
+    "name": "DaVinci Resolve",
+    "url": "blackmagicdesign.com",
+    "note": "تدوین حرفه‌ای رایگان"
+   }
+  ],
+  "path": [
+   "یادگیری نورپردازی محصول (۱ ماه)",
+   "عکاسی ۳۰ محصول واقعی (۱ ماه)",
+   "تدوین ویدیو با DaVinci (۲ ماه)",
+   "ساخت ریلز معرفی محصول (مداوم)"
+  ],
+  "interview": "محصولی شیشه‌ای و بازتابنده دارید و عکس‌هایش همیشه درشت‌نمایی می‌شوند. راه‌حل فنی شما؟"
+ },
+ {
+  "role": "تولیدکننده محتوای گرافیکی",
+  "roleEn": "Visual Content Creator",
+  "section": "مرحله ۶ — تولید محتوا",
+  "mission": "طراحی اینفوگرافیک، بنر و تصاویر سوشال هم‌راستا با برند",
+  "skills": [
+   "اینفوگرافیک داده-محور",
+   "طراحی بنر تبلیغاتی",
+   "قالب‌سازی سوشال مدیا",
+   "ایلاستریشن برداری",
+   "داشبورد تصویری داده",
+   "انیمیشن GIF ساده"
+  ],
+  "stack": [
+   {
+    "name": "P5.js (ژنراتیو)",
+    "repo": "processing/p5.js"
+   },
+   {
+    "name": "D3 (داده-محور)",
+    "repo": "d3/d3"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Canva",
+    "url": "canva.com",
+    "note": "قالب‌های سوشال"
+   },
+   {
+    "name": "Penpot",
+    "url": "penpot.app",
+    "note": "طراحی وکتور"
+   },
+   {
+    "name": "Coolors",
+    "url": "coolors.co",
+    "note": "پالت هماهنگ برند"
+   }
+  ],
+  "path": [
+   "یادگیری اصول داده‌ویژوالایزیشن (۱ ماه)",
+   "ساخت ۱۰ اینفوگرافیک (۱ ماه)",
+   "طراحی ست کامل سوشال یک برند (۲ هفته)",
+   "تسلط بر D3 برای نمودار سفارشی (۲ ماه)"
+  ],
+  "interview": "داده‌ای خشک و جدولی دارید. چگونه تصمیم می‌گیرید کدام بخش آن اینفوگرافیک شود و کدام نه؟"
+ },
+ {
+  "role": "توسعه‌دهنده فرانت‌اند",
+  "roleEn": "Frontend Developer",
+  "section": "مرحله ۷ — فرانت‌اند",
+  "mission": "پیاده‌سازی رابط کاربری با کد تمیز، سریع و ریسپانسیو",
+  "skills": [
+   "HTML سیمانتیک و CSS مدرن",
+   "جاوااسکریپت/TypeScript",
+   "ریسپانسیو و موبایل-فرست",
+   "مدیریت State",
+   "دسترس‌پذیری و RTL",
+   "بهینه‌سازی رندر"
+  ],
+  "stack": [
+   {
+    "name": "React",
+    "repo": "facebook/react"
+   },
+   {
+    "name": "Vue",
+    "repo": "vuejs/vue"
+   },
+   {
+    "name": "Tailwind CSS",
+    "repo": "tailwindlabs/tailwindcss"
+   },
+   {
+    "name": "TypeScript",
+    "repo": "microsoft/TypeScript"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Frontend Mentor",
+    "url": "frontendmentor.io",
+    "note": "چالش طراحی به کد"
+   },
+   {
+    "name": "CSS Battle",
+    "url": "cssbattle.dev",
+    "note": "مسابقه روزانه CSS"
+   },
+   {
+    "name": "CodePen",
+    "url": "codepen.io",
+    "note": "زمین بازی و ایده"
+   }
+  ],
+  "path": [
+   "تسلط بر HTML/CSS/JS (۳ ماه)",
+   "یادگیری React و TypeScript (۳ ماه)",
+   "ساخت ۵ پروژه واقعی ریسپانسیو (۳ ماه)",
+   "مکانیزم رندر، SSR و بهینه‌سازی (۲ ماه)"
+  ],
+  "interview": "صفحه‌ای با لیست ۱۰هزار آیتم کرش می‌کند. تکنیک‌های رفع و بهینه‌سازی آن را توضیح دهید."
+ },
+ {
+  "role": "توسعه‌دهنده ری‌اکت",
+  "roleEn": "React Developer",
+  "section": "مرحله ۷ — فرانت‌اند",
+  "mission": "تخصص در اکوسیستم React برای رابط‌های تعاملی پیچیده",
+  "skills": [
+   "کامپوننت و Hookهای پیشرفته",
+   "مدیریت State سمت کلاینت",
+   "React Query و کش سرور",
+   "تست با Testing Library",
+   "بهینه‌سازی رندر (memo/useMemo)",
+   "Server Components"
+  ],
+  "stack": [
+   {
+    "name": "React",
+    "repo": "facebook/react"
+   },
+   {
+    "name": "Next.js",
+    "repo": "vercel/next.js"
+   },
+   {
+    "name": "shadcn/ui",
+    "repo": "shadcn-ui/ui"
+   }
+  ],
+  "practice": [
+   {
+    "name": "StackBlitz",
+    "url": "stackblitz.com",
+    "note": "پروژه React در مرورگر"
+   },
+   {
+    "name": "Frontend Mentor",
+    "url": "frontendmentor.io",
+    "note": "چالش‌های UI واقعی"
+   }
+  ],
+  "path": [
+   "تسلط بر JS مدرن و TypeScript (۲ ماه)",
+   "یادگیری عمیق React و هوک‌ها (۲ ماه)",
+   "ساخت اپ CRUD با Next.js (۱ ماه)",
+   "تست و بهینه‌سازی (۱ ماه)"
+  ],
+  "interview": "useEffect نامتناسب باعث درخواست تکراری می‌شود. چگونه صحت وابستگی‌ها را تشخیص می‌دهید؟"
+ },
+ {
+  "role": "متخصص Next.js",
+  "roleEn": "Next.js Specialist",
+  "section": "مرحله ۷ — فرانت‌اند",
+  "mission": "سایت‌های SSR/ISR سریع و سئو-پسند با اکوسیستم Next",
+  "skills": [
+   "App Router و Server Components",
+   "SSR/SSG/ISR",
+   "مسیریابی و API Route",
+   "بهینه‌سازی تصویر/فونت",
+   "Edge و Middleware",
+   "احراز هویت Auth.js"
+  ],
+  "stack": [
+   {
+    "name": "Next.js",
+    "repo": "vercel/next.js"
+   },
+   {
+    "name": "shadcn/ui",
+    "repo": "shadcn-ui/ui"
+   },
+   {
+    "name": "Auth.js",
+    "repo": "nextauthjs/next-auth"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Next.js Learn",
+    "url": "nextjs.org/learn",
+    "note": "آموزش رسمی تعاملی"
+   },
+   {
+    "name": "Vercel Hobby",
+    "url": "vercel.com",
+    "note": "هاست رایگان پروژه"
+   }
+  ],
+  "path": [
+   "یادگیری React پیش‌نیاز (۲ ماه)",
+   "دوره Next.js Learn رسمی (۱ ماه)",
+   "ساخت فروشگاه SSR با ISR (۱ ماه)",
+   "استقرار و بهینه‌سازی تولید (۲ هفته)"
+  ],
+  "interview": "صفحه‌ای باید هم سئو عالی و هم داده کاربر لاگین‌شده داشته باشد. معماری رندر شما؟"
+ },
+ {
+  "role": "توسعه‌دهنده انیمیشن وب",
+  "roleEn": "Web Animation Developer",
+  "section": "مرحله ۷ — فرانت‌اند",
+  "mission": "پیاده‌سازی انیمیشن روان ۶۰fps بدون قربانی کردن سرعت",
+  "skills": [
+   "انیمیشن CSS و Web Animations API",
+   "GSAP/Motion در React",
+   "انیمیشن اسکرول (Scroll-driven)",
+   "FLIP و layout animation",
+   "بهینه‌سازی GPU",
+   "Reduced Motion برای a11y"
+  ],
+  "stack": [
+   {
+    "name": "Motion",
+    "repo": "motion-dev/motion"
+   },
+   {
+    "name": "React Three Fiber",
+    "repo": "pmndrs/react-three-fiber"
+   },
+   {
+    "name": "Lottie",
+    "repo": "airbnb/lottie-web"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Motion",
+    "url": "motion.dev",
+    "note": "مستندات تعاملی"
+   },
+   {
+    "name": "CSS Battle",
+    "url": "cssbattle.dev",
+    "note": "تمرین CSS پیشرفته"
+   }
+  ],
+  "path": [
+   "یادگیری اصول انیمیشن و easing (۱ ماه)",
+   "پیاده‌سازی ۲۰ میکرواینترکشن (۱ ماه)",
+   "پروژه لندینگ انیمیشن-محور (۱ ماه)",
+   "وب سه‌بعدی با R3F (۲ ماه)"
+  ],
+  "interview": "انیمیشنی روی موبایل ارزان لگ می‌زند. چگونه پروفایل و بهینه‌سازی می‌کنید؟"
+ },
+ {
+  "role": "متخصص دسترس‌پذیری فرانت‌اند",
+  "roleEn": "Frontend Accessibility Engineer",
+  "section": "مرحله ۷ — فرانت‌اند",
+  "mission": "پیاده‌سازی کد فرانت‌اند سازگار با WCAG برای همه کاربران",
+  "skills": [
+   "HTML سیمانتیک",
+   "ARIA درست در جای درست",
+   "مدیریت فوکوس در SPA",
+   "تست با Screen Reader",
+   "کنتراست و واحدهای نسبی",
+   "CI خودکار a11y"
+  ],
+  "stack": [
+   {
+    "name": "Radix Primitives",
+    "repo": "radix-ui/primitives"
+   },
+   {
+    "name": "React Aria",
+    "repo": "adobe/react-spectrum"
+   }
+  ],
+  "practice": [
+   {
+    "name": "WebAIM WAVE",
+    "url": "wave.webaim.org",
+    "note": "ارزیابی سریع صفحات"
+   },
+   {
+    "name": "NVDA",
+    "url": "nvaccess.org",
+    "note": "خواننده صفحه ویندوز"
+   },
+   {
+    "name": "axe DevTools",
+    "url": "deque.com/axe",
+    "note": "اسکن خودکار a11y"
+   }
+  ],
+  "path": [
+   "مطالعه WCAG و ARIA (۱ ماه)",
+   "بازسازی ۳ کامپوننت a11y-پسند (۱ ماه)",
+   "تست کامل یک سایت با NVDA (۲ هفته)",
+   "راه‌اندازی CI با axe (۲ هفته)"
+  ],
+  "interview": "منوی کشویی فقط با موس کار می‌کند. چه تغییری در DOM و رفتار کیبورد لازم است؟"
+ },
+ {
+  "role": "مهندس بک‌اند",
+  "roleEn": "Backend Engineer",
+  "section": "مرحله ۸ — بک‌اند",
+  "mission": "موتور سایت: APIها، منطق کسب‌وکار و کارایی پایدار",
+  "skills": [
+   "طراحی REST/GraphQL",
+   "احراز هویت و امنیت API",
+   "معماری لایه‌ای و تمیز",
+   "کش و صف",
+   "لاگ و مانیتورینگ",
+   "تست یکپارچه"
+  ],
+  "stack": [
+   {
+    "name": "Express",
+    "repo": "expressjs/express"
+   },
+   {
+    "name": "NestJS",
+    "repo": "nestjs/nest"
+   },
+   {
+    "name": "FastAPI",
+    "repo": "fastapi/fastapi"
+   },
+   {
+    "name": "PostgreSQL",
+    "repo": "postgres/postgres"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Roadmap.sh",
+    "url": "roadmap.sh/backend",
+    "note": "نقشه راه کامل بک‌اند"
+   },
+   {
+    "name": "Postman",
+    "url": "postman.com",
+    "note": "طراحی و تست API"
+   },
+   {
+    "name": "Supabase",
+    "url": "supabase.com",
+    "note": "پستگرس + API آماده"
+   }
+  ],
+  "path": [
+   "یادگیری یک زبان سرور و SQL (۳ ماه)",
+   "ساخت API کامل CRUD با احراز هویت (۲ ماه)",
+   "آزمون بار و امنیت (۱ ماه)",
+   "معماری میکروسرویس و صف (۲ ماه)"
+  ],
+  "interview": "اندپوینتی زیر بار ۱۰x کند می‌شود. فرآیند تشخیص و رفع شما به ترتیب چیست؟"
+ },
+ {
+  "role": "توسعه‌دهنده Node.js",
+  "roleEn": "Node.js Developer",
+  "section": "مرحله ۸ — بک‌اند",
+  "mission": "سرورهای جاوااسکریپت پرسرعت و ایزومورفیک",
+  "skills": [
+   "Event Loop و غیرهمگامی",
+   "Express/Fastify/Nest",
+   "استریم و بافر",
+   "Worker Thread",
+   "NPM و مدیریت پکیج",
+   "دیباگ و Profiling"
+  ],
+  "stack": [
+   {
+    "name": "Express",
+    "repo": "expressjs/express"
+   },
+   {
+    "name": "Fastify",
+    "repo": "fastify/fastify"
+   },
+   {
+    "name": "NestJS",
+    "repo": "nestjs/nest"
+   },
+   {
+    "name": "Hono (ترند)",
+    "repo": "honojs/hono"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Node.js Docs",
+    "url": "nodejs.org",
+    "note": "مستندات رسمی با REPL"
+   },
+   {
+    "name": "Roadmap.sh",
+    "url": "roadmap.sh/backend",
+    "note": "مسیر یادگیری"
+   }
+  ],
+  "path": [
+   "تسلط بر JS مدرن و async (۲ ماه)",
+   "ساخت API با Express سپس Nest (۲ ماه)",
+   "استریم و بهینه‌سازی حافظه (۱ ماه)",
+   "مقیاس‌پذیری با Redis و صف (۲ ماه)"
+  ],
+  "interview": "سرور Node شما Memory Leak دارد. ابزار و مراحل تشخیص نشتی را شرح دهید."
+ },
+ {
+  "role": "توسعه‌دهنده پایتون وب",
+  "roleEn": "Python Web Developer",
+  "section": "مرحله ۸ — بک‌اند",
+  "mission": "بک‌اند پایتونی برای APIهای سریع و اتصال به دنیای داده و AI",
+  "skills": [
+   "Django و ORM",
+   "FastAPI و Pydantic",
+   "معماری اپ پایتون",
+   "Celery و وظایف پس‌زمینه",
+   "Test با pytest",
+   "استقرار با Gunicorn/Uvicorn"
+  ],
+  "stack": [
+   {
+    "name": "FastAPI",
+    "repo": "fastapi/fastapi"
+   },
+   {
+    "name": "Django",
+    "repo": "django/django"
+   },
+   {
+    "name": "Flask",
+    "repo": "pallets/flask"
+   }
+  ],
+  "practice": [
+   {
+    "name": "FastAPI Docs",
+    "url": "fastapi.tiangolo.com",
+    "note": "مستندات تعاملی Swagger"
+   },
+   {
+    "name": "Supabase",
+    "url": "supabase.com",
+    "note": "دیتابیس برای تمرین API"
+   }
+  ],
+  "path": [
+   "تسلط بر پایتون و SQL (۲ ماه)",
+   "ساخت API با FastAPI و مستندسازی (۱ ماه)",
+   "پروژه جنگو با پنل ادمین (۲ ماه)",
+   "Celery و استقرار (۱ ماه)"
+  ],
+  "interview": "چرا برای API پایتون، FastAPI و برای سایت محتوایی جنگو انتخاب می‌شود؟ یک مثال واقعی بگویید."
+ },
+ {
+  "role": "توسعه‌دهنده PHP / لاراول",
+  "roleEn": "Laravel Developer",
+  "section": "مرحله ۸ — بک‌اند",
+  "mission": "وب‌سایت‌ها و فروشگاه‌های سریع با اکوسیستم بالغ PHP",
+  "skills": [
+   "PHP مدرن 8+",
+   "لاراول: Eloquent/Blade/Queue",
+   "استقرار و بهینه‌سازی OPcache",
+   "امنیت لاراول",
+   "تست با Pest/PHPUnit",
+   "اکوسیستم پکیج‌ها"
+  ],
+  "stack": [
+   {
+    "name": "Laravel",
+    "repo": "laravel/framework"
+   },
+   {
+    "name": "Symfony",
+    "repo": "symfony/symfony"
+   },
+   {
+    "name": "PHPMailer",
+    "repo": "PHPMailer/PHPMailer"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Laravel Bootcamp",
+    "url": "bootcamp.laravel.com",
+    "note": "آموزش رسمی پروژه‌محور"
+   },
+   {
+    "name": "Laracasts free",
+    "url": "laracasts.com",
+    "note": "ویدیوهای آموزشی"
+   }
+  ],
+  "path": [
+   "یادگیری PHP مدرن (۲ ماه)",
+   "ساخت CRUD با لاراول (۱ ماه)",
+   "پروژه کامل فروشگاه/بلوگ (۲ ماه)",
+   "تست، صف و استقرار (۱ ماه)"
+  ],
+  "interview": "کوئری Eloquent شما روی جدول میلیونی کند است. چه گزینه‌هایی برای بهینه‌سازی دارید؟"
+ },
+ {
+  "role": "توسعه‌دهنده Go",
+  "roleEn": "Go Developer",
+  "section": "مرحله ۸ — بک‌اند",
+  "mission": "سرویس‌های سبک و مقیاس‌پذیر با زبان همزمانی‌محور گوگل",
+  "skills": [
+   "Goroutine و Channel",
+   "Gin/Chi برای API",
+   "ساختار پروژه استاندارد",
+   "gRPC سرویس",
+   "تست و بنچمارک",
+   "کامپایل و استقرار تک‌باینری"
+  ],
+  "stack": [
+   {
+    "name": "Gin",
+    "repo": "gin-gonic/gin"
+   },
+   {
+    "name": "Chi",
+    "repo": "go-chi/chi"
+   },
+   {
+    "name": "gRPC",
+    "repo": "grpc/grpc"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Go Tour",
+    "url": "go.dev/tour",
+    "note": "آموزش تعاملی رسمی"
+   },
+   {
+    "name": "Go by Example",
+    "url": "gobyexample.com",
+    "note": "نمونه کدهای موضوعی"
+   }
+  ],
+  "path": [
+   "یادگیری Go با Tour رسمی (۱ ماه)",
+   "ساخت REST API با Gin (۱ ماه)",
+   "سرویس gRPC و همزمانی (۱ ماه)",
+   "پروژه میکروسرویس واقعی (۲ ماه)"
+  ],
+  "interview": "Goroutineهای شما Deadlock می‌کنند. چگونه با channel و context جلوی آن را می‌گیرید؟"
+ },
+ {
+  "role": "طراح API",
+  "roleEn": "API Designer",
+  "section": "مرحله ۸ — بک‌اند",
+  "mission": "طراحی قراردادهای تمیز و ماندگار بین سیستم‌ها",
+  "skills": [
+   "REST maturity و HATEOAS",
+   "OpenAPI/Swagger",
+   "نسخه‌بندی و deprecation",
+   "GraphQL Schema Design",
+   "Webhook و رویداد",
+   "امنیت OAuth2/JWT"
+  ],
+  "stack": [
+   {
+    "name": "GraphQL",
+    "repo": "graphql/graphql-js"
+   },
+   {
+    "name": "gRPC",
+    "repo": "grpc/grpc"
+   },
+   {
+    "name": "Hoppscotch",
+    "repo": "hoppscotch/hoppscotch"
+   }
+  ],
+  "practice": [
+   {
+    "name": "OpenAPI Spec",
+    "url": "swagger.io/spec",
+    "note": "مستندات استاندارد"
+   },
+   {
+    "name": "Hoppscotch",
+    "url": "hoppscotch.io",
+    "note": "تست تعاملی API"
+   },
+   {
+    "name": "Postman",
+    "url": "postman.com",
+    "note": "مجموعه تست API"
+   }
+  ],
+  "path": [
+   "مطالعه طراحی APIهای بزرگ عمومی (۱ ماه)",
+   "طراحی OpenAPI برای یک فروشگاه (۱ ماه)",
+   "پیاده‌سازی و مستندسازی خودکار (۱ ماه)",
+   "طراحی GraphQL معادل (۱ ماه)"
+  ],
+  "interview": "کلاینتی فیلد حیاتی را در API v1 بد طراحی شده می‌خواهد؛ v2 آماده است. استراتژی مهاجرت شما؟"
+ },
+ {
+  "role": "مهندس احراز هویت",
+  "roleEn": "Auth Engineer",
+  "section": "مرحله ۸ — بک‌اند",
+  "mission": "ورود امن و بی‌دردسر کاربران با OAuth/OIDC و MFA",
+  "skills": [
+   "OAuth 2.0 و OpenID Connect",
+   "JWT در برابر Session",
+   "MFA و Passkey/WebAuthn",
+   "SSO سازمانی SAML",
+   "مدیریت نقش RBAC/ABAC",
+   "جلوگیری از حملات احراز هویت"
+  ],
+  "stack": [
+   {
+    "name": "Keycloak",
+    "repo": "keycloak/keycloak"
+   },
+   {
+    "name": "Auth.js",
+    "repo": "nextauthjs/next-auth"
+   },
+   {
+    "name": "Authentik",
+    "repo": "goauthentik/authentik"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Keycloak Demo",
+    "url": "keycloak.org",
+    "note": "دموی آنلاین SSO"
+   },
+   {
+    "name": "Auth0 Docs",
+    "url": "auth0.com/docs",
+    "note": "مستندات آموزشی OIDC"
+   }
+  ],
+  "path": [
+   "یادگیری OAuth2/OIDC (۱ ماه)",
+   "پیاده‌سازی ورود گوگل/گیت‌هاب (۲ هفته)",
+   "ساخت SSO با Keycloak (۱ ماه)",
+   "MFA و Passkey (۱ ماه)"
+  ],
+  "interview": "چرا JWT در LocalStorage ناامن تلقی می‌شود و جایگزن‌های آن چیست؟"
+ },
+ {
+  "role": "مدیر دیتابیس",
+  "roleEn": "Database Administrator",
+  "section": "مرحله ۹ — دیتابیس",
+  "mission": "سلامت، کارایی و پشتیبان‌گیری دیتابیس قلب سایت",
+  "skills": [
+   "طراحی اسکیما و نرمال‌سازی",
+   "ایندکس‌گذاری و Query Plan",
+   "پشتیبان‌گیری و بازیابی",
+   "همسان‌سازی Replica",
+   "امنیت و دسترسی",
+   "مانیتورینگ کارایی"
+  ],
+  "stack": [
+   {
+    "name": "PostgreSQL",
+    "repo": "postgres/postgres"
+   },
+   {
+    "name": "MySQL",
+    "repo": "mysql/mysql-server"
+   },
+   {
+    "name": "ClickHouse",
+    "repo": "clickhouse/clickhouse"
+   }
+  ],
+  "practice": [
+   {
+    "name": "SQLZoo",
+    "url": "sqlzoo.net",
+    "note": "تمرین تعاملی SQL"
+   },
+   {
+    "name": "pgAdmin",
+    "url": "pgadmin.org",
+    "note": "محیط مدیریت پستگرس"
+   },
+   {
+    "name": "DB Fiddle",
+    "url": "db-fiddle.com",
+    "note": "تست کوئری آنلاین"
+   }
+  ],
+  "path": [
+   "تسلط بر SQL و طراحی اسکیما (۲ ماه)",
+   "یادگیری عمیق پستگرس و ایندکس (۲ ماه)",
+   "پشتیبان‌گیری و بازیابی تمرینی (۱ ماه)",
+   "بهینه‌سازی کوئری‌های واقعی (مداوم)"
+  ],
+  "interview": "کوئری‌ای که در تست سریع بود در تولید کند شده. مراحل تحلیل EXPLAIN شما؟"
+ },
+ {
+  "role": "مدل‌ساز داده",
+  "roleEn": "Data Modeler",
+  "section": "مرحله ۹ — دیتابیس",
+  "mission": "طراحی ساختار داده که کسب‌وکار فردا را هم پوشش دهد",
+  "skills": [
+   "مدل‌سازی Conceptual/Logical/Physical",
+   "ERD و نرمال‌سازی",
+   "الگوهای طراحی داده",
+   "مهاجرت اسکیما",
+   "DWH و ستاره",
+   "داده نیمه‌ساختاریافته JSONB"
+  ],
+  "stack": [
+   {
+    "name": "PostgreSQL (JSONB)",
+    "repo": "postgres/postgres"
+   },
+   {
+    "name": "DBML",
+    "repo": "dbdiagram-io/dbml"
+   },
+   {
+    "name": "Supabase",
+    "repo": "supabase/supabase"
+   }
+  ],
+  "practice": [
+   {
+    "name": "DrawDB",
+    "url": "drawdb.app",
+    "note": "طراحی آنلاین ERD"
+   },
+   {
+    "name": "dbdiagram.io",
+    "url": "dbdiagram.io",
+    "note": "مدل‌سازی با DBML"
+   }
+  ],
+  "path": [
+   "یادگیری نرمال‌سازی و الگوها (۱ ماه)",
+   "مدل‌سازی ۵ سناریوی واقعی (۱ ماه)",
+   "پیاده‌سازی و مهاجرت با SQL (۱ ماه)",
+   "الگوهای DWH (۱ ماه)"
+  ],
+  "interview": "مشتری می‌خواهد فیلد سفارشی نامحدود برای محصولات. JSONB در برابر EAV را تحلیل کنید."
+ },
+ {
+  "role": "مهندس ORM و Data Access",
+  "roleEn": "ORM Engineer",
+  "section": "مرحله ۹ — دیتابیس",
+  "mission": "پل میان کد و دیتابیس با ORMهای مدرن و تایپ‌دار",
+  "skills": [
+   "Prisma/Drizzle در TS",
+   "Django ORM/SQLAlchemy",
+   "الگوی Repository",
+   "مهاجرت خودکار",
+   "N+1 و بارگذاری تنبل",
+   "تراکنش و ایزولاسیون"
+  ],
+  "stack": [
+   {
+    "name": "Prisma",
+    "repo": "prisma/prisma"
+   },
+   {
+    "name": "Drizzle ORM",
+    "repo": "drizzle-team/drizzle-orm"
+   },
+   {
+    "name": "Supabase",
+    "repo": "supabase/supabase"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Prisma Docs",
+    "url": "prisma.io/docs",
+    "note": "مستندات تعاملی ORM"
+   },
+   {
+    "name": "Drizzle Playground",
+    "url": "drizzle.run",
+    "note": "زمین play آنلاین"
+   }
+  ],
+  "path": [
+   "یادگیری SQL پیش‌نیاز (۱ ماه)",
+   "تسلط بر Prisma و مهاجرت‌ها (۱ ماه)",
+   "رفع N+1 و بهینه‌سازی (۲ هفته)",
+   "مقایسه و مهاجرت به Drizzle (۲ هفته)"
+  ],
+  "interview": " ORM همه‌چیز را راحت کرده اما کوئری سنگینی تولید می‌کند. چگونه از SQL خام در جای درست استفاده می‌کنید؟"
+ },
+ {
+  "role": "توسعه‌دهنده فروشگاه آنلاین",
+  "roleEn": "E-commerce Developer",
+  "section": "مرحله ۱۰ — فروشگاهی",
+  "mission": "ساخت فروشگاه سریع و امن با درگاه و مدیریت انبار",
+  "skills": [
+   "معماری فروشگاه (B2C/B2B2)",
+   "درگاه پرداخت و تسویه",
+   "مدیریت انبار و SKU",
+   "سبد خرید و Checkout",
+   "مالیات و صورت‌حساب",
+   "انطباق PCI-DSS"
+  ],
+  "stack": [
+   {
+    "name": "Medusa",
+    "repo": "medusajs/medusa"
+   },
+   {
+    "name": "WooCommerce",
+    "repo": "woocommerce/woocommerce"
+   },
+   {
+    "name": "Stripe SDK",
+    "repo": "stripe/stripe-node"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Medusa Docs",
+    "url": "docs.medusajs.com",
+    "note": "راه‌اندازی لوکال هدلس"
+   },
+   {
+    "name": "Stripe Test Mode",
+    "url": "stripe.com/docs/testing",
+    "note": "درگاه آزمایشی با کارت تست"
+   },
+   {
+    "name": "Shopify Partners",
+    "url": "partners.shopify.com",
+    "note": "سندباکس توسعه"
+   }
+  ],
+  "path": [
+   "یادگیری اصول تجارت الکترونیک (۱ ماه)",
+   "ساخت فروشگاه با Medusa/Woo (۲ ماه)",
+   "اتصال درگاه تست و تسویه (۱ ماه)",
+   "بهینه‌سازی Checkout و CRO (مداوم)"
+  ],
+  "interview": "در میانه پرداخت، اتصال بانک قطع می‌شود و پول کاربر برگشت نمی‌خورد. سیستم Reconcile شما؟"
+ },
+ {
+  "role": "متخصص پرداخت",
+  "roleEn": "Payments Specialist",
+  "section": "مرحله ۱۰ — فروشگاهی",
+  "mission": "یکپارچه‌سازی امن درگاه‌ها و کاهش تراکنش ناموفق",
+  "skills": [
+   "استاندارد PCI-DSS",
+   "درگاه‌های داخلی و بین‌المللی",
+   "Webhook و تایید تراکنش",
+   "پرداخت اشتراکی Recurring",
+   "پول‌بازی و تسویه",
+   "کشف تقلب"
+  ],
+  "stack": [
+   {
+    "name": "Stripe",
+    "repo": "stripe/stripe-node"
+   },
+   {
+    "name": "Medusa Payments",
+    "repo": "medusajs/medusa"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Stripe Test",
+    "url": "stripe.com/docs/testing",
+    "note": "شبیه‌ساز کامل پرداخت"
+   },
+   {
+    "name": "Stripe Webhooks",
+    "url": "stripe.com/docs/webhooks",
+    "note": "شبیه‌ساز رویداد"
+   }
+  ],
+  "path": [
+   "مطالعه PCI و امنیت پرداخت (۱ ماه)",
+   "پیاده‌سازی پرداخت کامل تست (۱ ماه)",
+   "Webhook و Reconciliation (۲ هفته)",
+   "اشتراکی و Refund (۲ هفته)"
+  ],
+  "interview": "کاربری می‌گوید پولش کشیده شده اما سفارش ثبت نشده. لاگ و رویدادها را چگونه بررسی می‌کنید؟"
+ },
+ {
+  "role": "متخصص امنیت وب",
+  "roleEn": "Web Security Specialist",
+  "section": "مرحله ۱۱ — امنیت",
+  "mission": "سد مقابل XSS و SQLi و CSRF و داده‌های در معرض خطر",
+  "skills": [
+   "OWASP Top 10",
+   "امنیت Cookie و Header",
+   "CSP و SRI",
+   "اسکن آسیب‌پذیری خودکار",
+   "رمزنگاری داده",
+   "پاسخ به رخداد"
+  ],
+  "stack": [
+   {
+    "name": "OWASP CheatSheet",
+    "repo": "OWASP/CheatSheetSeries"
+   },
+   {
+    "name": "Trivy",
+    "repo": "aquasecurity/trivy"
+   },
+   {
+    "name": "TruffleHog",
+    "repo": "trufflesecurity/trufflehog"
+   }
+  ],
+  "practice": [
+   {
+    "name": "OWASP WebGoat",
+    "url": "owasp.org/www-project-webgoat",
+    "note": "تمرین عملی آسیب‌پذیری"
+   },
+   {
+    "name": "PortSwigger Academy",
+    "url": "portswigger.net/web-security",
+    "note": "آکادمی رایگان تست نفوذ"
+   },
+   {
+    "name": "DVWA",
+    "url": "github.com/digininja/dvwa",
+    "note": "برنامه آسیب‌پذیر عمدی"
+   }
+  ],
+  "path": [
+   "مطالعه OWASP Top 10 (۱ ماه)",
+   "حل لبه‌های WebGoat و Academy (۲ ماه)",
+   "اسکن و گزارش سایت واقعی (مجاز) (۱ ماه)",
+   "هاردنینگ و CI امنیتی (مداوم)"
+  ],
+  "interview": "فرمی بدون توکن CSRF منتشر شده. سناریوی حمله و دو راه مقابله server-side را توضیح دهید."
+ },
+ {
+  "role": "تستر نفوذ",
+  "roleEn": "Penetration Tester",
+  "section": "مرحله ۱۱ — امنیت",
+  "mission": "هک اخلاقی قانونی برای یافتن حفره پیش از مهاجمان",
+  "skills": [
+   "Recon و شناسایی سطح حمله",
+   "استثناات وب: SQLi/XSS/SSRF",
+   "Burp Suite حرفه‌ای",
+   "نوشتن گزارش نفوذ",
+   "مهندسی اجتماعی (مجاز)",
+   "اخلاق و دامنه مجاز"
+  ],
+  "stack": [
+   {
+    "name": "SQLMap",
+    "repo": "sqlmapproject/sqlmap"
+   },
+   {
+    "name": "OWASP ZAP",
+    "repo": "zaproxy/zaproxy"
+   },
+   {
+    "name": "Nmap",
+    "repo": "nmap/nmap"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Hack The Box",
+    "url": "hackthebox.com",
+    "note": "آزمایشگاه عملی نفوذ"
+   },
+   {
+    "name": "TryHackMe",
+    "url": "tryhackme.com",
+    "note": "مسیرهای یادگیری امنیت"
+   },
+   {
+    "name": "PortSwigger Academy",
+    "url": "portswigger.net/web-security",
+    "note": "تمرین تخصصی وب"
+   }
+  ],
+  "path": [
+   "یادگیری شبکه و لینوکس (۲ ماه)",
+   "حل ماژول‌های وب Academy (۲ ماه)",
+   "ماشین‌های HTB آسان تا متوسط (۳ ماه)",
+   "گزارش‌نویسی حرفه‌ای (مداوم)"
+  ],
+  "interview": "SQLi زمان-محور (time-based) پیدا کردید اما خروجی مستقیم ندارد. چگونه داده را استخراج می‌کنید؟"
+ },
+ {
+  "role": "مهندس پاسخ به رخداد",
+  "roleEn": "Incident Response Engineer",
+  "section": "مرحله ۱۱ — امنیت",
+  "mission": "مهار سریع نفوذ و بازگشت سرویس با کمترین خسارت",
+  "skills": [
+   "چرخه IR: آماده‌سازی تا درس‌آموخته",
+   "تحلیل لاگ و Forensic",
+   "ISOLATION و مهار",
+   "ارتباط بحران",
+   "Playbook رخداد",
+   "شبیه‌سازی Tabletop"
+  ],
+  "stack": [
+   {
+    "name": "Wazuh (SIEM)",
+    "repo": "wazuh/wazuh"
+   },
+   {
+    "name": "TruffleHog (کشف راز)",
+    "repo": "trufflesecurity/trufflehog"
+   }
+  ],
+  "practice": [
+   {
+    "name": "TryHackMe SOC",
+    "url": "tryhackme.com",
+    "note": "مسیر تحلیلگر SOC"
+   },
+   {
+    "name": "Wazuh demo",
+    "url": "wazuh.com",
+    "note": "پلتفرم SIEM متن‌باز"
+   }
+  ],
+  "path": [
+   "یادگیری چرخه NIST IR (۱ ماه)",
+   "راه‌اندازی SIEM خانگی Wazuh (۱ ماه)",
+   "تحلیل ۱۰ سناریوی لاگ (۱ ماه)",
+   "شبیه‌سازی بحران تیمی (مداوم)"
+  ],
+  "interview": "ساعت ۳ بامداد درگاه پرداخت ترافیک غیرعادی به یک IP ناشناس دارد. پنج اقدام اول شما؟"
+ },
+ {
+  "role": "مهندس تست خودکار",
+  "roleEn": "Test Automation Engineer",
+  "section": "مرحله ۱۲ — تست و QA",
+  "mission": "تست‌های E2E و یکپارچه پایدار که جلو رگرسیون را می‌گیرند",
+  "skills": [
+   "Playwright/Cypress",
+   "Page Object Model",
+   "تست API یکپارچه",
+   "Mock و Stub",
+   "CI خودکار تست",
+   "Flaky Test Management"
+  ],
+  "stack": [
+   {
+    "name": "Playwright",
+    "repo": "microsoft/playwright"
+   },
+   {
+    "name": "Cypress",
+    "repo": "cypress-io/cypress"
+   },
+   {
+    "name": "Vitest",
+    "repo": "vitest-dev/vitest"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Playwright Docs",
+    "url": "playwright.dev",
+    "note": "مستندات و sandbox تعاملی"
+   },
+   {
+    "name": "DemoQA",
+    "url": "demoqa.com",
+    "note": "المان‌های تمرین اتومیشن"
+   },
+   {
+    "name": "the-internet",
+    "url": "the-internet.herokuapp.com",
+    "note": "صفحات تمرینی مصنوعی"
+   }
+  ],
+  "path": [
+   "یادگیری JS/TS و انتخاب ابزار (۱ ماه)",
+   "نوشتن ۵۰ تست E2E پایدار (۲ ماه)",
+   "تست API و یکپارچه‌سازی CI (۱ ماه)",
+   "الگوهای پیشرفته و نگهداشت (مداوم)"
+  ],
+  "interview": "تست‌ها به صورت تصادفی Fail می‌شوند. چگونه Flakiness را ریشه‌یابی و حذف می‌کنید؟"
+ },
+ {
+  "role": "مهندس تست بار",
+  "roleEn": "Performance Test Engineer",
+  "section": "مرحله ۱۲ — تست و QA",
+  "mission": "سنجش مرز تحمل سایت زیر بار واقعی و کشف گلوگاه",
+  "skills": [
+   "سناریوی بار واقع‌گرایانه",
+   "k6 و Grafana",
+   "تحلیل متریک: TPS/Latency/Errors",
+   "شناسایی گلوگاه",
+   "تست Soak و Spike",
+   "گزارش بهره‌وری"
+  ],
+  "stack": [
+   {
+    "name": "k6",
+    "repo": "grafana/k6"
+   },
+   {
+    "name": "Locust",
+    "repo": "locustio/locust"
+   }
+  ],
+  "practice": [
+   {
+    "name": "k6 Cloud",
+    "url": "k6.io",
+    "note": "اسکریپت و اجرای بار"
+   },
+   {
+    "name": "Grafana Play",
+    "url": "play.grafana.org",
+    "note": "داشبورد متریک تمرینی"
+   }
+  ],
+  "path": [
+   "یادگیری مفاهیم تست بار (۲ هفته)",
+   "نوشتن سناریو k6 برای یک سایت (۱ ماه)",
+   "تحلیل نتایج و یافتن گلوگاه (۱ ماه)",
+   "تست Soak/Spike و گزارش (مداوم)"
+  ],
+  "interview": "زیر بار ۱۰۰۰ کاربر، CPU سرور ۱۰۰٪ می‌شود اما دیتابیس خاموش است. فرضیه‌های شما؟"
+ },
+ {
+  "role": "مهندس کیفیت دستی",
+  "roleEn": "Manual QA Engineer",
+  "section": "مرحله ۱۲ — تست و QA",
+  "mission": "چشم تیز کشف باگ‌هایی که اسکریپت‌ها نمی‌بینند",
+  "skills": [
+   "نوشتن Test Plan و Case",
+   "تست اکتشافی Session-Based",
+   "تست ریسپانسیو و بین‌مرورگری",
+   "تست دسترس‌پذیری",
+   "گزارش باگ حرفه‌ای",
+   "Verificate از نظر کاربر نهایی"
+  ],
+  "stack": [
+   {
+    "name": "Playwright (کمکی)",
+    "repo": "microsoft/playwright"
+   },
+   {
+    "name": "Selenium",
+    "repo": "SeleniumHQ/selenium"
+   }
+  ],
+  "practice": [
+   {
+    "name": "the-internet",
+    "url": "the-internet.herokuapp.com",
+    "note": "صفحات تمرینی مصنوعی"
+   },
+   {
+    "name": "DemoQA",
+    "url": "demoqa.com",
+    "note": "المان‌های تمرینی"
+   },
+   {
+    "name": "BrowserStack free",
+    "url": "browserstack.com",
+    "note": "تست بین‌مرورگری ابری"
+   }
+  ],
+  "path": [
+   "یادگیری اصول تست و Case نوشتن (۱ ماه)",
+   "اجرای ۲۰۰ تست دستی مستند (۱ ماه)",
+   "تست اکتشافی و Bug Bounty داخلی (۱ ماه)",
+   "همکاری نزدیک با تیم اتومیشن (مداوم)"
+  ],
+  "interview": "بگی فقط در Safari موبایل ظاهر می‌شود. چگونه گزارشی می‌نویسید که توسعه‌دهنده سریع ریشه را بفهمد؟"
+ },
+ {
+  "role": "مهندس DevOps",
+  "roleEn": "DevOps Engineer",
+  "section": "مرحله ۱۳ — DevOps",
+  "mission": "زیرساخت به‌کد، استقرار خودکار و اطمینان از تداوم سرویس",
+  "skills": [
+   "لینوکس و شبکه",
+   "Docker و Kubernetes",
+   "CI/CD Pipeline",
+   "IaC با Terraform",
+   "مانیتورینگ و هشدار",
+   "بهبود مستمر فرآیند"
+  ],
+  "stack": [
+   {
+    "name": "Kubernetes",
+    "repo": "kubernetes/kubernetes"
+   },
+   {
+    "name": "Terraform",
+    "repo": "hashicorp/terraform"
+   },
+   {
+    "name": "Docker/Moby",
+    "repo": "moby/moby"
+   },
+   {
+    "name": "GitHub Actions Runner",
+    "repo": "actions/runner"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Killercoda",
+    "url": "killercoda.com",
+    "note": "محیط تمرین لینوکس/کوبرنتیز"
+   },
+   {
+    "name": "Play with Docker",
+    "url": "labs.play-with-docker.com",
+    "note": "داکر رایگان در مرورگر"
+   },
+   {
+    "name": "LocalStack",
+    "url": "localstack.cloud",
+    "note": "شبیه‌ساز AWS لوکال"
+   }
+  ],
+  "path": [
+   "تسلط بر لینوکس و شبکه (۲ ماه)",
+   "داکر و کامپوز (۱ ماه)",
+   "CI/CD با GitHub Actions (۱ ماه)",
+   "کوبرنتیز و Terraform (۳ ماه)"
+  ],
+  "interview": "استقرار جدید باعث افت ۲۰٪ کارایی شده. چگونه بدون Downtime به نسخه قبل برمی‌گردید؟"
+ },
+ {
+  "role": "مهندس پلتفرم",
+  "roleEn": "Platform Engineer",
+  "section": "مرحله ۱۳ — DevOps",
+  "mission": "ساخت پلتفرم داخلی که توسعه‌دهندگان خودشان مستقر شوند",
+  "skills": [
+   "Internal Developer Platform",
+   "قالب‌سازی و Golden Path",
+   "ArgoCD و GitOps",
+   "Self-Service CI/CD",
+   "چند-مستأجری",
+   "قابلیت اطمینان SLO"
+  ],
+  "stack": [
+   {
+    "name": "ArgoCD",
+    "repo": "argoproj/argo-cd"
+   },
+   {
+    "name": "Kubernetes",
+    "repo": "kubernetes/kubernetes"
+   },
+   {
+    "name": "Portainer",
+    "repo": "portainer/portainer"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Play with K8s",
+    "url": "labs.play-with-k8s.com",
+    "note": "خوشه تمرینی رایگان"
+   },
+   {
+    "name": "ArgoCD Demo",
+    "url": "cd.apps.argoproj.io",
+    "note": "دموی زنده GitOps"
+   }
+  ],
+  "path": [
+   "پیش‌نیاز DevOps (۴ ماه)",
+   "GitOps با ArgoCD (۱ ماه)",
+   "ساخت IDP کوچک برای تیم (۲ ماه)",
+   "SLO و قابلیت اطمینان (مداوم)"
+  ],
+  "interview": "تیم‌ها از پلتفرم داخلی شما استفاده نمی‌کنند و سراغ سرور شخصی می‌روند. واکنش شما؟"
+ },
+ {
+  "role": "مهندس قابلیت اطمینان",
+  "roleEn": "Site Reliability Engineer",
+  "section": "مرحله ۱۳ — DevOps",
+  "mission": "سایت همیشه بالا، همیشه سریع — با هدف‌گذاری خطا و اتوماسیون",
+  "skills": [
+   "SLO/SLI/Error Budget",
+   "مانیتورینگ Three Pillars",
+   "Troubleshooting سیستماتیک",
+   "Capacity Planning",
+   "Postmortem بدون سرزنش",
+   "اتوماسیون Toil"
+  ],
+  "stack": [
+   {
+    "name": "Prometheus",
+    "repo": "prometheus/prometheus"
+   },
+   {
+    "name": "Grafana",
+    "repo": "grafana/grafana"
+   },
+   {
+    "name": "Loki (لاگ)",
+    "repo": "grafana/loki"
+   },
+   {
+    "name": "Netdata",
+    "repo": "netdata/netdata"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Grafana Play",
+    "url": "play.grafana.org",
+    "note": "داشبورد تمرینی"
+   },
+   {
+    "name": "Netdata demo",
+    "url": "learn.netdata.cloud",
+    "note": "مانیتورینگ بلادرنگ"
+   }
+  ],
+  "path": [
+   "یادگیری مانیتورینگ و متریک (۱ ماه)",
+   "ساخت Stack کامل Prom/Grafana (۱ ماه)",
+   "تعریف SLO برای یک سرویس (۱ ماه)",
+   "Postmortem و اتوماسیون (مداوم)"
+  ],
+  "interview": "SLO ماهانه ۹۹/۹٪ در روز ۲۰ خراب شده. چگونه بین سرعت انتشار و Error Budget تعادل برقرار می‌کنید؟"
+ },
+ {
+  "role": "مدیر وب‌سرور",
+  "roleEn": "Web Server Administrator",
+  "section": "مرحله ۱۳ — DevOps",
+  "mission": "پیکربندی و حفاظت از لایهٔ خدمت‌دهی وب",
+  "skills": [
+   "Nginx و Caddy",
+   "TLS/SSL و OCSP",
+   "Load Balancing",
+   "کش و CDN",
+   "Rewrite و امنیت هدر",
+   "بهینه‌سازی اتصال"
+  ],
+  "stack": [
+   {
+    "name": "Nginx",
+    "repo": "nginx/nginx"
+   },
+   {
+    "name": "Caddy",
+    "repo": "caddyserver/caddy"
+   },
+   {
+    "name": "Traefik",
+    "repo": "traefik/traefik"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Nginx Playground",
+    "url": "nginx-playground.dev",
+    "note": "تست کانفیگ آنلاین"
+   },
+   {
+    "name": "Let's Encrypt",
+    "url": "letsencrypt.org",
+    "note": "گواهی رایگان TLS"
+   }
+  ],
+  "path": [
+   "یادگیری HTTP و لینوکس (۱ ماه)",
+   "کانفیگ کامل Nginx با TLS (۱ ماه)",
+   "Load Balance و کش (۱ ماه)",
+   "هاردنینگ و CDN (۱ ماه)"
+  ],
+  "interview": "بعد از فعال‌سازی HTTP/2 سرعت دانلود افت کرده. چه پارامترهایی را بررسی می‌کنید؟"
+ },
+ {
+  "role": "متخصص سئو فنی",
+  "roleEn": "Technical SEO Specialist",
+  "section": "مرحله ۱۴ — سئو",
+  "mission": "زیرساخت سایت را برای موتورهای جستجو شفاف و سریع می‌کند",
+  "skills": [
+   "Core Web Vitals",
+   " robots و sitemap و canonical",
+   "Schema Markup",
+   "رندر و ایندکس JS",
+   "معماری URL و لینک داخلی",
+   "لاگ‌آنالیز خزش"
+  ],
+  "stack": [
+   {
+    "name": "Lighthouse",
+    "repo": "GoogleChrome/lighthouse"
+   },
+   {
+    "name": "Next Sitemap",
+    "repo": "iamvishnusankar/next-sitemap"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Search Console",
+    "url": "search.google.com/search-console",
+    "note": "مانیتور ایندکس سایت خودتان"
+   },
+   {
+    "name": "Screaming Frog",
+    "url": "screamingfrog.co.uk/seo-spider",
+    "note": "خزش تا ۵۰۰ URL رایگان"
+   },
+   {
+    "name": "Rich Results Test",
+    "url": "search.google.com/test/rich-results",
+    "note": "تست اسکیما"
+   }
+  ],
+  "path": [
+   "یادگیری نحوه کار موتور جستجو (۱ ماه)",
+   "ممیزی فنی کامل یک سایت واقعی (۱ ماه)",
+   "پیاده‌سازی Schema و Core Web Vitals (۱ ماه)",
+   "لاگ‌آنالیز و بهینه‌سازی خزش (مداوم)"
+  ],
+  "interview": "سایت SPA شما فقط صفحات اول را ایندکس می‌کند. راه‌حل‌های رندر را مقایسه کنید."
+ },
+ {
+  "role": "متخصص سئو محتوا",
+  "roleEn": "Content SEO Specialist",
+  "section": "مرحله ۱۴ — سئو",
+  "mission": "برنامه کلمات کلیدی و محتوای رتبه‌گیر برای کل سایت",
+  "skills": [
+   "تحقیق کلمه کلیدی و Search Intent",
+   "خوشه‌بندی Topic Cluster",
+   "بهینه‌سازی On-Page",
+   "E-E-A-T و اعتبار محتوا",
+   "به‌روزرسانی محتوای قدیمی",
+   "تحلیل SERP رقبا"
+  ],
+  "stack": [
+   {
+    "name": "Strapi (CMS)",
+    "repo": "strapi/strapi"
+   },
+   {
+    "name": "Ghost (نشر)",
+    "repo": "tryghost/ghost"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Ahrefs Webmaster Tools",
+    "url": "ahrefs.com/webmaster-tools",
+    "note": "رایگان برای سایت خودتان"
+   },
+   {
+    "name": "Google Trends",
+    "url": "trends.google.com",
+    "note": "روند کلمات کلیدی"
+   },
+   {
+    "name": "AnswerThePublic",
+    "url": "answerthepublic.com",
+    "note": "سوالات واقعی کاربران"
+   }
+  ],
+  "path": [
+   "یادگیری Search Intent و انواع آن (۱ ماه)",
+   "ساخت خوشه محتوایی ۱۰ تایی (۲ ماه)",
+   "رصد رتبه و بهینه‌سازی تکراری (مداوم)",
+   "به‌روزرسانی محتوای فرسوده (فصلی)"
+  ],
+  "interview": "صفحه‌ای رتبه ۸ دارد برای کلمه پرجستجو. چک‌لیست ارتقای آن به صفحه اول چیست؟"
+ },
+ {
+  "role": "متخصص سئو محلی",
+  "roleEn": "Local SEO Specialist",
+  "section": "مرحله ۱۴ — سئو",
+  "mission": "دیده‌شدن کسب‌وکار در جستجو و نقشه شهر خودش",
+  "skills": [
+   "پروفایل Google Business",
+   "NAP یکدست و Citations",
+   "نظرات و مدیریت پاسخ",
+   "سئوی محلی On-Page",
+   "Local Pack",
+   "تحلیل رقیب محلی"
+  ],
+  "stack": [
+   {
+    "name": "Meilisearch (جستجوی سایت)",
+    "repo": "meilisearch/meilisearch"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Google Business Profile",
+    "url": "business.google.com",
+    "note": "مدیریت پروفایل کسب‌وکار"
+   },
+   {
+    "name": "Google Maps",
+    "url": "google.com/maps",
+    "note": "تحلیل Local Pack رقبا"
+   },
+   {
+    "name": "Local Falcon trial",
+    "url": "localfalcon.com",
+    "note": "نقشه رتبه محلی"
+   }
+  ],
+  "path": [
+   "یادگیری فاکتورهای رتبه محلی (۲ هفته)",
+   "بهینه‌سازی کامل پروفایل یک کسب‌وکار واقعی (۱ ماه)",
+   "ساخت ۲۰ Citation یکدست (۲ هفته)",
+   "مدیریت نظرات و گزارش ماهانه (مداوم)"
+  ],
+  "interview": "رستورانی در Local Pack دیده نمی‌شود اما رقیب ۲۰۰ متری‌تر اول است. سه اقدام اول شما؟"
+ },
+ {
+  "role": "مهندس عملکرد وب",
+  "roleEn": "Web Performance Engineer",
+  "section": "مرحله ۱۵ — عملکرد",
+  "mission": "سایت را به سریع‌ترین نسخه ممکن خودش تبدیل می‌کند",
+  "skills": [
+   "Core Web Vitals عمیق",
+   "زنجیره درخواست و Critical Path",
+   "بهینه‌سازی تصویر و فونت",
+   "کش مرورگر و CDN",
+   "باندل و Tree-shaking",
+   "پروفایل رندر JS"
+  ],
+  "stack": [
+   {
+    "name": "web-vitals",
+    "repo": "GoogleChrome/web-vitals"
+   },
+   {
+    "name": "Sharp (تصویر)",
+    "repo": "lovell/sharp"
+   },
+   {
+    "name": "esbuild",
+    "repo": "evanw/esbuild"
+   }
+  ],
+  "practice": [
+   {
+    "name": "PageSpeed Insights",
+    "url": "pagespeed.web.dev",
+    "note": "سنجش CWV واقعی"
+   },
+   {
+    "name": "WebPageTest",
+    "url": "webpagetest.org",
+    "note": "آزمون از نقاط جهان"
+   },
+   {
+    "name": "Chrome DevTools",
+    "url": "developer.chrome.com/docs/devtools",
+    "note": "پروفایل کارایی"
+   }
+  ],
+  "path": [
+   "یادگیری نحوه کار رندر مرورگر (۱ ماه)",
+   "بهینه‌سازی یک سایت واقعی تا سبز (۱ ماه)",
+   "پروفایل JS و حذف گلوگاه (۱ ماه)",
+   "رصد مداوم RUM (مداوم)"
+  ],
+  "interview": "LCP سایت ۴ ثانیه است. پنج اقدام اولویت‌دار شما به ترتیب اثر چیست؟"
+ },
+ {
+  "role": "مهندس کش و CDN",
+  "roleEn": "Caching & CDN Engineer",
+  "section": "مرحله ۱۵ — عملکرد",
+  "mission": "سرو محتوا از نزدیک‌ترین نقطه جهان به کاربر",
+  "skills": [
+   "استراتژی کش چندلایه",
+   "CDN و Edge",
+   "Cache-Control و ETag",
+   "Invalidation",
+   "تصویر و ویدیو Adaptive",
+   "A/B در Edge"
+  ],
+  "stack": [
+   {
+    "name": "Nginx (کش)",
+    "repo": "nginx/nginx"
+   },
+   {
+    "name": "Caddy",
+    "repo": "caddyserver/caddy"
+   },
+   {
+    "name": "Traefik",
+    "repo": "traefik/traefik"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Cloudflare free",
+    "url": "cloudflare.com",
+    "note": "CDN رایگان برای تمرین"
+   },
+   {
+    "name": "WebPageTest",
+    "url": "webpagetest.org",
+    "note": "مقایسه قبل/بعد کش"
+   }
+  ],
+  "path": [
+   "یادگیری هدرهای HTTP کش (۲ هفته)",
+   "پیاده‌سازی کش Nginx لوکال (۲ هفته)",
+   "اتصال CDN واقعی و تست (۱ ماه)",
+   "Invalidation و A/B در Edge (۱ ماه)"
+  ],
+  "interview": "محتوای جدید منتشر شده اما کاربران نسخه قدیمی می‌بینند. استراتژی Invalidation شما؟"
+ },
+ {
+  "role": "تحلیلگر داده وب",
+  "roleEn": "Web Data Analyst",
+  "section": "مرحله ۱۶ — آنالیتیکس",
+  "mission": "تبدیل داده رفتار کاربر به تصمیم‌های محصول",
+  "skills": [
+   "GA4 و مدل رویداد",
+   "داشبوردسازی Looker",
+   "کوهورت و Retention",
+   "تحلیل قیف",
+   "آمار پایه و معناداری",
+   "دموکراسی داده در تیم"
+  ],
+  "stack": [
+   {
+    "name": "PostHog",
+    "repo": "posthog/posthog"
+   },
+   {
+    "name": "Umami",
+    "repo": "umami-software/umami"
+   },
+   {
+    "name": "Matomo",
+    "repo": "matomo-org/matomo"
+   }
+  ],
+  "practice": [
+   {
+    "name": "GA4 Demo Account",
+    "url": "analytics.google.com",
+    "note": "داده واقعی فروشگاه گوگل"
+   },
+   {
+    "name": "Looker Studio",
+    "url": "lookerstudio.google.com",
+    "note": "داشبورد رایگان"
+   },
+   {
+    "name": "PostHog Demo",
+    "url": "posthog.com",
+    "note": "محصول با داده نمونه"
+   }
+  ],
+  "path": [
+   "یادگیری GA4 و SQL پایه (۱ ماه)",
+   "ساخت داشبورد فروش واقعی (۱ ماه)",
+   "تحلیل قیف و کوهورت (۱ ماه)",
+   "A/B تحلیل و تصمیسازی (مداوم)"
+  ],
+  "interview": "بازدید سایت دو برابر شده اما فروش ثابت. چگونه این معما را تحلیل می‌کنید؟"
+ },
+ {
+  "role": "متخصص بهینه‌سازی نرخ تبدیل",
+  "roleEn": "CRO Specialist",
+  "section": "مرحله ۱۶ — آنالیتیکس",
+  "mission": "بیشتر کردن فروش بدون یک بازدید اضافه — با تست و روانشناسی",
+  "skills": [
+   "فرآیند تحقیق CRO",
+   "نظریه A/B تست و آمار",
+   "روانشناسی قانع‌کردن",
+   "تحلیل فرم و Checkout",
+   "Heatmap و ضبط جلسه",
+   "اولویت‌بندی ICE"
+  ],
+  "stack": [
+   {
+    "name": "GrowthBook",
+    "repo": "growthbook/growthbook"
+   },
+   {
+    "name": "PostHog (Feature Flag)",
+    "repo": "posthog/posthog"
+   }
+  ],
+  "practice": [
+   {
+    "name": "GrowthBook Demo",
+    "url": "growthbook.io",
+    "note": "پلتفرم تست A/B متن‌باز"
+   },
+   {
+    "name": "Microsoft Clarity",
+    "url": "clarity.microsoft.com",
+    "note": "هیت‌مپ و ضبط رایگان"
+   },
+   {
+    "name": "GA4 Demo",
+    "url": "analytics.google.com",
+    "note": "داده قیف واقعی"
+   }
+  ],
+  "path": [
+   "یادگیری آمار A/B تست (۱ ماه)",
+   "تحقیق کیفی با Clarity (۲ هفته)",
+   "اجرای ۵ تست A/B واقعی (۲ ماه)",
+   "ساخت برنامه CRO سالانه (مداوم)"
+  ],
+  "interview": "تستی برنده شده اما بعد از انتشار، فروش بیشتر نشده. چه توضیحی دارد؟"
+ },
+ {
+  "role": "مشاور حقوقی دیجیتال",
+  "roleEn": "Digital Legal Advisor",
+  "section": "مرحله ۱۷ — حقوقی",
+  "mission": "حفاظت حقوقی سایت: قوانین، حریم خصوصی و قراردادها",
+  "skills": [
+   "قوانین تجارت الکترونیک",
+   "GDPR و حریم خصوصی",
+   "تنظیم شرایط استفاده",
+   "حق مالکیت محتوا",
+   "قرارداد توسعه و SLA",
+   "انطباق کوکی"
+  ],
+  "stack": [
+   {
+    "name": "Umami (بدون کوکی)",
+    "repo": "umami-software/umami"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Osano CookieConsent",
+    "url": "osano.com/cookieconsent",
+    "note": "بنر رضایت رایگان"
+   }
+  ],
+  "path": [
+   "مطالعه قوانین تجارت الکترونیک هدف (۱ ماه)",
+   "تنظیم ۵ سند حقوقی نمونه (۱ ماه)",
+   "ممیزی انطباق یک سایت واقعی (۱ ماه)"
+  ],
+  "interview": "سایتی بدون بنر کوکی به اتحادیه اروپا سرویس می‌دهد. ریسک‌ها و اقدامات اصلاحی؟"
+ },
+ {
+  "role": "کارشناس پشتیبانی فنی",
+  "roleEn": "Technical Support Specialist",
+  "section": "مرحله ۱۸ — پشتیبانی",
+  "mission": "حل مشکلات کاربران با سرعت و همدلی — خط مقدم رضایت",
+  "skills": [
+   "مدیریت تیکت و SLA",
+   "عیب‌یابی راهنمای کاربر",
+   "نوشتن مقاله راهنما",
+   "مهارت‌های ارتباطی و همدلی",
+   "اسکالATION به تیم فنی",
+   "تحلیل ریشه مشکل"
+  ],
+  "stack": [
+   {
+    "name": "Chatwoot",
+    "repo": "chatwoot/chatwoot"
+   },
+   {
+    "name": "Zammad",
+    "repo": "zammad/zammad"
+   },
+   {
+    "name": "GLPI",
+    "repo": "glpi-project/glpi"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Chatwoot Cloud",
+    "url": "chatwoot.com",
+    "note": "پشتیبانی چندکاناله رایگان"
+   },
+   {
+    "name": "Zammad Demo",
+    "url": "zammad.com/en/demo",
+    "note": "دموی آنلاین کمک‌دسک"
+   }
+  ],
+  "path": [
+   "یادگیری محصول و عیب‌یابی (۱ ماه)",
+   "پاسخ به ۱۰۰ تیکت تمرینی/واقعی (۲ ماه)",
+   "نوشتن ۱۰ مقاله راهنما (۱ ماه)",
+   "تحلیل ریشه و بهبود محصول (مداوم)"
+  ],
+  "interview": "کاربری عصبانی با تیکت تکراری نوشته. پاسخ شما و روند رسیدگی چگونه است؟"
+ },
+ {
+  "role": "مدیر انجمن و مرکز کمک",
+  "roleEn": "Community Manager",
+  "section": "مرحله ۱۸ — پشتیبانی",
+  "mission": "ساخت جامعه‌ای که کاربران همدیگر را کمک کنند",
+  "skills": [
+   "مدیریت انجمن Discourse",
+   "گیمیفیکیشن و سطح کاربر",
+   "سیاست‌های انجمن",
+   "رویداد و AMA",
+   "مدیریت بحران جامعه",
+   "سنجش سلامت انجمن"
+  ],
+  "stack": [
+   {
+    "name": "Discourse",
+    "repo": "discourse/discourse"
+   },
+   {
+    "name": "Chatwoot",
+    "repo": "chatwoot/chatwoot"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Discourse Demo",
+    "url": "try.discourse.org",
+    "note": "انجمن تمرینی رسمی"
+   },
+   {
+    "name": "meta.discourse.org",
+    "url": "meta.discourse.org",
+    "note": "انجمن حرفه‌ای واقعی"
+   }
+  ],
+  "path": [
+   "مطالعه مدیریت انجمن‌های بزرگ (۱ ماه)",
+   "مدیریت انجمن تمرینی (۲ ماه)",
+   "طراحی برنامه گیمیفیکیشن (۱ ماه)",
+   "رویداد و AMA ماهانه (مداوم)"
+  ],
+  "interview": "کاربر فعالی شروع به انتشار اطلاعات نادرست در انجمن شما کرده. برخورد شما؟"
+ },
+ {
+  "role": "مهندس نگهداشت",
+  "roleEn": "Maintenance Engineer",
+  "section": "مرحله ۱۸ — پشتیبانی",
+  "mission": "به‌روز و امن نگه‌داشتن سایت در طول سال‌ها",
+  "skills": [
+   "برنامه به‌روزرسانی",
+   "بکاپ و بازیابی آزمایشی",
+   "پایش خرابی بی‌صدا",
+   "مدیریت دیون فنی",
+   "پچ امنیتی سریع",
+   "مستندسازی عملیاتی"
+  ],
+  "stack": [
+   {
+    "name": "Restic (بکاپ)",
+    "repo": "restic/restic"
+   },
+   {
+    "name": "Uptime Kuma",
+    "repo": "louislam/uptime-kuma"
+   },
+   {
+    "name": "Duplicati",
+    "repo": "duplicati/duplicati"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Uptime Kuma demo",
+    "url": "uptime.kuma.pet",
+    "note": "دموی مانیتور آپ‌تایم"
+   },
+   {
+    "name": "Restic Docs",
+    "url": "restic.net",
+    "note": "بکاپ رمزنگاری‌شده"
+   }
+  ],
+  "path": [
+   "یادگیری چرخه نگهداشت (۲ هفته)",
+   "راه‌اندازی پایش و بکاپ واقعی (۱ ماه)",
+   "شبیه‌سازی بازیابی فاجعه (۲ هفته)",
+   "برنامه به‌روزرسانی فصلی (مداوم)"
+  ],
+  "interview": "آپدیت وابستگی باعث خرابی تولید شد. چگونه از این پس فرآیند آپدیت را ایمن می‌کنید؟"
+ },
+ {
+  "role": "مدیر دیجیتال مارکتینگ",
+  "roleEn": "Digital Marketing Manager",
+  "section": "مرحله ۱۹ — بازاریابی",
+  "mission": "استراتژی و اجرای جذب کاربر از همه کانال‌های دیجیتال",
+  "skills": [
+   "استراتژی چندکاناله",
+   "بودجه‌بندی و ROI",
+   "داشبورد شاخص‌ها",
+   "همکاری با تیم محتوا و سئو",
+   "اتوماسیون مارکتینگ",
+   "تحلیل رقبا"
+  ],
+  "stack": [
+   {
+    "name": "PostHog",
+    "repo": "posthog/posthog"
+   },
+   {
+    "name": "Mautic",
+    "repo": "mautic/mautic"
+   }
+  ],
+  "practice": [
+   {
+    "name": "GA4 Demo",
+    "url": "analytics.google.com",
+    "note": "داده واقعی برای تحلیل"
+   },
+   {
+    "name": "Looker Studio",
+    "url": "lookerstudio.google.com",
+    "note": "داشبورد شاخص‌ها"
+   },
+   {
+    "name": "Mautic demo",
+    "url": "mautic.org",
+    "note": "اتوماسیون متن‌باز"
+   }
+  ],
+  "path": [
+   "یادگیری مفاهیم مارکتینگ دیجیتال (۱ ماه)",
+   "مدیریت کمپین کوچک واقعی (۲ ماه)",
+   "تحلیل ROI و بهینه‌سازی (۱ ماه)",
+   "استراتژی سالانه چندکاناله (مداوم)"
+  ],
+  "interview": "بودجه تبلیغات نصف شده. چگونه کمپین‌ها را اولویت‌بندی می‌کنید تا فروش حفظ شود؟"
+ },
+ {
+  "role": "متخصص تبلیغات کلیکی",
+  "roleEn": "PPC Specialist",
+  "section": "مرحله ۱۹ — بازاریابی",
+  "mission": "خرید هوشمند ترافیک: هر کلیک سودآور باشد",
+  "skills": [
+   "گوگل‌ادز و ساختار کمپین",
+   "امتیار کیفیت و QS",
+   "لیبل نرخ تبدیل",
+   "ریتارگتینگ",
+   "لیدینگ و فرم تبلیغ",
+   "منفی‌سازی کلمات"
+  ],
+  "stack": [
+   {
+    "name": "Shlink (ردیابی لینک)",
+    "repo": "shlinkio/shlink"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Google Ads Demo",
+    "url": "ads.google.com",
+    "note": "حساب تمرینی با کد تخفیف"
+   },
+   {
+    "name": "Google Skillshop",
+    "url": "skillshop.withgoogle.com",
+    "note": "آموزش رسمی رایگان"
+   }
+  ],
+  "path": [
+   "گذراندن Skillshop گوگل (۱ ماه)",
+   "اجرا کمپین کوچک واقعی با بودجه کم (۱ ماه)",
+   "بهینه‌سازی و منفی‌سازی (۱ ماه)",
+   "تسلط بر ریتارگتینگ و فرم (۲ ماه)"
+  ],
+  "interview": "CPC کمپین بالا رفته و CVR افت کرده. چک‌لیست عیب‌یابی شما؟"
+ },
+ {
+  "role": "مدیر سوشال مدیا",
+  "roleEn": "Social Media Manager",
+  "section": "مرحله ۱۹ — بازاریابی",
+  "mission": "حضور فعال و رشدآور برند در شبکه‌های اجتماعی",
+  "skills": [
+   "استراتژی محتوای سوشال",
+   "زمان‌بندی و تقویم",
+   "کپی و کپشن‌نویسی",
+   "تحلیل بینش شبکه",
+   "همکاری با اینفلوئنسر",
+   "مدیریت بحران سوشال"
+  ],
+  "stack": [
+   {
+    "name": "Postiz",
+    "repo": "postizapp/postiz"
+   },
+   {
+    "name": "Mixpost",
+    "repo": "mixpost/mixpost"
+   },
+   {
+    "name": "Novu (نوتیف)",
+    "repo": "novuhq/novu"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Postiz Cloud",
+    "url": "postiz.com",
+    "note": "زمان‌بندی با نسخه ابری"
+   },
+   {
+    "name": "Buffer free",
+    "url": "buffer.com",
+    "note": "پلن رایگان زمان‌بندی"
+   },
+   {
+    "name": "Canva",
+    "url": "canva.com",
+    "note": "طراحی پست"
+   }
+  ],
+  "path": [
+   "یادگیری الگوریتم‌های شبکه‌ها (۱ ماه)",
+   "مدیریت یک پیج واقعی ۳ ماهه (۳ ماه)",
+   "تحلیل Insights و بهینه‌سازی (مداوم)",
+   "کمپین اینفلوئنسر (۱ ماه)"
+  ],
+  "interview": "پستی منتقدانه وایرال شده. پروتکل پاسخ شما در ساعت اول؟"
+ },
+ {
+  "role": "متخصص ایمیل مارکتینگ",
+  "roleEn": "Email Marketing Specialist",
+  "section": "مرحله ۱۹ — بازاریابی",
+  "mission": "رساندن پیام درست به صندوق ورودی — و کلیک شدن",
+  "skills": [
+   "لیست‌سازی Opt-in دوگانه",
+   "طراحی ایمیل ریسپانسیو",
+   "اتوماسیون Welcome/Cart",
+   "تفکیک و شخصی‌سازی",
+   "Deliverability و SPF/DKIM",
+   "A/B تست سوژه"
+  ],
+  "stack": [
+   {
+    "name": "Listmonk",
+    "repo": "listmonk-app/listmonk"
+   },
+   {
+    "name": "Mautic",
+    "repo": "mautic/mautic"
+   },
+   {
+    "name": "Novu",
+    "repo": "novuhq/novu"
+   }
+  ],
+  "practice": [
+   {
+    "name": "Listmonk demo",
+    "url": "listmonk.app",
+    "note": "دموی خبرنامه متن‌باز"
+   },
+   {
+    "name": "Mailchimp free",
+    "url": "mailchimp.com",
+    "note": "تا ۵۰۰ مخاطب رایگان"
+   },
+   {
+    "name": "Keila",
+    "url": "keila.io",
+    "note": "خبرنامه متن‌باز"
+   }
+  ],
+  "path": [
+   "یادگیری اصول Deliverability (۲ هفته)",
+   "ساخت اتوماسیون خوش‌آمد (۲ هفته)",
+   "کمپین ماهانه و A/B (۱ ماه)",
+   "تفکیک و شخصی‌سازی پیشرفته (مداوم)"
+  ],
+  "interview": "نرخ باز شدن ایمیل‌ها ماهانه افت می‌کند. چه فاکتورهایی را بررسی و بهینه می‌کنید؟"
+ }
+]

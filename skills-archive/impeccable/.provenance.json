@@ -1,0 +1,7 @@
+{
+ "repo": "pbakaus/impeccable",
+ "sha": "8409a564d1baee90b2dde4f7a8f06288838e3921",
+ "license": "Apache-2.0",
+ "installed_at": "2026-10-28T12:38:09",
+ "via": "skill-engine/hunt.py"
+}

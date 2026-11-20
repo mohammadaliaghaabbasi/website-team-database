@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "1) **Yes.** The image features a distinct, intricate radial pattern that expands outward from a central focal point, resembling the \"eye\" of a peacock's tail.\n2) **No.** There are no people, silhouettes, or obstructions visible; the frame is entirely filled with the architectural pattern.\n3) **Yes.** The lighting is even and majestic, clearly illuminating the fine details of the blue and gold mosaic work without harsh shadows.\n4) **Yes.** The composition provides a strong \"aha\" reveal by focusing on the perfect symmetry and complexity of the dome's center.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1792145122,
+  "id": "20261016180519043358efaf5744d4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261016180519043358efaf5744d4",
+  "usage": {
+    "completion_tokens": 126,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1396,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1522
+  }
+}

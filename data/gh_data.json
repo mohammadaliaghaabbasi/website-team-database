@@ -1,0 +1,1107 @@
+{
+ "mermaid-js/mermaid": {
+  "ok": true,
+  "stars": 91200,
+  "desc_en": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown - mermaid-js/mermaid",
+  "err": null
+ },
+ "hoppscotch/hoppscotch": {
+  "ok": true,
+  "stars": 80900,
+  "desc_en": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem &amp; Cloud • Web, Desktop &amp; CLI • Open-Source Alternative to Postman, Insomnia - hoppscotch/hoppscotch",
+  "err": null
+ },
+ "github-changelog-generator/github-changelog-generator": {
+  "ok": true,
+  "stars": 7500,
+  "desc_en": "Automatically generate change log from your tags, issues, labels and pull requests on GitHub. - github-changelog-generator/github-changelog-generator",
+  "err": null
+ },
+ "plantuml/plantuml": {
+  "ok": true,
+  "stars": 13400,
+  "desc_en": "Generate diagrams from textual description",
+  "err": null
+ },
+ "dbdiagram-io/dbml": {
+  "ok": true,
+  "stars": 3700,
+  "desc_en": "Database Markup Language (DBML), designed to define and document database structures - holistics/dbml",
+  "err": null,
+  "real": "holistics/dbml"
+ },
+ "appsmithorg/appsmith": {
+  "ok": true,
+  "stars": 41300,
+  "desc_en": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API. - appsmithorg/appsmith",
+  "err": null
+ },
+ "outline/outline": {
+  "ok": true,
+  "stars": 41300,
+  "desc_en": "The fastest knowledge base for growing teams. Beautiful, realtime collaborative, feature packed, and markdown compatible. - outline/outline",
+  "err": null
+ },
+ "formbricks/formbricks": {
+  "ok": true,
+  "stars": 13300,
+  "desc_en": "The Open Source Qualtrics Alternative",
+  "err": null
+ },
+ "posthog/posthog": {
+  "ok": true,
+  "stars": 41000,
+  "desc_en": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more ...",
+  "err": null
+ },
+ "umami-software/umami": {
+  "ok": true,
+  "stars": 40300,
+  "desc_en": "Umami is a privacy-first web and product analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place. No cookies, no surveillance, self-hosted or in the cloud. - umami-s...",
+  "err": null
+ },
+ "matomo-org/matomo": {
+  "ok": true,
+  "stars": 22000,
+  "desc_en": "Empowering People Ethically 🚀 — Matomo is hiring! Join us → https://matomo.org/jobs Matomo is the leading open-source alternative to Google Analytics, giving you complete control and built-in priva...",
+  "err": null
+ },
+ "plausible/analytics": {
+  "ok": true,
+  "stars": 29900,
+  "desc_en": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud. - plausible/analytics",
+  "err": null
+ },
+ "excalidraw/excalidraw": {
+  "ok": true,
+  "stars": 136000,
+  "desc_en": "Virtual whiteboard for sketching hand-drawn like diagrams - excalidraw/excalidraw",
+  "err": null
+ },
+ "processing/p5.js": {
+  "ok": true,
+  "stars": 24400,
+  "desc_en": "p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Proces...",
+  "err": null
+ },
+ "fontsource/fontsource": {
+  "ok": true,
+  "stars": 6300,
+  "desc_en": "Self-host Open Source fonts in neatly bundled NPM packages. - fontsource/fontsource",
+  "err": null
+ },
+ "googlefonts/fontmake": {
+  "ok": true,
+  "stars": 900,
+  "desc_en": "Compile fonts from sources (UFO, Glyphs) to binary (OpenType, TrueType). - googlefonts/fontmake",
+  "err": null
+ },
+ "penpot/penpot": {
+  "ok": true,
+  "stars": 62600,
+  "desc_en": "Penpot: The open-source design platform for Product teams that need scalable collaboration. - penpot/penpot",
+  "err": null
+ },
+ "tldraw/tldraw": {
+  "ok": true,
+  "stars": 51500,
+  "desc_en": "Build infinite canvas apps in React with the tldraw SDK. World&#39;s best, top-most agent recommended #1 five star SDK. - tldraw/tldraw",
+  "err": null
+ },
+ "drawdb-io/drawdb": {
+  "ok": true,
+  "stars": 40300,
+  "desc_en": "Free, simple, and intuitive online database diagram editor and SQL generator. - drawdb-io/drawdb",
+  "err": null
+ },
+ "style-dictionary/style-dictionary": {
+  "ok": true,
+  "stars": 4900,
+  "desc_en": "A build system for creating cross-platform styles. - style-dictionary/style-dictionary",
+  "err": null
+ },
+ "shadcn-ui/ui": {
+  "ok": true,
+  "stars": 128600,
+  "desc_en": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own. - shadcn-ui/ui",
+  "err": null
+ },
+ "ant-design/ant-design": {
+  "ok": true,
+  "stars": 100300,
+  "desc_en": "An enterprise-class UI design language and React UI library - ant-design/ant-design",
+  "err": null
+ },
+ "mui/material-ui": {
+  "ok": true,
+  "stars": 99400,
+  "desc_en": "Material UI: Comprehensive React component library that implements Google&#39;s Material Design. Free forever. - mui/material-ui",
+  "err": null
+ },
+ "radix-ui/primitives": {
+  "ok": true,
+  "stars": 19500,
+  "desc_en": "Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @workos. - radix-ui/primitives",
+  "err": null
+ },
+ "chakra-ui/chakra-ui": {
+  "ok": true,
+  "stars": 40700,
+  "desc_en": "Chakra UI is a component system for building SaaS products with speed ⚡️ - chakra-ui/chakra-ui",
+  "err": null
+ },
+ "adobe/react-spectrum": {
+  "ok": true,
+  "stars": 16100,
+  "desc_en": "A collection of libraries and tools that help you build adaptive, accessible, and robust user experiences. - adobe/react-spectrum",
+  "err": null
+ },
+ "marmelab/react-admin": {
+  "ok": true,
+  "stars": 27000,
+  "desc_en": "A frontend Framework for single-page applications on top of REST/GraphQL APIs, using TypeScript, React and Material Design - marmelab/react-admin",
+  "err": null
+ },
+ "storybookjs/storybook": {
+  "ok": true,
+  "stars": 91700,
+  "desc_en": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation - storybookjs/storybook",
+  "err": null
+ },
+ "motion-dev/motion": {
+  "ok": true,
+  "stars": 35400,
+  "desc_en": "A modern animation library for React and JavaScript - motiondivision/motion",
+  "err": null,
+  "real": "framer/motion"
+ },
+ "pmndrs/react-three-fiber": {
+  "ok": true,
+  "stars": 33800,
+  "desc_en": "🇨🇭 A React renderer for Three.js",
+  "err": null
+ },
+ "theatre-js/theatre": {
+  "ok": true,
+  "stars": 13100,
+  "desc_en": "Motion design editor for the web",
+  "err": null
+ },
+ "d3/d3": {
+  "ok": true,
+  "stars": 114000,
+  "desc_en": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada: - d3/d3",
+  "err": null
+ },
+ "chartjs/Chart.js": {
+  "ok": true,
+  "stars": 67800,
+  "desc_en": "Simple HTML5 Charts using the &lt;canvas&gt; tag",
+  "err": null
+ },
+ "microsoft/monaco-editor": {
+  "ok": true,
+  "stars": 47000,
+  "desc_en": "A browser based code editor",
+  "err": null
+ },
+ "toeverything/AFFiNE": {
+  "ok": true,
+  "stars": 75400,
+  "desc_en": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable an...",
+  "err": null
+ },
+ "siyuan-note/siyuan": {
+  "ok": true,
+  "stars": 47300,
+  "desc_en": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作 - siyuan-note/siyuan",
+  "err": null
+ },
+ "strapi/strapi": {
+  "ok": true,
+  "stars": 73500,
+  "desc_en": "🚀 Strapi is the leading open-source headless CMS. It’s 100% JavaScript/TypeScript, fully customizable, and developer-first. - strapi/strapi",
+  "err": null
+ },
+ "directus/directus": {
+  "ok": true,
+  "stars": 38600,
+  "desc_en": "The flexible backend for all your projects 🐰 Turn your DB into a headless CMS, admin panels, or apps with a custom UI, instant APIs, auth &amp; more. - directus/directus",
+  "err": null
+ },
+ "payloadcms/payload": {
+  "ok": true,
+  "stars": 45900,
+  "desc_en": "Payload is the open-source, fullstack Next.js framework, giving you instant backend superpowers. Get a full TypeScript backend and admin panel instantly. Use Payload as a headless CMS or for buildi...",
+  "err": null
+ },
+ "sanity-io/sanity": {
+  "ok": true,
+  "stars": 6400,
+  "desc_en": "Sanity Studio – Rapidly configure content workspaces powered by structured content - sanity-io/sanity",
+  "err": null
+ },
+ "wagtail/wagtail": {
+  "ok": true,
+  "stars": 20700,
+  "desc_en": "A Django content management system focused on flexibility and user experience - wagtail/wagtail",
+  "err": null
+ },
+ "tryghost/ghost": {
+  "ok": true,
+  "stars": 55900,
+  "desc_en": "Independent technology for modern publishing, memberships, subscriptions and newsletters. - TryGhost/Ghost",
+  "err": null
+ },
+ "keystonejs/keystone": {
+  "ok": true,
+  "stars": 10000,
+  "desc_en": "The superpowered headless CMS for Node.js — built with GraphQL and React - keystonejs/keystone",
+  "err": null
+ },
+ "immich-app/immich": {
+  "ok": true,
+  "stars": 119700,
+  "desc_en": "High performance self-hosted photo and video management solution. - immich-app/immich",
+  "err": null
+ },
+ "photoprism/photoprism": {
+  "ok": true,
+  "stars": 40500,
+  "desc_en": "AI-Powered Photos App 🌈💎✨",
+  "err": null
+ },
+ "facebook/react": {
+  "ok": true,
+  "stars": 252800,
+  "desc_en": "The library for web and native user interfaces",
+  "err": null,
+  "real": "facebook/react"
+ },
+ "vuejs/vue": {
+  "ok": true,
+  "stars": 212500,
+  "desc_en": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core - vuejs/vue",
+  "err": null
+ },
+ "angular/angular": {
+  "ok": true,
+  "stars": 101500,
+  "desc_en": "Deliver web apps with confidence 🚀",
+  "err": null
+ },
+ "sveltejs/svelte": {
+  "ok": true,
+  "stars": 89800,
+  "desc_en": "web development for the rest of us",
+  "err": null
+ },
+ "solidjs/solid": {
+  "ok": true,
+  "stars": 36800,
+  "desc_en": "A declarative, efficient, and flexible JavaScript library for building user interfaces. - solidjs/solid",
+  "err": null
+ },
+ "preactjs/preact": {
+  "ok": true,
+  "stars": 39000,
+  "desc_en": "⚛️ Fast 3kB React alternative with the same modern API. Components &amp; Virtual DOM. - preactjs/preact",
+  "err": null
+ },
+ "vercel/next.js": {
+  "ok": true,
+  "stars": 143600,
+  "desc_en": "The React Framework",
+  "err": null
+ },
+ "nuxt/nuxt": {
+  "ok": true,
+  "stars": 61100,
+  "desc_en": "The full-stack Vue framework",
+  "err": null
+ },
+ "remix-run/remix": {
+  "ok": true,
+  "stars": 33500,
+  "desc_en": "The fully-stacked web framework",
+  "err": null
+ },
+ "qwik-dev/qwik": {
+  "ok": true,
+  "stars": 22100,
+  "desc_en": "Instant-loading web apps, without effort",
+  "err": null,
+  "real": "QwikDev/qwik"
+ },
+ "withastro/astro": {
+  "ok": true,
+  "stars": 64099,
+  "desc_en": "The web framework for content-driven websites",
+  "err": null
+ },
+ "microsoft/TypeScript": {
+  "ok": true,
+  "stars": 111900,
+  "desc_en": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output. - microsoft/TypeScript",
+  "err": null
+ },
+ "tailwindlabs/tailwindcss": {
+  "ok": true,
+  "stars": 98700,
+  "desc_en": "A utility-first CSS framework for rapid UI development. - tailwindlabs/tailwindcss",
+  "err": null
+ },
+ "vitejs/vite": {
+  "ok": true,
+  "stars": 84000,
+  "desc_en": "Next generation frontend tooling. It&#39;s fast! Contribute to vitejs/vite development by creating an account on GitHub.",
+  "err": null
+ },
+ "evanw/esbuild": {
+  "ok": true,
+  "stars": 40200,
+  "desc_en": "An extremely fast bundler for the web",
+  "err": null
+ },
+ "web-infra-dev/rspack": {
+  "ok": true,
+  "stars": 13000,
+  "desc_en": "Fast Rust-based bundler for the web with a modernized webpack API 🦀 - web-infra-dev/rspack",
+  "err": null
+ },
+ "webpack/webpack": {
+  "ok": true,
+  "stars": 66000,
+  "desc_en": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through &amp;quot;loaders&amp;quot;, modules can be...",
+  "err": null
+ },
+ "expressjs/express": {
+  "ok": true,
+  "stars": 69700,
+  "desc_en": "Fast, unopinionated, minimalist web framework for node. - expressjs/express",
+  "err": null
+ },
+ "fastify/fastify": {
+  "ok": true,
+  "stars": 37500,
+  "desc_en": "Fast and low overhead web framework, for Node.js",
+  "err": null
+ },
+ "nestjs/nest": {
+  "ok": true,
+  "stars": 77100,
+  "desc_en": "A progressive TypeScript framework for Node.js backends: from a small API in one file to efficient, scalable, enterprise-grade systems 🚀 - nestjs/nest",
+  "err": null
+ },
+ "koajs/koa": {
+  "ok": true,
+  "stars": 35700,
+  "desc_en": "Expressive middleware for node.js using ES2017 async functions - koajs/koa",
+  "err": null
+ },
+ "gofiber/fiber": {
+  "ok": true,
+  "stars": 40300,
+  "desc_en": "⚡️ Express inspired web framework written in Go",
+  "err": null
+ },
+ "honojs/hono": {
+  "ok": true,
+  "stars": 33000,
+  "desc_en": "Web framework built on Web Standards",
+  "err": null
+ },
+ "socketio/socket.io": {
+  "ok": true,
+  "stars": 63300,
+  "desc_en": "Bidirectional and low-latency communication for every platform - socketio/socket.io",
+  "err": null
+ },
+ "django/django": {
+  "ok": true,
+  "stars": 91900,
+  "desc_en": "The Web framework for perfectionists with deadlines. - django/django",
+  "err": null
+ },
+ "pallets/flask": {
+  "ok": true,
+  "stars": 75300,
+  "desc_en": "The Python micro framework for building web applications. - pallets/flask",
+  "err": null
+ },
+ "fastapi/fastapi": {
+  "ok": true,
+  "stars": 105000,
+  "desc_en": "FastAPI framework, high performance, easy to learn, fast to code, ready for production - fastapi/fastapi",
+  "err": null
+ },
+ "encode/django-rest-framework": {
+  "ok": true,
+  "stars": 30300,
+  "desc_en": "Web APIs for Django. 🎸",
+  "err": null
+ },
+ "encode/starlette": {
+  "ok": true,
+  "stars": 12700,
+  "desc_en": "The little ASGI framework that shines. 🌟",
+  "err": null,
+  "real": "encode/starlette"
+ },
+ "laravel/framework": {
+  "ok": true,
+  "stars": 35000,
+  "desc_en": "Laravel is a web application framework with expressive, elegant syntax. - laravel/framework",
+  "err": null
+ },
+ "symfony/symfony": {
+  "ok": true,
+  "stars": 31500,
+  "desc_en": "The Symfony PHP framework",
+  "err": null
+ },
+ "slimphp/Slim": {
+  "ok": true,
+  "stars": 12300,
+  "desc_en": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs. - slimphp/Slim",
+  "err": null
+ },
+ "PHPMailer/PHPMailer": {
+  "ok": true,
+  "stars": 22300,
+  "desc_en": "The classic email sending library for PHP",
+  "err": null
+ },
+ "gin-gonic/gin": {
+  "ok": true,
+  "stars": 89600,
+  "desc_en": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for ...",
+  "err": null
+ },
+ "go-chi/chi": {
+  "ok": true,
+  "stars": 23100,
+  "desc_en": "lightweight, idiomatic and composable router for building Go HTTP services - go-chi/chi",
+  "err": null
+ },
+ "spring-projects/spring-boot": {
+  "ok": true,
+  "stars": 81900,
+  "desc_en": "Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss. - spring-projects/spring-boot",
+  "err": null
+ },
+ "quarkusio/quarkus": {
+  "ok": true,
+  "stars": 16000,
+  "desc_en": "Quarkus: Supersonic Subatomic Java.",
+  "err": null
+ },
+ "dotnet/aspnetcore": {
+  "ok": true,
+  "stars": 38500,
+  "desc_en": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux. - dotnet/aspnetcore",
+  "err": null
+ },
+ "tokio-rs/axum": {
+  "ok": true,
+  "stars": 27900,
+  "desc_en": "HTTP routing and request-handling library for Rust that focuses on ergonomics and modularity - tokio-rs/axum",
+  "err": null
+ },
+ "actix/actix-web": {
+  "ok": true,
+  "stars": 25000,
+  "desc_en": "Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust. - actix/actix-web",
+  "err": null
+ },
+ "grpc/grpc": {
+  "ok": true,
+  "stars": 45500,
+  "desc_en": "C++ based gRPC (C++, Python, Ruby, Objective-C, PHP, C#) - grpc/grpc",
+  "err": null
+ },
+ "graphql/graphql-js": {
+  "ok": true,
+  "stars": 20400,
+  "desc_en": "A reference implementation of GraphQL for JavaScript - graphql/graphql-js",
+  "err": null
+ },
+ "rabbitmq/rabbitmq-server": {
+  "ok": true,
+  "stars": 14000,
+  "desc_en": "Open source RabbitMQ: core server and tier 1 (built-in) plugins - rabbitmq/rabbitmq-server",
+  "err": null
+ },
+ "apache/kafka": {
+  "ok": true,
+  "stars": 34200,
+  "desc_en": "Apache Kafka - A distributed event streaming platform - apache/kafka",
+  "err": null
+ },
+ "redis/redis": {
+  "ok": true,
+  "stars": 77600,
+  "desc_en": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine. - red...",
+  "err": null
+ },
+ "keycloak/keycloak": {
+  "ok": true,
+  "stars": 38000,
+  "desc_en": "Open Source Identity and Access Management For Modern Applications and Services - keycloak/keycloak",
+  "err": null
+ },
+ "goauthentik/authentik": {
+  "ok": true,
+  "stars": 26400,
+  "desc_en": "The authentication glue you need",
+  "err": null
+ },
+ "authelia/authelia": {
+  "ok": true,
+  "stars": 29700,
+  "desc_en": "The Single Sign-On Multi-Factor portal for web apps. OpenID Certified™ and Post-Quantum Cryptography Ready. - authelia/authelia",
+  "err": null
+ },
+ "nextauthjs/next-auth": {
+  "ok": true,
+  "stars": 28400,
+  "desc_en": "Authentication for the Web",
+  "err": null
+ },
+ "postgres/postgres": {
+  "ok": true,
+  "stars": 22900,
+  "desc_en": "Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don&amp;#39;t work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Subm...",
+  "err": null
+ },
+ "mysql/mysql-server": {
+  "ok": true,
+  "stars": 12500,
+  "desc_en": "MySQL Server, the world&#39;s most popular open source database, and MySQL Cluster, a real-time, open source transactional database. - mysql/mysql-server",
+  "err": null
+ },
+ "sqlite/sqlite": {
+  "ok": true,
+  "stars": 11100,
+  "desc_en": "Official Git mirror of the SQLite source tree",
+  "err": null
+ },
+ "timescale/timescaledb": {
+  "ok": true,
+  "stars": 23900,
+  "desc_en": "A time-series database for high-performance real-time analytics packaged as a Postgres extension - timescale/timescaledb",
+  "err": null
+ },
+ "cockroachdb/cockroach": {
+  "ok": true,
+  "stars": 32600,
+  "desc_en": "CockroachDB — the cloud native, distributed SQL database designed for high availability, effortless scale, and control over data placement. - cockroachdb/cockroach",
+  "err": null
+ },
+ "mongodb/mongo": {
+  "ok": true,
+  "stars": 28700,
+  "desc_en": "The MongoDB Database",
+  "err": null
+ },
+ "clickhouse/clickhouse": {
+  "ok": true,
+  "stars": 51000,
+  "desc_en": "ClickHouse® is a real-time analytics database management system - ClickHouse/ClickHouse",
+  "err": null
+ },
+ "influxdata/influxdb": {
+  "ok": true,
+  "stars": 31800,
+  "desc_en": "Scalable datastore for metrics, events, and real-time analytics - influxdata/influxdb",
+  "err": null
+ },
+ "supabase/supabase": {
+  "ok": true,
+  "stars": 115200,
+  "desc_en": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications. - supabase/supabase",
+  "err": null
+ },
+ "prisma/prisma": {
+  "ok": true,
+  "stars": 47700,
+  "desc_en": "The Prisma ORM: write your application in TypeScript with human-readable queries instead of SQL. Host your database on Prisma Postgres and your app on Prisma Compute. - prisma/orm",
+  "err": null,
+  "real": "prisma/prisma"
+ },
+ "drizzle-team/drizzle-orm": {
+  "ok": true,
+  "stars": 36300,
+  "desc_en": "ORM",
+  "err": null
+ },
+ "medusajs/medusa": {
+  "ok": true,
+  "stars": 37300,
+  "desc_en": "The world&#39;s most flexible commerce platform for agents and developers - medusajs/medusa",
+  "err": null
+ },
+ "saleor/saleor": {
+  "ok": true,
+  "stars": 23600,
+  "desc_en": "Saleor Core: the high performance, composable, headless commerce API. - saleor/saleor",
+  "err": null
+ },
+ "woocommerce/woocommerce": {
+  "ok": true,
+  "stars": 10600,
+  "desc_en": "A customizable, open-source ecommerce platform built on WordPress. Build any commerce solution you can imagine. - woocommerce/woocommerce",
+  "err": null
+ },
+ "sylius/sylius": {
+  "ok": true,
+  "stars": 8600,
+  "desc_en": "Headless open-source eCommerce platform on top of PHP/Symfony/API Platform - Sylius/Sylius",
+  "err": null
+ },
+ "vendure-ecommerce/vendure": {
+  "ok": true,
+  "stars": 8600,
+  "desc_en": "Open-source headless commerce platform built with TypeScript, NestJS, React, and GraphQL - vendurehq/vendure",
+  "err": null,
+  "real": "vendure-ecommerce/vendure"
+ },
+ "spree/spree": {
+  "ok": true,
+  "stars": 15800,
+  "desc_en": "Open Source Platform for DTC, B2B Commerce, Marketplaces &amp;amp; Omnichannel. REST APIs, TypeScript SDKs, and production-ready Next.js storefront. Self-host it. Own your data. No vendor lock-in. Zero...",
+  "err": null
+ },
+ "stripe/stripe-node": {
+  "ok": true,
+  "stars": 4600,
+  "desc_en": "Node.js library for the Stripe API.",
+  "err": null
+ },
+ "OWASP/CheatSheetSeries": {
+  "ok": true,
+  "stars": 34100,
+  "desc_en": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics. - OWASP/CheatSheetSeries",
+  "err": null
+ },
+ "trufflesecurity/trufflehog": {
+  "ok": true,
+  "stars": 29500,
+  "desc_en": "Find, verify, and analyze leaked credentials",
+  "err": null
+ },
+ "aquasecurity/trivy": {
+  "ok": true,
+  "stars": 39600,
+  "desc_en": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more - aquasecurity/trivy",
+  "err": null
+ },
+ "wazuh/wazuh": {
+  "ok": true,
+  "stars": 17800,
+  "desc_en": "Wazuh - The Open Source Security Platform. Unified XDR and SIEM protection for endpoints and cloud workloads. - wazuh/wazuh",
+  "err": null
+ },
+ "hashicorp/vault": {
+  "ok": true,
+  "stars": 36500,
+  "desc_en": "A tool for secrets management, encryption as a service, and privileged access management - hashicorp/vault",
+  "err": null
+ },
+ "fail2ban/fail2ban": {
+  "ok": true,
+  "stars": 19100,
+  "desc_en": "Daemon to ban hosts that cause multiple authentication errors - fail2ban/fail2ban",
+  "err": null
+ },
+ "sqlmapproject/sqlmap": {
+  "ok": true,
+  "stars": 39000,
+  "desc_en": "Automatic SQL injection and database takeover tool - sqlmapproject/sqlmap",
+  "err": null
+ },
+ "zaproxy/zaproxy": {
+  "ok": true,
+  "stars": 16200,
+  "desc_en": "The ZAP by Checkmarx Core project",
+  "err": null
+ },
+ "nmap/nmap": {
+  "ok": true,
+  "stars": 14000,
+  "desc_en": "Nmap - the Network Mapper. Github mirror of official SVN repository. - nmap/nmap",
+  "err": null
+ },
+ "coreruleset/coreruleset": {
+  "ok": true,
+  "stars": 3400,
+  "desc_en": "OWASP CRS (Official Repository)",
+  "err": null
+ },
+ "caddyserver/caddy": {
+  "ok": true,
+  "stars": 79300,
+  "desc_en": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS - caddyserver/caddy",
+  "err": null
+ },
+ "microsoft/playwright": {
+  "ok": true,
+  "stars": 100600,
+  "desc_en": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.  - microsoft/playwright",
+  "err": null
+ },
+ "cypress-io/cypress": {
+  "ok": true,
+  "stars": 51000,
+  "desc_en": "Fast, easy and reliable testing for anything that runs in a browser. - cypress-io/cypress",
+  "err": null
+ },
+ "SeleniumHQ/selenium": {
+  "ok": true,
+  "stars": 34600,
+  "desc_en": "A browser automation framework and ecosystem",
+  "err": null
+ },
+ "puppeteer/puppeteer": {
+  "ok": true,
+  "stars": 95900,
+  "desc_en": "JavaScript API for Chrome and Firefox",
+  "err": null
+ },
+ "testing-library/react-testing-library": {
+  "ok": true,
+  "stars": 19700,
+  "desc_en": "🐐 Simple and complete React DOM testing utilities that encourage good testing practices. - testing-library/react-testing-library",
+  "err": null
+ },
+ "vitest-dev/vitest": {
+  "ok": true,
+  "stars": 17400,
+  "desc_en": "Next generation testing framework powered by Vite. - vitest-dev/vitest",
+  "err": null
+ },
+ "jestjs/jest": {
+  "ok": true,
+  "stars": 45500,
+  "desc_en": "Delightful JavaScript Testing",
+  "err": null
+ },
+ "pytest-dev/pytest": {
+  "ok": true,
+  "stars": 14700,
+  "desc_en": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing - pytest-dev/pytest",
+  "err": null
+ },
+ "grafana/k6": {
+  "ok": true,
+  "stars": 32400,
+  "desc_en": "A modern load testing tool, using Go and JavaScript - grafana/k6",
+  "err": null
+ },
+ "locustio/locust": {
+  "ok": true,
+  "stars": 28300,
+  "desc_en": "Write scalable load tests in plain Python 🚗💨",
+  "err": null
+ },
+ "moby/moby": {
+  "ok": true,
+  "stars": 72300,
+  "desc_en": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems - moby/moby",
+  "err": null
+ },
+ "kubernetes/kubernetes": {
+  "ok": true,
+  "stars": 129300,
+  "desc_en": "Production-Grade Container Scheduling and Management - kubernetes/kubernetes",
+  "err": null
+ },
+ "k3s-io/k3s": {
+  "ok": true,
+  "stars": 34500,
+  "desc_en": "Lightweight Kubernetes",
+  "err": null
+ },
+ "portainer/portainer": {
+  "ok": true,
+  "stars": 38900,
+  "desc_en": "Making Docker and Kubernetes management easy",
+  "err": null
+ },
+ "goharbor/harbor": {
+  "ok": true,
+  "stars": 29800,
+  "desc_en": "An open source trusted cloud native registry project that stores, signs, and scans content. - goharbor/harbor",
+  "err": null
+ },
+ "actions/runner": {
+  "ok": true,
+  "stars": 6400,
+  "desc_en": "The Runner for GitHub Actions :rocket:",
+  "err": null
+ },
+ "argoproj/argo-cd": {
+  "ok": true,
+  "stars": 24700,
+  "desc_en": "Declarative Continuous Deployment for Kubernetes",
+  "err": null
+ },
+ "woodpecker-ci/woodpecker": {
+  "ok": true,
+  "stars": 8300,
+  "desc_en": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility. - woodpecker-ci/woodpecker",
+  "err": null
+ },
+ "drone/drone": {
+  "ok": true,
+  "stars": 38900,
+  "desc_en": "Harness Open Source is an end-to-end developer platform with Source Control Management, CI/CD Pipelines, Hosted Developer Environments, and Artifact Registries. - harness/harness",
+  "err": null,
+  "real": "drone/drone"
+ },
+ "hashicorp/terraform": {
+  "ok": true,
+  "stars": 50300,
+  "desc_en": "Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared ...",
+  "err": null
+ },
+ "pulumi/pulumi": {
+  "ok": true,
+  "stars": 25900,
+  "desc_en": "Pulumi - Infrastructure as Code in any programming language 🚀 - pulumi/pulumi",
+  "err": null
+ },
+ "ansible/ansible": {
+  "ok": true,
+  "stars": 71500,
+  "desc_en": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to clo...",
+  "err": null
+ },
+ "grafana/grafana": {
+  "ok": true,
+  "stars": 78000,
+  "desc_en": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many mo...",
+  "err": null
+ },
+ "prometheus/prometheus": {
+  "ok": true,
+  "stars": 67700,
+  "desc_en": "The Prometheus monitoring system and time series database. - prometheus/prometheus",
+  "err": null
+ },
+ "grafana/loki": {
+  "ok": true,
+  "stars": 29200,
+  "desc_en": "Like Prometheus, but for logs",
+  "err": null
+ },
+ "netdata/netdata": {
+  "ok": true,
+  "stars": 81500,
+  "desc_en": "Full-stack observability · Metrics · Logs · Traces · Flows · Topology · Infrastructure · APM · NPM · DBM · RUM · Synthetics · Cloud · AI SRE · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Re...",
+  "err": null
+ },
+ "nginx/nginx": {
+  "ok": true,
+  "stars": 32400,
+  "desc_en": "The official NGINX Open Source repository",
+  "err": null
+ },
+ "traefik/traefik": {
+  "ok": true,
+  "stars": 65600,
+  "desc_en": "The Cloud Native Application Proxy",
+  "err": null
+ },
+ "localstack/localstack": {
+  "ok": true,
+  "stars": 65099,
+  "desc_en": "💻 A fully functional local AWS cloud stack. Develop and test your cloud &amp; Serverless apps offline - localstack/localstack",
+  "err": null
+ },
+ "minio/minio": {
+  "ok": true,
+  "stars": 61300,
+  "desc_en": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license. - minio/minio",
+  "err": null
+ },
+ "GoogleChrome/lighthouse": {
+  "ok": true,
+  "stars": 31200,
+  "desc_en": "Automated auditing, performance metrics, and best practices for the web. - GoogleChrome/lighthouse",
+  "err": null
+ },
+ "meilisearch/meilisearch": {
+  "ok": true,
+  "stars": 59900,
+  "desc_en": "A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications. - meilisearch/meilisearch",
+  "err": null
+ },
+ "typesense/typesense": {
+  "ok": true,
+  "stars": 27200,
+  "desc_en": "Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 ✨ Fast, typo tolerant, in-memory fuzzy Search Engine for building delightful search experiences -...",
+  "err": null
+ },
+ "iamvishnusankar/next-sitemap": {
+  "ok": true,
+  "stars": 3800,
+  "desc_en": "Sitemap generator for next.js. Generate sitemap(s) and robots.txt for all static/pre-rendered/dynamic/server-side pages. - iamvishnusankar/next-sitemap",
+  "err": null
+ },
+ "lovell/sharp": {
+  "ok": true,
+  "stars": 32900,
+  "desc_en": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, AVIF and TIFF images. Uses the libvips library. - lovell/sharp",
+  "err": null
+ },
+ "GoogleChrome/web-vitals": {
+  "ok": true,
+  "stars": 8700,
+  "desc_en": "Essential metrics for a healthy site",
+  "err": null
+ },
+ "kevva/imagemin": {
+  "ok": true,
+  "stars": 5700,
+  "desc_en": "Minify images seamlessly",
+  "err": null,
+  "real": "imagemin/imagemin"
+ },
+ "webp-sh/webp_server_go": {
+  "ok": true,
+  "stars": 2000,
+  "desc_en": "Go version of WebP Server. A tool that will serve your JPG/PNG/BMP/SVGs as WebP/AVIF format with compression, on-the-fly. - webp-sh/webp_server_go",
+  "err": null
+ },
+ "growthbook/growthbook": {
+  "ok": true,
+  "stars": 8600,
+  "desc_en": "Open Source Feature Flags, Experimentation, and Product Analytics - growthbook/growthbook",
+  "err": null
+ },
+ "flagsmith/flagsmith": {
+  "ok": true,
+  "stars": 7700,
+  "desc_en": "Flagsmith is an open-source feature flag platform with remote config and experimentation. Choose from self-hosted or cloud deployment options. - Flagsmith/flagsmith",
+  "err": null
+ },
+ "shlinkio/shlink": {
+  "ok": true,
+  "stars": 5400,
+  "desc_en": "The definitive self-hosted URL shortener",
+  "err": null
+ },
+ "Lissy93/web-check": {
+  "ok": true,
+  "stars": 35600,
+  "desc_en": "🕵️‍♂️ All-in-one OSINT tool for analysing any website - lissy93/web-check",
+  "err": null
+ },
+ "Osano/cookieconsent": {
+  "ok": true,
+  "stars": 3600,
+  "desc_en": "A free solution to the EU, GDPR, and California Cookie Laws - osano/cookieconsent",
+  "err": null
+ },
+ "chatwoot/chatwoot": {
+  "ok": true,
+  "stars": 40200,
+  "desc_en": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬 - chatwoot/chatwoot",
+  "err": null
+ },
+ "discourse/discourse": {
+  "ok": true,
+  "stars": 48100,
+  "desc_en": "A platform for community discussion. Free, open, simple. - discourse/discourse",
+  "err": null
+ },
+ "zammad/zammad": {
+  "ok": true,
+  "stars": 6100,
+  "desc_en": "Zammad is a web based open source helpdesk/customer support system. - zammad/zammad",
+  "err": null
+ },
+ "glpi-project/glpi": {
+  "ok": true,
+  "stars": 6600,
+  "desc_en": "GLPI is a Free Asset and IT Management Software package, Data center management, ITIL Service Desk, licenses tracking and software auditing. - glpi-project/glpi",
+  "err": null
+ },
+ "freescout-help-desk/freescout": {
+  "ok": true,
+  "stars": 4700,
+  "desc_en": "FreeScout — Free self-hosted omnichannel AI-powered helpdesk &amp; shared mailbox - freescout-help-desk/freescout",
+  "err": null
+ },
+ "peppermint-sh/peppermint": {
+  "ok": true,
+  "stars": 3200,
+  "desc_en": "An open source issue management &amp; help desk solution. A zendesk &amp; jira alternative - Peppermint-Lab/peppermint",
+  "err": null,
+  "real": "Peppermint-Lab/peppermint"
+ },
+ "docmost/docmost": {
+  "ok": true,
+  "stars": 22400,
+  "desc_en": "Docmost is an open-source collaborative wiki and documentation software. It is an open-source alternative to Confluence and Notion. - docmost/docmost",
+  "err": null
+ },
+ "BookStackApp/BookStack": {
+  "ok": true,
+  "stars": 19100,
+  "desc_en": "NOW MANAGED ON CODEBERG",
+  "err": null
+ },
+ "restic/restic": {
+  "ok": true,
+  "stars": 37300,
+  "desc_en": "Fast, secure, efficient backup program",
+  "err": null
+ },
+ "duplicati/duplicati": {
+  "ok": true,
+  "stars": 15200,
+  "desc_en": "Store securely encrypted backups in the cloud! Contribute to duplicati/duplicati development by creating an account on GitHub.",
+  "err": null
+ },
+ "louislam/uptime-kuma": {
+  "ok": true,
+  "stars": 94700,
+  "desc_en": "A fancy self-hosted monitoring tool",
+  "err": null
+ },
+ "listmonk-app/listmonk": {
+  "ok": true,
+  "stars": 24400,
+  "desc_en": "High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app. - knadh/listmonk",
+  "err": null,
+  "real": "knadh/listmonk"
+ },
+ "mautic/mautic": {
+  "ok": true,
+  "stars": 11100,
+  "desc_en": "Mautic: Open Source Marketing Automation Software. - mautic/mautic",
+  "err": null
+ },
+ "novuhq/novu": {
+  "ok": true,
+  "stars": 40400,
+  "desc_en": "The open-source communication infrastructure for agents and products - novuhq/novu",
+  "err": null
+ },
+ "postizapp/postiz": {
+  "ok": true,
+  "stars": 42000,
+  "desc_en": "📨 The ultimate agentic social media scheduling tool 🤖 - gitroomhq/postiz-app",
+  "err": null,
+  "real": "gitroomhq/postiz-app"
+ },
+ "mixpost/mixpost": {
+  "ok": true,
+  "stars": 4000,
+  "desc_en": "📅 Schedule, 📢 publish, and ⚡ manage your social media content on your server. No subscriptions, no limits. (Buffer alternative) - inovector/mixpost",
+  "err": null,
+  "real": "inovector/mixpost"
+ }
+}

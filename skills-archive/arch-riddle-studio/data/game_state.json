@@ -1,0 +1,17 @@
+{
+  "game": {
+    "name": "رازِ فضا",
+    "season": 1,
+    "season_theme": "آب",
+    "boss_puzzle": 8,
+    "current_stage": 0,
+    "puzzles_played": 0
+  },
+  "gates": {},
+  "players": {},
+  "config": {
+    "phase": "آغاز",
+    "followers": 0
+  },
+  "updated_at": "2026-10-16 10:05:32.637470"
+}
