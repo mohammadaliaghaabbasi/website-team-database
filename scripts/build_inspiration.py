@@ -1,0 +1,438 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""منبع ویرایش «صفحات الهام و الگو» برای هر ۶۱ نقش تیم طراحی سایت.
+
+ایده از پست اینستاگرام farshad_frhni (نوامبر ۲۰۲۵):
+قبل از شروع هر کار، از گالری‌ها و مراجع الهام تخصصی بازدید کن — نمونه واقعی،
+الگوی آماده، ترند و استاندارد همان حوزه را ببین، بعد دست به کار شو.
+
+هر نقش: ۴ تا ۵ صفحه الهام با توضیح فارسی که دقیقاً می‌گوید چه چیزی از آن صفحه بردار.
+خروجی: data/inspiration_data.json — مصرف‌کننده: scripts/build_docx.js
+"""
+import json
+import os
+
+# role_key = نام فارسی نقش (دقیقاً مطابق specialists_data.json)
+INSPIRATION = {
+    # ---------- مرحله ۱ — استراتژی و مدیریت ----------
+    "مدیر پروژه دیجیتال": [
+        {"name": "ProductPlan — منابع آموزشی نقشه راه", "url": "https://www.productplan.com/learn/", "note": "راهنماها و مثال‌های ساختار رودمپ برای انواع تیم و محصول؛ الگوبرداری نقشه راه"},
+        {"name": "Atlassian — Play و قالب‌های تیمی", "url": "https://www.atlassian.com/team-playbook", "note": "تمپلیت آماده برای بک‌لاگ، اسپرینت و مستندات تصمیم (اگر 405 دیدید مستقیم از مرورگر باز کنید)"},
+        {"name": "Miroverse — بوم‌های هم‌فکری تیمی", "url": "https://miro.com/miroverse/", "note": "هزاران بوم اشتراک‌گذاشته توسط تیم‌های واقعی؛ برای جلسات کیک‌آف و رتروسپکتیو"},
+        {"name": "Leanstack — Lean Canvas", "url": "https://leanstack.com/lean-canvas/", "note": "بوم یک‌صفحه‌ای استاندارد اعتبارسنجی ایده قبل از شروع پروژه؛ مرجع رسمی آن"},
+    ],
+    "مدیر محصول": [
+        {"name": "Lenny's Newsletter — نایت‌هوپر شماره‌ها", "url": "https://www.lennysnewsletter.com/", "note": "دیفینیشن‌های واقعی PM از شرکت‌های بزرگ؛ برای نوشتن PRD و استراتژی محصول الگو بگیر"},
+        {"name": "ProductPlan — منابع آموزشی نقشه راه", "url": "https://www.productplan.com/learn/", "note": "راهنماها و مثال‌های ساختار رودمپ برای انواع تیم و محصول؛ الگوبرداری نقشه راه"},
+        {"name": "SVPG — مقالات Inspire و Empowered", "url": "https://www.svpg.com/articles/", "note": "چارچوب کشف محصول و تیم محصولی از Marty Cagan؛ مرجع استاندارد صنعت"},
+        {"name": "Roadmunk — پلتفرم رودمپ", "url": "https://roadmunk.com/", "note": "ابزار مرجع ساخت رودمپ با نمونه‌های واقعی برندها برای ارتباط با ذینفعان"},
+    ],
+    "تحلیلگر کسب‌وکار": [
+        {"name": "Balsamiq — نمونه‌های وایرفریم سریع", "url": "https://balsamiq.com/samples/", "note": "نمونه وایرفریم‌های لو-فای برای مستندسازی نیازمندی‌ها پیش از طراحی"},
+        {"name": "Creately — قالب‌های تحلیل کسب‌وکار", "url": "https://creately.com/templates/", "note": "قالب BPMN، use case و تحلیل ذینفعان؛ مستقیم قابل استفاده در جلسات کشف"},
+        {"name": "Miroverse — قالب‌های کشف و تحلیل", "url": "https://miro.com/miroverse/", "note": "بوم‌های تحلیل رقبا، persona و value proposition با مثال‌های واقعی"},
+        {"name": "SmartDraw — فلوچارت فرایند", "url": "https://www.smartdraw.com/flowchart/", "note": "نمونه فلوچارت‌های استاندارد فرایندهای کسب‌وکار برای مستندسازی جریان کار"},
+    ],
+    "مشاور استراتژی دیجیتال": [
+        {"name": "WebFX — نمونه‌های استراتژی دیجیتال", "url": "https://www.webfx.com/blog/internet-marketing/digital-strategy-examples/", "note": "مطالعه موردی واقعی استراتژی‌های دیجیتال برندها با نتایج عددی"},
+        {"name": "Miroverse — قالب‌های استراتژی", "url": "https://miro.com/miroverse/", "note": "بوم‌های سوت‌استرپژی، دیفرانسیاسیون و تحلیل SWOT با پر کردن واقعی"},
+        {"name": "Strategyzer — منابع Business Model Canvas", "url": "https://www.strategyzer.com/library", "note": "خالق BMC؛ کتابخانه مقالات و مثال‌های اعتبارسنجی مدل کسب‌وکار دیجیتال"},
+        {"name": "CXL — مقالات رشد", "url": "https://cxl.com/blog/", "note": "مطالعات موردی رشد دیجیتال با جزئیات آزمون‌ها و اعداد واقعی"},
+    ],
+    # ---------- مرحله ۲ — تحقیق کاربر ----------
+    "پژوهشگر تجربه کاربر": [
+        {"name": "Nielsen Norman Group", "url": "https://www.nngroup.com/articles/", "note": "مرجع جهانی پژوهش کاربر؛ مقالات با مثال‌های واقعی و متدولوژی استاندارد"},
+        {"name": "UX Research — گالری اسکرین‌شات پروژه‌ها", "url": "https://usersearch.com/", "note": "نمونه واقعی ریسرچ‌ها و متدولوژی؛ برای طراحی طرح پژوهش الگو بگیر"},
+        {"name": "Dovetail — بلاگ پژوهش کاربر", "url": "https://dovetail.com/blog/", "note": "متدولوژی و مثال‌های واقعی ریسرچ؛ الگوی سینتز و ریپورت‌نویسی"},
+        {"name": "User Interviews — UX Research Field Guide", "url": "https://www.userinterviews.com/ux-research-field-guide", "note": "کتابخانه رایگان اجرای پژوهش با کاربران واقعی؛ مرجع کامل متدها"},
+    ],
+    "معمار اطلاعات": [
+        {"name": "Nielsen Norman — مقالات معماری اطلاعات", "url": "https://www.nngroup.com/articles/?topic=information-architecture", "note": "مقالات مرجع IA با مثال‌های واقعی برچسب‌گذاری و ناوبری سایت‌های معروف"},
+        {"name": "Boxes and Arrows", "url": "https://boxesandarrows.com/", "note": "مجله تخصصی معماری اطلاعات با مطالعات موردی واقعی"},
+        {"name": "IA Institute — منابع", "url": "https://www.iainstitute.org/what-is-ia", "note": "تعریف‌ها و چارچوب‌های رسمی IA برای مستندسازی ساختار سایت"},
+        {"name": "Card Sort — نتایج واقعی کاردسورتینگ", "url": "https://optimalworkshop.com/questions/card-sorting", "note": "مثال‌های اجرای کاردسورت با تحلیل خوشه‌ای برای طراحی دسته‌بندی"},
+    ],
+    "تستر استفاده‌پذیری": [
+        {"name": "Nielsen Norman — گزارش‌های تست استفاده‌پذیری", "url": "https://www.nngroup.com/articles/usability-testing-101/", "note": "متدولوژی و نمونه گزارش‌های تست واقعی با ویدیوهای جلسات"},
+        {"name": "Maze — گالری تست‌ها", "url": "https://maze.co/templates/", "note": "قالب‌های آماده تست استفاده‌پذیری غیرحضوری با مثال‌های واقعی"},
+        {"name": "Usability.gov — متدولوژی تست", "url": "https://usability.gov/", "note": "مرجع دولتی آمریکا؛ پروتکل‌های استاندارد تست و چک‌لیست‌های گزارش"},
+        {"name": "Baymard Institute", "url": "https://baymard.com/", "note": "ده‌ها هزار ساعت تست واقعی ecommerce؛ الگوی عالی گزارش یافته‌ها"},
+    ],
+    # ---------- مرحله ۳ — برندینگ ----------
+    "طراح هویت بصری": [
+        {"name": "Behance — کالکشن هویت بصری", "url": "https://www.behance.net/search/projects?search=brand%20identity", "note": "بزرگ‌ترین گالری پروژه‌های هویت بصری دنیا؛ فیلتر بر اساس صنعت و سبک"},
+        {"name": "Dribbble — برندینگ", "url": "https://dribbble.com/search/branding", "note": "پروژه‌های برندینگ با ویدیوی پروسس طراحی؛ برای دیدن ترندها"},
+        {"name": "Under Consideration — Brand New", "url": "https://underconsideration.com/brandnew/", "note": "نقد و تحلیل ری‌برندینگ‌های واقعی شرکت‌های بزرگ با قبل/بعد"},
+        {"name": "Logopond — گالری لوگو", "url": "https://logopond.com/", "note": "گالری تخصصی لوگوی منتخب؛ برای سبک‌یابی قبل از طراحی (اگر باز نشد از مرورگر امتحان کنید)"},
+        {"name": "Brandpad — قالب ارائه برند", "url": "https://www.brandpad.io/", "note": "قالب‌های استاندارد برندبوک؛ ساختار بسته‌بندی هویت را از اینجا یاد بگیر"},
+    ],
+    "طراح فونت": [
+        {"name": "Fonts In Use", "url": "https://fontsinuse.com/", "note": "نمونه‌های واقعی استفاده از فونت‌ها در برندهای واقعی با نقد تایپوگرافی"},
+        {"name": "Typewolf — سایت روز و ترندهای تایپوگرافی", "url": "https://www.typewolf.com/site-of-the-day", "note": "فونت‌های پرکاربرد سایت‌های زیبا + پیشنهاد جفت‌فونت؛ مرجع انتخاب فونت وب"},
+        {"name": "Google Fonts — نمونه‌های زنده", "url": "https://fonts.google.com/", "note": "پیش‌نمایش زنده با متن واقعی + آمار محبوبیت هر فونت"},
+        {"name": "Behance — پروژه‌های تایپ‌فیس", "url": "https://www.behance.net/search/projects?search=typeface%20design", "note": "پروسس طراحی فونت‌های واقعی از اسکچ تا فایل نهایی"},
+    ],
+    # ---------- مرحله ۴ — طراحی UX ----------
+    "طراح تجربه کاربری": [
+        {"name": "Page Flows — گالری الگوهای UX", "url": "https://pageflows.com/", "note": "ویدیوی جریان‌های کامل سایت‌های معروف (لاگین تا خرید)؛ الگو از محصولات واقعی — اگر 403 دیدید از مرورگر باز کنید"},
+        {"name": "Mobbin — کتابخانه الگوهای اپ", "url": "https://mobbin.com/", "note": "صدها هزار اسکرین‌شات واقعی اپ‌ها؛ برای الگوهای جریان و UI"},
+        {"name": "GoodUI — الگوهای تبدیل اثبات‌شده", "url": "https://goodui.org/", "note": "الگوهای UI اثبات‌شده با نتیجه A/B تست واقعی؛ هر الگو با عدد تبدیل"},
+        {"name": "Animate.css — انیمیشن‌های آماده CSS", "url": "https://animate.style/", "note": "کتابخانه مرجع انیمیشن‌های آماده وب با دموی زنده؛ کشف سبک حرکت"},
+    ],
+    "طراح تعامل": [
+        {"name": "Little Big Details", "url": "https://littlebigdetails.com/", "note": "مجموعه جزئیات تعامل محصولات معروف؛ معدن طلا برای میکرواینترکشن"},
+        {"name": "Page Flows — جریان‌های کامل", "url": "https://pageflows.com/", "note": "ویدیوی جریان‌های کامل محصول؛ ساختار مراحل تعامل را از اینجا بردار"},
+        {"name": "Animate.css — انیمیشن‌های آماده CSS", "url": "https://animate.style/", "note": "کتابخانه مرجع انیمیشن‌های آماده وب با دموی زنده؛ کشف سبک حرکت"},
+        {"name": "LawsofUX", "url": "https://lawsofux.com/", "note": "قوانین روانشناسی تعامل با مثال‌های واقعی؛ چارچوب تصمیم‌گیری طراحی"},
+    ],
+    "طراح دسترس‌پذیری": [
+        {"name": "WebAIM — مقالات و ابزارهای دسترس‌پذیری", "url": "https://webaim.org/resources/", "note": "مرجع استاندارد a11y با مثال‌های واقعی خوب/بد و ابزار WAVE"},
+        {"name": "A11Y Project — چک‌لیست‌ها", "url": "https://www.a11yproject.com/checklist/", "note": "چک‌لیست عملی دسترس‌پذیری بر اساس WCAG؛ برای ممیزی صفحه به صفحه"},
+        {"name": "W3C WAI — آموزش و مثال‌ها", "url": "https://www.w3.org/WAI/", "note": "منبع رسمی استاندارد WCAG با آموزش‌های گام‌به‌گام و مثال‌های before/after"},
+        {"name": "Deque — رفع موانع", "url": "https://www.deque.com/axe/", "note": "ابزار و منابع بررسی دسترس‌پذیری با مطالعات موردی واقعی رفع خطا"},
+    ],
+    # ---------- مرحله ۵ — طراحی UI ----------
+    "طراح رابط کاربری": [
+        {"name": "Dribbble — الگوهای لندینگ", "url": "https://dribbble.com/search/landing-page", "note": "ترند لحظه‌ای طراحی لندینگ؛ همان ایده پست اینستاگرام برای فرود صفحات"},
+        {"name": "Land-book — گالری لندینگ واقعی", "url": "https://land-book.com/", "note": "هزاران لندینگ پیج دستچین با فیلتر صنعت؛ قبل از طراحی حتماً مرور شود"},
+        {"name": "Godly — وب‌سایت‌های خفن", "url": "https://godly.website/", "note": "وب‌سایت‌های ویژه دستچین‌شده با تمرکز بر جزئیات بصری و موشن"},
+        {"name": "Awwwards — سایت‌های برنده", "url": "https://www.awwwards.com/", "note": "سایت‌های برنده جایزه با نقد داوران؛ معیار کیفیت جهانی طراحی وب"},
+        {"name": "One Page Love — تک‌صفحه‌ای‌ها", "url": "https://onepagelove.com/", "note": "گالری تخصصی سایت‌های تک‌صفحه‌ای با تحلیل ساختار سکشن‌ها"},
+    ],
+    "متخصص دیزاین سیستم": [
+        {"name": "Design Systems Repo — دیزاین سیستم‌های واقعی", "url": "https://designsystemsrepo.com/", "note": "کالکشن قدیمی و مرجع دیزاین سیستم‌های شرکت‌های معروف"},
+        {"name": "Component Gallery — کامپوننت‌های واقعی", "url": "https://component.gallery/", "note": "نمایش کنار-به-کنار کامپوننت یک نوع (دکمه، مودال...) در ۲۰+ سیستم معروف"},
+        {"name": "Material Design 3", "url": "https://m3.material.io/", "note": "مرجع رسمی گوگل؛ توکن‌ها و منطق دقیق دیزاین سیستم مدرن"},
+        {"name": "Polaris — دیزاین سیستم Shopify", "url": "https://polaris.shopify.com/", "note": "دیزاین سیستم مرجع ecommerce با مستندات عالی کامپوننت"},
+    ],
+    "موشن دیزاینر": [
+        {"name": "Godly — موشن وب", "url": "https://godly.website/", "note": "سایت‌های ویژه با تمرکز موشن؛ همان دسته «موشن و انیمیشن» پست اینستاگرام"},
+        {"name": "Awwwards — کتگوری انیمیشن", "url": "https://www.awwwards.com/websites/animation/", "note": "بهترین‌های انیمیشن وب با نقد؛ برای سطح‌بندی کیفیت موشن"},
+        {"name": "Cubic-Beziers — منحنی‌های easing", "url": "https://cubic-bezier.com/", "note": "آزمایش زنده منحنی‌های حرکتی؛ برای حس درست حرکت"},
+        {"name": "Theatre.js — showcase", "url": "https://www.theatrejs.com/docs/latest", "note": "نمونه‌های موشن سینمایی وب و مستندات ابزار حرفه‌ای انیمیشن"},
+        {"name": "Codrops — دموهای موشن", "url": "https://tympanus.net/codrops/", "note": "آزمایشگاه دموهای تعاملی و موشن وب با آموزش ساخت"},
+    ],
+    # ---------- مرحله ۶ — تولید محتوا ----------
+    "کپی‌رایتر وب": [
+        {"name": "Swiped.co — آرشیو کپی‌های کلاسیک", "url": "https://swiped.co/", "note": "آرشیو کپی‌های واقعی کمپین‌های موفق با تحلیل؛ کتابخانه الگو برای نوشتن"},
+        {"name": "Copyhackers — مقالات و مثال‌ها", "url": "https://copyhackers.com/blog/", "note": "مرجع آموزش کپی‌رایتینگ با بازنویسی‌های قبل/بعد واقعی"},
+        {"name": "Really Good Emails", "url": "https://reallygoodemails.com/", "note": "گالری هزاران ایمیل واقعی برندها؛ برای کپی ایمیل مارکتینگ"},
+        {"name": "Land-book — کپی لندینگ‌ها", "url": "https://land-book.com/", "note": "هیرو کپی‌های واقعی سایت‌های موفق؛ الگوی پیام اصلی صفحه فرود"},
+    ],
+    "مدیر محتوا": [
+        {"name": "Content Marketing Institute", "url": "https://contentmarketinginstitute.com/articles/", "note": "مرجع استراتژی محتوا با مثال‌های واقعی تقویم و ادیتوریال"},
+        {"name": "HubSpot — قالب‌های رایگان مارکتینگ", "url": "https://www.hubspot.com/resources", "note": "قالب‌های رایگان تقویم محتوا و برنامه‌ریزی برای شروع سریع"},
+        {"name": "Ahrefs — مثال‌های استراتژی محتوا", "url": "https://ahrefs.com/blog/content-strategy/", "note": "مطالعات موردی سئو-محتوا با اعداد واقعی ترافیک و رشد"},
+        {"name": "Animalz — بلاگ B2B", "url": "https://www.animalz.co/", "note": "آژانس معروف محتوای B2B؛ نمونه ساختار و کیفیت مقاله سئو-محور"},
+    ],
+    "عکاس و فیلم‌ساز محصول": [
+        {"name": "Behance — عکاسی محصول", "url": "https://www.behance.net/search/projects?search=product%20photography", "note": "پروژه‌های عکاسی محصول واقعی با لایتینگ و استایل متفاوت"},
+        {"name": "PetaPixel", "url": "https://petapixel.com/", "note": "مجله عکاسی با مقالات تکنیکی و ترندهای عکاسی محصول"},
+        {"name": "ShotStash — مثال‌های استاک", "url": "https://shotstash.com/", "note": "عکس‌های استاک رایگان با کیفیت؛ برای جایگزینی سریع در پروژه‌های کم‌بودجه"},
+        {"name": "Videvo — فوتیج‌های ویدیویی", "url": "https://www.videvo.net/", "note": "فوتیج رایگان برای تدوین ویدیوی معرفی محصول"},
+    ],
+    "تولیدکننده محتوای گرافیکی": [
+        {"name": "Behance — اینفوگرافیک", "url": "https://www.behance.net/search/projects?search=infographic", "note": "اینفوگرافیک‌های واقعی با ساختار روایت داده؛ الگوی بصری‌سازی اطلاعات"},
+        {"name": "Visual Capitalist — بصری‌سازی داده", "url": "https://www.visualcapitalist.com/", "note": "شاهکارهای بصری‌سازی داده؛ سطح جهانی کیفیت اینفوگرافیک"},
+        {"name": "Piktochart — قالب‌های اینفوگرافیک", "url": "https://piktochart.com/templates/", "note": "قالب‌های آماده برای ساخت سریع اینفوگرافیک برند‌شده"},
+        {"name": "FlowingData", "url": "https://flowingdata.com/", "note": "مقالات بصری‌سازی داده با متدولوژی و نمونه‌های واقعی"},
+    ],
+    # ---------- مرحله ۷ — فرانت‌اند ----------
+    "توسعه‌دهنده فرانت‌اند": [
+        {"name": "CodePen — الگوهای آماده", "url": "https://codepen.io/pens/popular", "note": "بزرگ‌ترین آرشیو کد آماده فرانت‌اند؛ دقیقاً همان ایده «کامپوننت آماده» پست اینستاگرام"},
+        {"name": "Frontend Mentor — چالش‌های واقعی", "url": "https://www.frontendmentor.io/challenges", "note": "طرح‌های واقعی برای تمرین تبدیل طراحی به کد با فایل Figma"},
+        {"name": "CodeSandbox — قالب‌های شروع", "url": "https://codesandbox.io/templates", "note": "محیط‌های آماده با استک‌های مختلف؛ شروع سریع پروژه بدون setup"},
+        {"name": "shadcn/ui — کامپوننت‌های کپی‌شدنی", "url": "https://ui.shadcn.com/", "note": "کامپوننت‌های محبوب برای صفحات فرود؛ همان «کامپوننت‌های آماده صفحه فرود» پست اینستاگرام"},
+    ],
+    "توسعه‌دهنده ری‌اکت": [
+        {"name": "React.gg — الگوهای تعاملی", "url": "https://react.gg/", "note": "آموزش تعاملی الگوهای ری‌اکت با مثال‌های زنده"},
+        {"name": "React Flow — مثال‌های کاربردی", "url": "https://reactflow.dev/examples", "note": "نمونه‌های واقعی اپ‌های پیچیده ری‌اکت (دیاگرام، ویرایشگر...)"},
+        {"name": "Build UI — الگوهای انیمیشن ری‌اکت", "url": "https://buildui.com/recipes", "note": "وصف‌های آماده انیمیشن‌های واقعی در ری‌اکت"},
+        {"name": "shadcn/ui — گالری کامپوننت", "url": "https://ui.shadcn.com/", "note": "کامپوننت‌های کپی‌شدنی محبوب‌ترین سیستم ری‌اکت سال؛ الگوی مستقیم صفحه فرود"},
+    ],
+    "متخصص Next.js": [
+        {"name": "Vercel Templates — قالب‌های رسمی", "url": "https://vercel.com/templates", "note": "قالب‌های آماده رسمی Next.js برای هر نوع پروژه؛ شروع سریع"},
+        {"name": "Next.js Learn — پروژه‌های آموزشی", "url": "https://nextjs.org/learn", "note": "دوره رسمی با پروژه واقعی؛ بهترین مرجع الگوی App Router"},
+        {"name": "T3 Stack — قالب شروع", "url": "https://create.t3.gg/en/introduction", "note": "قالب جامع Next.js+tRPC+Prisma؛ الگوی معماری مدرن full-stack"},
+        {"name": "NextjsTemplates.com", "url": "https://nextjstemplates.com/", "note": "قالب‌های رایگان و تجاری Next.js برای لندینگ و داشبورد"},
+    ],
+    "توسعه‌دهنده انیمیشن وب": [
+        {"name": "Codrops — دموهای تعاملی", "url": "https://tympanus.net/codrops/", "note": "آزمایشگاه مرجع دموهای تعاملی و انیمیشن وب با سورس‌کد"},
+        {"name": "Hover.css — افکت‌های hover آماده", "url": "https://ianlunn.github.io/Hover/", "note": "مجموعه مرجع افکت‌های hover؛ همان دسته موشن پست اینستاگرام"},
+        {"name": "Theatre.js — Showcase", "url": "https://www.theatrejs.com/docs/latest", "note": "موشن‌های سینمایی وب با مستندات حرفه‌ای"},
+        {"name": "Lusion — مرزهای موشن", "url": "https://lusion.co/", "note": "نمونه مرزهای موشن وب (WebGL)؛ برای الهام سطح بالا"},
+        {"name": "GSAP — Showcase", "url": "https://gsap.com/showcase/", "note": "گالری رسمی پروژه‌های GSAP؛ الگوهای آماده تایم‌لاین و اسکرول"},
+    ],
+    "متخصص دسترس‌پذیری فرانت‌اند": [
+        {"name": "WebAIM — WAVE و مقالات", "url": "https://webaim.org/resources/", "note": "ابزار ارزیابی و مقالات با مثال‌های واقعی مشکل a11y"},
+        {"name": "A11Y Project — چک‌لیست", "url": "https://www.a11yproject.com/checklist/", "note": "چک‌لیست عملی WCAG برای ممیزی کامپوننت‌ها"},
+        {"name": "W3C WAI-ARIA — الگوهای رسمی", "url": "https://www.w3.org/WAI/ARIA/apg/patterns/", "note": "الگوهای رسمی ARIA برای هر کامپوننت؛ مرجع قطعی کد دسترس‌پذیر"},
+        {"name": "Google Chrome Developers — کانال یوتیوب", "url": "https://www.youtube.com/user/ChromeDevelopers", "note": "ویدیوهای آموزشی دسترس‌پذیری و وب گوگل با دموهای زنده"},
+    ],
+    # ---------- مرحله ۸ — بک‌اند ----------
+    "مهندس بک‌اند": [
+        {"name": "RealWorld — مثال‌های واقعی backend", "url": "https://codebase.show/projects/realworld", "note": "همان اپ Medium با ده‌ها استک مختلف پیاده‌سازی شده؛ مقایسه معماری‌ها"},
+        {"name": "Fastify — ریپوی رسمی", "url": "https://github.com/fastify/fastify", "note": "ریپوی رسمی با مثال‌های کامل؛ الگوی ساختار پروژه"},
+        {"name": "The Twelve-Factor App", "url": "https://12factor.net/", "note": "مانیفست استاندارد معماری اپ‌های وب؛ چک‌لیست تصمیم‌های بک‌اند"},
+        {"name": "Roadmap.sh — Backend", "url": "https://roadmap.sh/backend", "note": "نقشه راه مصور و به‌روز مهارت‌های بک‌اند؛ برای مسیر یادگیری"},
+    ],
+    "توسعه‌دهنده Node.js": [
+        {"name": "RealWorld — پیاده‌سازی Node", "url": "https://codebase.show/projects/realworld", "note": "اپ کامل Medium با Node؛ ساختار لایه‌بندی و فولدرینگ را از اینجا بردار"},
+        {"name": "Node.js Best Practices — ریپوی مرجع", "url": "https://github.com/goldbergyoni/nodebestpractices", "note": "۱۲۰k+ ستاره؛ استاندارد de-facto معماری و امنیت Node"},
+        {"name": "Bulletproof React", "url": "https://github.com/alan2207/bulletproof-react", "note": "الگوی معماری تمیز و مقیاس‌پذیر React (مرجع فرانت، مفید برای API gateway ها)"},
+    ],
+    "توسعه‌دهنده پایتون وب": [
+        {"name": "RealWorld — پیاده‌سازی FastAPI", "url": "https://github.com/gothinkster/realworld", "note": "اپ کامل با FastAPI؛ الگوی ساختار پروژه پایتون وب"},
+        {"name": "FastAPI — مستندات رسمی", "url": "https://fastapi.tiangolo.com/", "note": "بهترین مستندات فریمورک؛ با مثال‌های کامل و تعاملی"},
+        {"name": "Django — مستندات و پروژه‌های نمونه", "url": "https://docs.djangoproject.com/en/stable/intro/tutorial01/", "note": "توتوریال رسمی ساخت اپ کامل؛ الگوی ORM و ادمین"},
+        {"name": "Awesome Python — کتابخانه‌ها", "url": "https://github.com/vinta/awesome-python", "note": "فهرست مرجع کتابخانه‌های پایتون برای هر کار"},
+    ],
+    "توسعه‌دهنده PHP / لاراول": [
+        {"name": "Laravel — مستندات رسمی", "url": "https://laravel.com/docs", "note": "مستندات طلایی لاراول با مثال‌های کامل هر فیچر"},
+        {"name": "Laracasts — ویدیوهای آموزشی", "url": "https://laracasts.com/", "note": "هزاران ویدیوی ساخت پروژه واقعی با لاراول"},
+        {"name": "Spatie — پکیج‌های مرجع", "url": "https://spatie.be/open-source", "note": "پکیج‌های استاندارد لاراول با سورس‌کد تمیز؛ الگوی کد نویسی"},
+        {"name": "RealWorld — پیاده‌سازی لاراول", "url": "https://codebase.show/projects/realworld", "note": "اپ کامل با لاراول؛ ساختار لایه‌بندی پروژه"},
+    ],
+    "توسعه‌دهنده Go": [
+        {"name": "RealWorld — پیاده‌سازی Go", "url": "https://codebase.show/projects/realworld", "note": "اپ کامل با Go؛ الگوی ساختار استاندارد گو"},
+        {"name": "Go Web Examples", "url": "https://gowebexamples.com/", "note": "نمونه‌های کوتاه و عملی هر مفهوم وب در Go"},
+        {"name": "Standard Go Project Layout", "url": "https://github.com/golang-standards/project-layout", "note": "الگوی پذیرفته‌شده ساختار پوشه پروژه Go"},
+        {"name": "Awesome Go", "url": "https://github.com/avelino/awesome-go", "note": "فهرست مرجع کتابخانه‌های Go برای هر کار"},
+    ],
+    "طراح API": [
+        {"name": "RealWorld — API Spec", "url": "https://github.com/gothinkster/realworld", "note": "اسپیک API استاندارد اپ واقعی (پوشه spec)؛ الگوی طراحی endpoint ها"},
+        {"name": "Stripe API — مرجع طراحی", "url": "https://docs.stripe.com/api", "note": "بهترین مستندات API دنیا؛ الگوی طراحی و مستندسازی"},
+        {"name": "Microsoft REST API Guidelines", "url": "https://github.com/microsoft/api-guidelines", "note": "راهنمای رسمی مایکروسافت برای REST؛ استاندارد نام‌گذاری و versioning"},
+        {"name": "Swagger — OpenAPI Specification", "url": "https://swagger.io/docs/specification/about/", "note": "راهنمای کامل OpenAPI/Swagger برای طراحی و مستندسازی API"},
+    ],
+    "مهندس احراز هویت": [
+        {"name": "Auth0 — الگوهای Auth", "url": "https://auth0.com/docs/get-started", "note": "الگوهای کامل احراز هویت برای هر استک؛ مرجع استاندارد صنعت"},
+        {"name": "OWASP Authentication Cheat Sheet", "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html", "note": "چک‌لیست امنیتی رسمی احراز هویت؛ قبل از هر پیاده‌سازی"},
+        {"name": "MITRE — ATT&CK Framework", "url": "https://attack.mitre.org/", "note": "مرجع جهانی تاکتیک‌ها و تکنیک‌های مهاجمان؛ چارچوب دفاع احراز هویت"},
+        {"name": "WebAuthn.io — دموهای بدون رمز", "url": "https://webauthn.io/", "note": "دموی زنده استاندارد passkey/webauthn؛ آینده احراز هویت"},
+    ],
+    # ---------- مرحله ۹ — دیتابیس ----------
+    "مدیر دیتابیس": [
+        {"name": "PostgreSQL — مستندات رسمی", "url": "https://www.postgresql.org/docs/", "note": "مستندات کامل با مثال‌های هر مفهوم؛ مرجع قطعی"},
+        {"name": "Use The Index, Luke", "url": "https://use-the-index-luke.com/", "note": "آموزش عمیق ایندکس‌گذاری با مثال‌های واقعی کوئری"},
+        {"name": "pgExercises", "url": "https://pgexercises.com/", "note": "تمرین تعاملی SQL روی دیتابیس واقعی؛ برای تمرین روزمره"},
+        {"name": "Supabase — مثال‌های ساختار", "url": "https://supabase.com/docs/guides/database/overview", "note": "الگوهای مدرن Postgres با RLS و realtime"},
+    ],
+    "مدل‌ساز داده": [
+        {"name": "Database Answers — مدل‌های نمونه", "url": "https://www.databaseanswers.org/data_models/", "note": "صدها ERD آماده برای صنایع مختلف؛ نزدیک‌ترین چیز به «الگوی آماده» مدل داده"},
+        {"name": "Kimball Group — مدل‌سازی ابعادی", "url": "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/", "note": "مرجع رسمی مدل‌سازی ابعادی برای دیتابیس تحلیتی"},
+        {"name": "Vertabelo — مثال‌های ERD", "url": "https://vertabelo.com/blog/", "note": "مقالات مدل‌سازی با نمودارهای واقعی برای سناریوهای متداول"},
+        {"name": "PostgreSQL — Data Types", "url": "https://www.postgresql.org/docs/current/datatype.html", "note": "مرجع انتخاب نوع داده درست برای هر فیلد"},
+    ],
+    "مهندس ORM و Data Access": [
+        {"name": "Prisma — مستندات و مثال‌ها", "url": "https://www.prisma.io/docs", "note": "ORM محبوب TypeScript با مثال‌های کامل هر الگو (relation, migration...)"},
+        {"name": "Use The Index, Luke", "url": "https://use-the-index-luke.com/", "note": "فهم کوئری‌هایی که ORM می‌سازد؛ برای دیباگ N+1"},
+        {"name": "Drizzle ORM — مثال‌ها", "url": "https://orm.drizzle.team/docs/overview", "note": "ORM سبک مدرن با مثال‌های ساده"},
+        {"name": "RealWorld — لایه داده", "url": "https://codebase.show/projects/realworld", "note": "پیاده‌سازی لایه دسترسی داده در ده‌ها استک"},
+    ],
+    # ---------- مرحله ۱۰ — فروشگاهی ----------
+    "توسعه‌دهنده فروشگاه آنلاین": [
+        {"name": "Awwwards — کتگوری ecommerce", "url": "https://www.awwwards.com/websites/e-commerce/", "note": "بهترین فروشگاه‌های آنلاین دنیا از نظر طراحی؛ همان ایده الهام گرفتن از نمونه‌های واقعی"},
+        {"name": "Baymard Institute", "url": "https://baymard.com/", "note": "تحقیقات عمیق UX فروشگاهی با یافته‌های واقعی کاربران"},
+        {"name": "Mobbin — جریان‌های خرید", "url": "https://mobbin.com/", "note": "جریان‌های واقعی checkout در اپ‌ها و وب‌های معروف"},
+        {"name": "Shopify Theme Store — قالب‌های مرجع", "url": "https://themes.shopify.com/", "note": "قالب‌های استاندارد فروشگاهی؛ الگوی ساختار صفحه محصول و دسته"},
+    ],
+    "متخصص پرداخت": [
+        {"name": "Stripe Docs — payments", "url": "https://docs.stripe.com/payments", "note": "مرجع طراحی جریان پرداخت با مثال‌های کامل و تست‌کارت‌ها"},
+        {"name": "Baymard — Checkout UX", "url": "https://baymard.com/checkout-usability", "note": "تحقیق مرجع UX چک‌اوت با اعداد واقعی نرخ رها کردن"},
+        {"name": "PCI Security Standards", "url": "https://www.pcisecuritystandards.org/", "note": "استاندارد رسمی امنیت پرداخت؛ چک‌لیست انطباق"},
+        {"name": "Zarinpal — درگاه ایرانی", "url": "https://www.zarinpal.com/", "note": "مستندات درگاه پرداخت رایج ایران برای پروژه‌های داخلی"},
+    ],
+    # ---------- مرحله ۱۱ — امنیت ----------
+    "متخصص امنیت وب": [
+        {"name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/", "note": "لیست رسمی ۱۰ آسیب‌پذیری بحرانی وب؛ نقطه شروع هر ممیزی"},
+        {"name": "OWASP Cheat Sheet Series", "url": "https://cheatsheetseries.owasp.org/", "note": "چک‌لیست‌های عملی امنیت برای هر سناریو (ورود، پرداخت، آپلود...)"},
+        {"name": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "note": "آزمایشگاه‌های تعاملی رایگان تمرین نفوذ واقعی"},
+        {"name": "HackerOne — Hacktivity", "url": "https://hackerone.com/hacktivity", "note": "گزارش‌های واقعی باگ‌بانتی‌های عمومی؛ معدن الهام سناریوهای حمله"},
+    ],
+    "تستر نفوذ": [
+        {"name": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "note": "آزمایشگاه‌های تمرین رایگان با سناریوهای واقعی نفوذ"},
+        {"name": "HackTheBox", "url": "https://www.hackthebox.com/", "note": "ماشین‌های واقعی برای تمرین نفوذ ساختاریافته"},
+        {"name": "OWASP Web Security Testing Guide", "url": "https://owasp.org/www-project-web-security-testing-guide/", "note": "راهنمای رسمی تست امنیت وب؛ متدولوژی استاندارد پنتست"},
+        {"name": "TryHackMe", "url": "https://tryhackme.com/", "note": "مسیرهای یادگیری تعاملی امنیت با اتاق‌های واقعی"},
+    ],
+    "مهندس پاسخ به رخداد": [
+        {"name": "GitHub — Incident Reports (عظیم)", "url": "https://github.com/danluu/post-mortems", "note": "آرشیو بزرگ پست‌مورتم‌های واقعی شرکت‌ها؛ الگوی نوشتن گزارش رخداد"},
+        {"name": "NIST — Cybersecurity Framework", "url": "https://www.nist.gov/cyberframework", "note": "چارچوب رسمی مدیریت رخداد امنیتی"},
+        {"name": "PagerDuty — Incident Response Docs", "url": "https://response.pagerduty.com/", "note": "مرجع عملی فرایند پاسخ به رخداد با قالب‌های آماده"},
+        {"name": "SANS — Cheat Sheets", "url": "https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/", "note": "چک‌لیست‌های آماده واکنش و تحلیل رخداد امنیتی"},
+    ],
+    # ---------- مرحله ۱۲ — تست و QA ----------
+    "مهندس تست خودکار": [
+        {"name": "RealWorld — تست‌های e2e", "url": "https://codebase.show/projects/realworld", "note": "پروژه‌های کامل با تست‌های واقعی؛ الگوی نوشتن تست خوانا"},
+        {"name": "Playwright — مستندات و مثال", "url": "https://playwright.dev/docs/intro", "note": "مستندات رسمی با مثال‌های کامل هر سناریو تست"},
+        {"name": "Testing Trophy — Kent C. Dodds", "url": "https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications", "note": "چارچوب مرجع توزیع تست‌های unit/integration/e2e"},
+        {"name": "GitHub — Awesome Testing", "url": "https://github.com/TheJambo/awesome-testing", "note": "فهرست جامع ابزارها و منابع تست برای هر استک"},
+    ],
+    "مهندس تست بار": [
+        {"name": "Grafana k6 — مستندات", "url": "https://grafana.com/docs/k6/latest/", "note": "مرجع تست بار مدرن با اسکریپت‌های نمونه"},
+        {"name": "Gatling — مستندات", "url": "https://docs.gatling.io/", "note": "ابزار تست بار با گزارش‌های تحلیلی قوی"},
+        {"name": "Locust — مثال‌ها", "url": "https://docs.locust.io/en/stable/writing-a-locustfile.html", "note": "تست بار پایتونی با مثال‌های ساده"},
+        {"name": "AWS — Best Practices Load Testing", "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/testing-strategies/load-testing.html", "note": "راهنمای رسمی AWS برای استراتژی تست بار در مقیاس"},
+    ],
+    "مهندس کیفیت دستی": [
+        {"name": "Ministry of Testing", "url": "https://www.ministryoftesting.com/", "note": "بزرگ‌ترین جامعه QA با منابع و الگوهای تست"},
+        {"name": "Software Testing Help — مثال‌های تست کیس", "url": "https://www.softwaretestinghelp.com/", "note": "صدها مثال تست کیس واقعی برای سناریوهای متداول وب"},
+        {"name": "Ministry of Testing — تست اکتشافی", "url": "https://www.ministryoftesting.com/", "note": "بزرگ‌ترین جامعه QA؛ منابع تست اکتشافی و چارترهای تست در بخش Test Opinions"},
+        {"name": "OWASP WSTG — چک‌لیست تست", "url": "https://owasp.org/www-project-web-security-testing-guide/", "note": "چک‌لیست رسمی تست امنیتی وب برای ممیزی دستی"},
+    ],
+    # ---------- مرحله ۱۳ — DevOps ----------
+    "مهندس DevOps": [
+        {"name": "Roadmap.sh — DevOps", "url": "https://roadmap.sh/devops", "note": "نقشه راه مصور مهارت‌های DevOps؛ برای مسیر یادگیری"},
+        {"name": "Google SRE Book (رایگان)", "url": "https://sre.google/books/", "note": "کتاب رسمی SRE گوگل؛ مرجع فرهنگ و پراتیک عملیاتی"},
+        {"name": "12-Factor App", "url": "https://12factor.net/", "note": "مانیفست استاندارد اپ‌های deploy-پذیر؛ چک‌لیست تصمیم‌های DevOps"},
+        {"name": "CNCF Landscape", "url": "https://landscape.cncf.io/", "note": "نقشه کامل ابزارهای cloud native؛ برای انتخاب ابزار درست"},
+    ],
+    "مهندس پلتفرم": [
+        {"name": "Platform Engineering — منابع", "url": "https://platformengineering.org/", "note": "مرجع جدید پلتفرم انجینیرینگ با مقالات و الگوها"},
+        {"name": "Backstage — قالب‌ها", "url": "https://backstage.io/", "note": "پلتفرم توسعه‌دهنده Spotify با پلاگین‌های واقعی"},
+        {"name": "Google SRE — سرویس‌های پلتفرم", "url": "https://sre.google/books/", "note": "فصل‌های پلتفرم و infra در کتاب SRE گوگل"},
+        {"name": "CNCF Landscape", "url": "https://landscape.cncf.io/", "note": "انتخاب ابزارهای پلتفرم از میان صدها گزینه دسته‌بندی‌شده"},
+    ],
+    "مهندس قابلیت اطمینان": [
+        {"name": "Google SRE Books (رایگان)", "url": "https://sre.google/books/", "note": "دو کتاب کامل SRE رایگان؛ مرجع SLI/SLO و error budget"},
+        {"name": "Postmortems — آرشیو واقعی", "url": "https://github.com/danluu/post-mortems", "note": "صدها پست‌مورتم واقعی؛ برای الگوی تحلیل خرابی"},
+        {"name": "Google SRE Workbook — پیاده‌سازی SLO", "url": "https://sre.google/workbook/implementing-slos/", "note": "راهنمای عملی پیاده‌سازی SLO از SRE Workbook"},
+        {"name": "Observability — honeycomb guide", "url": "https://www.honeycomb.io/learn", "note": "راهنمای مدرن مشاهده‌پذیری با مثال‌های واقعی"},
+    ],
+    "مدیر وب‌سرور": [
+        {"name": "NGINX — مستندات رسمی", "url": "https://nginx.org/en/docs/", "note": "مرجع کامل کانفیگ وب‌سرور با مثال‌های هر سناریو"},
+        {"name": "Let's Encrypt — راهنما", "url": "https://letsencrypt.org/docs/", "note": "مرجع رایگان TLS و صدور خودکار گواهی"},
+        {"name": "Mozilla SSL Config Generator", "url": "https://ssl-config.mozilla.org/", "note": "تولید کانفیگ امن SSL برای NGINX/Apache با یک کلیک"},
+        {"name": "Caddy — مستندات", "url": "https://caddyserver.com/docs/", "note": "وب‌سرور مدرن با HTTPS خودکار؛ الگوی سادگی کانفیگ"},
+    ],
+    # ---------- مرحله ۱۴ — سئو ----------
+    "متخصص سئو فنی": [
+        {"name": "Google Search Central", "url": "https://developers.google.com/search/docs", "note": "مرجع رسمی گوگل برای سئوی فنی؛ نقطه شروع هر ممیزی"},
+        {"name": "Ahrefs Blog — سئو فنی", "url": "https://ahrefs.com/blog/technical-seo/", "note": "راهنماهای عملی با اسکرین‌شات و مثال‌های واقعی سایت‌ها"},
+        {"name": "Screaming Frog — راهنمای کراول", "url": "https://www.screamingfrog.co.uk/seo-spider/", "note": "ابزار استاندارد ممیزی فنی با مستندات کامل"},
+        {"name": "Web.dev — دوره‌های رسمی سئو و Core Web Vitals", "url": "https://web.dev/learn", "note": "دوره‌های رایگان گوگل برای سئو فنی مدرن و سرعت سایت"},
+    ],
+    "متخصص سئو محتوا": [
+        {"name": "Ahrefs Blog — سئو محتوا", "url": "https://ahrefs.com/blog/seo-content/", "note": "متدولوژی ساخت محتوای رتبه‌گیر با مطالعات موردی"},
+        {"name": "Backlinko — مطالعات موردی", "url": "https://backlinko.com/blog", "note": "مطالعات موردی سئو با اعداد واقعی ترافیک"},
+        {"name": "Google Search Quality Rater Guidelines", "url": "https://developers.google.com/search/blog/2022/12/google-raters-guidelines-e-e-a-t", "note": "راهنمای رسمی کیفیت محتوا از گوگل (E-E-A-T)؛ معیار محتوا"},
+        {"name": "Animalz — بلاگ B2B", "url": "https://www.animalz.co/", "note": "نمونه سطح بالای محتوای سئو-محور از آژانس معروف B2B"},
+    ],
+    "متخصص سئو محلی": [
+        {"name": "Google Business Profile — مرکز راهنما", "url": "https://support.google.com/business/", "note": "مرجع رسمی سئوی محلی گوگل؛ تنظیم و بهینه‌سازی پروفایل کسب‌وکار"},
+        {"name": "Whitespark — Local Search Resources", "url": "https://whitespark.ca/blog/", "note": "آژانس مرجع سئوی محلی با مطالعات موردی واقعی"},
+        {"name": "Moz — Local Search Ranking Factors", "url": "https://moz.com/local-search-ranking-factors", "note": "نظرسنجی سالانه متخصصان درباره فاکتورهای رتبه محلی"},
+        {"name": "BrightLocal — ابزار و منابع", "url": "https://www.brightlocal.com/learn/", "note": "راهنمای جامع سئوی محلی با چک‌لیست‌های عملی"},
+    ],
+    # ---------- مرحله ۱۵ — عملکرد ----------
+    "مهندس عملکرد وب": [
+        {"name": "web.dev — Learn Performance", "url": "https://web.dev/learn/performance", "note": "دوره رسمی گوگل برای عملکرد وب با مثال‌های زنده"},
+        {"name": "WebPageTest — نتایج واقعی", "url": "https://www.webpagetest.org/", "note": "ابزار مرجع تست سرعت با آبشار کامل درخواست‌ها"},
+        {"name": "Chrome UX Report (Crux)", "url": "https://developer.chrome.com/docs/crux/", "note": "داده‌های واقعی Core Web Vitals سایت‌های دنیا از گوگل"},
+        {"name": "HTTP Archive — Web Almanac", "url": "https://almanac.httparchive.org/", "note": "گزارش سالانه وضعیت واقعی وب (سرعت، تصاویر، کش) بر پایه داده‌های میلیونی سایت"},
+    ],
+    "مهندس کش و CDN": [
+        {"name": "web.dev — استراتژی کش", "url": "https://web.dev/articles/http-caching", "note": "راهنمای رسمی گوگل درباره استراتژی‌های کش با مثال‌های هر سناریو"},
+        {"name": "Fastly — Learning Center", "url": "https://www.fastly.com/learning", "note": "مرجع آموزشی CDN و edge computing با مثال‌های واقعی"},
+        {"name": "Cloudflare — Developers Docs", "url": "https://developers.cloudflare.com/", "note": "مستندات جامع CDN و کش با آموزش‌های گام‌به‌گام"},
+        {"name": "MDN — HTTP Caching", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching", "note": "مرجع قطعی هدرهای کش HTTP با مثال‌های کامل"},
+        {"name": "web.dev — استراتژی کش", "url": "https://web.dev/articles/http-caching", "note": "راهنمای عملی گوگل برای استراتژی‌های کش با مثال‌های هر سناریو"},
+    ],
+    # ---------- مرحله ۱۶ — آنالیتیکس ----------
+    "تحلیلگر داده وب": [
+        {"name": "Google Analytics Academy — مرجع رسمی GA4", "url": "https://analytics.google.com/analytics/academy/", "note": "دوره‌های رسمی گوگل برای GA4 با تمرین‌های واقعی"},
+        {"name": "Avinash Kaushik — Occam's Razor", "url": "https://www.kaushik.net/avinash/", "note": "پدر آنالیتیکس مدرن؛ مقالات با مثال‌های واقعی تحلیل"},
+        {"name": "Looker Studio — گالری قالب‌ها", "url": "https://lookerstudio.google.com/gallery", "note": "قالب‌های آماده داشبورد برای انواع کسب‌وکار"},
+        {"name": "MeasureSchool — آموزش‌های ویدیویی", "url": "https://measureschool.com/", "note": "آموزش‌های عملی آنالیتیکس با پروژه‌های واقعی"},
+    ],
+    "متخصص بهینه‌سازی نرخ تبدیل": [
+        {"name": "GoodUI — الگوهای تبدیل اثبات‌شده", "url": "https://goodui.org/", "note": "الگوهای UI با نتیجه واقعی A/B تست؛ دقیقاً کتابخانه الگوی تبدیل"},
+        {"name": "CXL — Institute", "url": "https://cxl.com/institute/", "note": "دوره‌های مرجع CRO با مطالعات موردی واقعی"},
+        {"name": "Baymard — Checkout Research", "url": "https://baymard.com/checkout-usability", "note": "تحقیق مرجع UX چک‌اوت با اعداد واقعی نرخ رها کردن"},
+        {"name": "Nielsen Norman — مقالات تبدیل", "url": "https://www.nngroup.com/articles/?topic=conversion", "note": "مقالات روانشناسی تبدیل از مرجع UX جهانی"},
+    ],
+    # ---------- مرحله ۱۷ — حقوقی ----------
+    "مشاور حقوقی دیجیتال": [
+        {"name": "Iubenda — نمونه‌های سیاست‌ها", "url": "https://www.iubenda.com/en/", "note": "تولیدکننده مرجع قالب‌های حقوقی وب (کوکی، حریم خصوصی) برای سایت‌های واقعی"},
+        {"name": "Termly — قالب‌های رایگان", "url": "https://termly.io/", "note": "قالب‌های رایگان Terms و Privacy برای وب‌سایت‌ها"},
+        {"name": "کمسیون اروپا — حفاظت داده (GDPR)", "url": "https://ec.europa.eu/info/law/law-topic/data-protection_en", "note": "متن رسمی قانون GDPR از منبع اصلی اروپا؛ چک‌لیست انطباق"},
+        {"name": "ICANN — WHOIS و دامنه", "url": "https://www.icann.org/", "note": "مرجع رسمی قوانین دامنه و WHOIS"},
+    ],
+    # ---------- مرحله ۱۸ — پشتیبانی ----------
+    "کارشناس پشتیبانی فنی": [
+        {"name": "HelpScout — Blog", "url": "https://www.helpscout.com/blog/", "note": "مرجع فرهنگ پشتیبانی با مثال‌های واقعی پاسخ به مشتری"},
+        {"name": "Chatwoot — دمو", "url": "https://www.chatwoot.com/", "note": "پلتفرم متن‌باز پشتیبانی؛ دموی زنده الگوی چت و تیکتینگ"},
+        {"name": "Support Driven — جامعه", "url": "https://supportdriven.com/", "note": "جامعه حرفه‌ای‌های پشتیبانی با الگوهای پاسخ"},
+        {"name": "Groove HQ — Blog", "url": "https://www.groovehq.com/blog", "note": "منابع پشتیبانی استارتاپی با مثال‌های واقعی"},
+    ],
+    "مدیر انجمن و مرکز کمک": [
+        {"name": "Discourse — انجمن‌های نمونه", "url": "https://www.discourse.org/", "note": "پلتفرم مرجع انجمن‌ها؛ سایت‌های واقعی ساخت‌یافته را ببین"},
+        {"name": "Zendesk — مرکز راهنما و قالب‌ها", "url": "https://www.zendesk.com/service/help-center/", "note": "الگوهای مرکز کمک برای انواع کسب‌وکار؛ ساختار مقالات راهنما"},
+        {"name": "Write the Docs — مستندسازی", "url": "https://www.writethedocs.org/", "note": "جامعه مرجع مستندسازی با الگوهای واقعی مقاله کمک"},
+        {"name": "Nielsen Norman — مقالات", "url": "https://www.nngroup.com/articles/", "note": "مقالات UX صفحه سوالات متداول و مرکز کمک از مرجع جهانی (جستجو کنید: FAQ)"},
+    ],
+    "مهندس نگهداشت": [
+        {"name": "Google SRE Books", "url": "https://sre.google/books/", "note": "مرجع نگهداشت و قابلیت اطمینان سرویس‌ها"},
+        {"name": "Postmortems — آرشیو واقعی", "url": "https://github.com/danluu/post-mortems", "note": "الگوی تحلیل و یادگیری از خرابی‌های واقعی"},
+        {"name": "Google SRE Books", "url": "https://sre.google/books/", "note": "چک‌لیست‌ها و فرایندهای نگهداشت سرویس از مرجع گوگل"},
+        {"name": "refactoring.guru — Design Patterns", "url": "https://refactoring.guru/design-patterns", "note": "مرجع مصور الگوهای طراحی برای نگهداشت کد سالم"},
+    ],
+    # ---------- مرحله ۱۹ — بازاریابی ----------
+    "مدیر دیجیتال مارکتینگ": [
+        {"name": "CXL — مقالات رشد", "url": "https://cxl.com/blog/", "note": "مرجع رشد دیجیتال با مطالعات موردی واقعی و اعداد"},
+        {"name": "HubSpot — منابع مارکتینگ", "url": "https://www.hubspot.com/resources", "note": "قالب‌ها و راهنماهای رایگان دیجیتال مارکتینگ برای هر صنعت"},
+        {"name": "ProductLed — رشد محصول", "url": "https://www.productled.com/blog", "note": "مرجع product-led growth با مثال‌های واقعی SaaS"},
+    ],
+    "متخصص تبلیغات کلیکی": [
+        {"name": "Google Ads Help", "url": "https://support.google.com/google-ads", "note": "مرجع رسمی تبلیغات گوگل با مثال‌های ساخت کمپین"},
+        {"name": "Meta Blueprint", "url": "https://www.facebook.com/business/learn", "note": "دوره‌های رسمی تبلیغات اینستاگرام/فیسبوک"},
+        {"name": "Facebook Ad Library — آرشیو تبلیغات", "url": "https://www.facebook.com/ads/library/", "note": "آرشیو عمومی همه تبلیغات فعال فیسبوک/اینستاگرام؛ کتابخانه الگو برای اد کپی رقبا"},
+        {"name": "AdEspresso — مطالعات موردی", "url": "https://adespresso.com/blog/", "note": "مطالعات موردی تبلیغات با اعداد واقعی CPC و تبدیل"},
+    ],
+    "مدیر سوشال مدیا": [
+        {"name": "Buffer — Social Media Blog", "url": "https://buffer.com/resources/", "note": "مرجع مدیریت سوشال با مطالعات موردی واقعی"},
+        {"name": "Later — راهنمای اینستاگرام", "url": "https://later.com/blog/", "note": "مرجع تخصصی اینستاگرام با ترندها و الگوهای پست"},
+        {"name": "Behance — الگوهای بصری سوشال", "url": "https://www.behance.net/search/projects?search=social%20media%20kit", "note": "کیت‌های آماده پست سوشال؛ همان ایده الگوی آماده پست اینستاگرام"},
+        {"name": "ContentCal/Planable — قالب تقویم", "url": "https://planable.io/", "note": "قالب‌های تقویم محتوای سوشال برای برنامه‌ریزی"},
+    ],
+    "متخصص ایمیل مارکتینگ": [
+        {"name": "Really Good Emails", "url": "https://reallygoodemails.com/", "note": "گالری هزاران ایمیل واقعی برندها؛ دقیقاً کتابخانه الگو برای طراحی ایمیل"},
+        {"name": "Mailchimp — Guides", "url": "https://mailchimp.com/resources/", "note": "راهنماهای رسمی ایمیل مارکتینگ با مثال‌های واقعی"},
+        {"name": "Litmus — Email Analytics", "url": "https://www.litmus.com/blog/", "note": "مرجع تحلیل و بهینه‌سازی ایمیل با داده‌های واقعی"},
+        {"name": "Stripo — گالری قالب ایمیل", "url": "https://stripo.email/templates/", "note": "گالری قالب‌های ایمیل آماده و پاسخگو برای الهام بصری"},
+    ],
+}
+
+# ---------------- تولید خروجی ----------------
+def main():
+    out_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+    out_path = os.path.join(out_dir, "inspiration_data.json")
+    # پاکسازی: حذف رکوردهای خراب (نام/لینک خالی)
+    cleaned = {}
+    problems = []
+    for role, items in INSPIRATION.items():
+        good = []
+        for it in items:
+            if not isinstance(it, dict) or not it.get("name") or not it.get("url") or not it.get("note"):
+                problems.append((role, it))
+                continue
+            # URL سالمسازی
+            url = it["url"].strip()
+            if not url.startswith(("http://", "https://")):
+                url = "https://" + url
+            good.append({"name": it["name"].strip(), "url": url, "note": it["note"].strip()})
+        if good:
+            cleaned[role] = good
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(cleaned, f, ensure_ascii=False, indent=2)
+    total = sum(len(v) for v in cleaned.values())
+    print(f"SAVED {out_path}")
+    print(f"roles: {len(cleaned)} | total inspiration pages: {total}")
+    if problems:
+        print(f"skipped broken entries: {len(problems)}")
+        for r, it in problems:
+            print("  -", r, "|", str(it)[:80])
+
+if __name__ == "__main__":
+    main()

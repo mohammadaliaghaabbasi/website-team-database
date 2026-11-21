@@ -1,0 +1,247 @@
+404	مدیر پروژه دیجیتال	ProductPlan — مثال‌های نقشه راه محصول	https://www.productplan.com/roadmap-examples/
+405	مدیر پروژه دیجیتال	Atlassian — قالب‌های رایگان مدیریت پروژه	https://www.atlassian.com/templates
+200	مدیر پروژه دیجیتال	Miroverse — بوم‌های هم‌فکری تیمی	https://miro.com/miroverse/
+404	مدیر پروژه دیجیتال	Leanstack — مثال‌های Lean Canvas	https://leanstack.com/lean-canvas-examples/
+200	مدیر محصول	Lenny's Newsletter — نایت‌هوپر شماره‌ها	https://www.lennysnewsletter.com/
+404	مدیر محصول	ProductPlan — مثال‌های رودمپ	https://www.productplan.com/roadmap-examples/
+200	مدیر محصول	SVPG — مقالات Inspire و Empowered	https://www.svpg.com/articles/
+404	مدیر محصول	Roadmunk — گالری رودمپ محصول	https://roadmunk.com/roadmap-examples/
+403	تحلیلگر کسب‌وکار	Balsamiq — نمونه‌های وایرفریم سریع	https://balsamiq.com/samples/
+404	تحلیلگر کسب‌وکار	Creately — قالب‌های تحلیل کسب‌وکار	https://creately.com/lp/business-analysis-templates/
+200	تحلیلگر کسب‌وکار	Miroverse — قالب‌های کشف و تحلیل	https://miro.com/miroverse/
+404	تحلیلگر کسب‌وکار	SmartDraw — نمونه فلوچارت فرایند	https://www.smartdraw.com/flowchart/examples.htm
+403	مشاور استراتژی دیجیتال	WebFX — نمونه‌های استراتژی دیجیتال	https://www.webfx.com/blog/internet-marketing/digital-strategy-examples/
+200	مشاور استراتژی دیجیتال	Miroverse — قالب‌های استراتژی	https://miro.com/miroverse/
+200	مشاور استراتژی دیجیتال	Strategyzer — منابع Business Model Canvas	https://www.strategyzer.com/library
+404	مشاور استراتژی دیجیتال	CXL — نمونه‌های سوت‌استرپژی	https://cxl.com/blog/growth-strategy/
+200	پژوهشگر تجربه کاربر	Nielsen Norman Group	https://www.nngroup.com/articles/
+200	پژوهشگر تجربه کاربر	UX Research — گالری اسکرین‌شات پروژه‌ها	https://usersearch.com/
+404	پژوهشگر تجربه کاربر	Dovetail — قالب‌های پژوهش کاربر	https://dovetail.com/templates/
+404	پژوهشگر تجربه کاربر	User Interviews — راهنمای ریسرچ	https://www.userinterviews.com/learn-topic/ux-research
+000	معمار اطلاعات	Information Architecture Gallery (IAG)	https://iag.ar/ia/
+200	معمار اطلاعات	Boxes and Arrows	https://boxesandarrows.com/
+200	معمار اطلاعات	IA Institute — منابع	https://www.iainstitute.org/what-is-ia
+202	معمار اطلاعات	Card Sort — نتایج واقعی کاردسورتینگ	https://optimalworkshop.com/questions/card-sorting
+200	تستر استفاده‌پذیری	Nielsen Norman — گزارش‌های تست استفاده‌پذیری	https://www.nngroup.com/articles/usability-testing-101/
+200	تستر استفاده‌پذیری	Maze — گالری تست‌ها	https://maze.co/templates/
+200	تستر استفاده‌پذیری	Usability.gov — متدولوژی تست	https://usability.gov/
+200	تستر استفاده‌پذیری	Baymard Institute	https://baymard.com/
+429	طراح هویت بصری	Behance — کالکشن هویت بصری	https://www.behance.net/search/projects?search=brand%20identity
+202	طراح هویت بصری	Dribbble — برندینگ	https://dribbble.com/search/branding
+200	طراح هویت بصری	Under Consideration — Brand New	https://underconsideration.com/brandnew/
+000	طراح هویت بصری	Logopond — گالری لوگو	https://logopond.com/
+200	طراح هویت بصری	Brandpad — قالب ارائه برند	https://www.brandpad.io/
+200	طراح فونت	Fonts In Use	https://fontsinuse.com/
+000	طراح فونت	Typewolf — ترندهای تایپوگرافی وب	https://www.typewolf.com/
+200	طراح فونت	Google Fonts — نمونه‌های زنده	https://fonts.google.com/
+429	طراح فونت	Behance — پروژه‌های تایپ‌فیس	https://www.behance.net/search/projects?search=typeface%20design
+403	طراح تجربه کاربری	Page Flows — گالری الگوهای UX	https://pageflows.com/
+200	طراح تجربه کاربری	Mobbin — کتابخانه الگوهای اپ	https://mobbin.com/
+403	طراح تجربه کاربری	UX Archive	https://uxarchive.com/
+200	طراح تجربه کاربری	GoodUI — الگوهای تبدیل اثبات‌شده	https://goodui.org/
+403	طراح تعامل	Little Big Details	https://littlebigdetails.com/
+403	طراح تعامل	Page Flows — جریان‌های کامل	https://pageflows.com/
+000	طراح تعامل	Animista — CSS انیمیشن‌های آماده	https://animista.net/
+200	طراح تعامل	LawsofUX	https://lawsofux.com/
+403	طراح دسترس‌پذیری	WebAIM — مقالات و ابزارهای دسترس‌پذیری	https://webaim.org/resources/
+200	طراح دسترس‌پذیری	A11Y Project — چک‌لیست‌ها	https://www.a11yproject.com/checklist/
+200	طراح دسترس‌پذیری	W3C WAI — آموزش و مثال‌ها	https://www.w3.org/WAI/
+200	طراح دسترس‌پذیری	Deque — رفع موانع	https://www.deque.com/axe/
+202	طراح رابط کاربری	Dribbble — الگوهای لندینگ	https://dribbble.com/search/landing-page
+200	طراح رابط کاربری	Land-book — گالری لندینگ واقعی	https://land-book.com/
+200	طراح رابط کاربری	Godly — وب‌سایت‌های خفن	https://godly.website/
+200	طراح رابط کاربری	Awwwards — سایت‌های برنده	https://www.awwwards.com/
+200	طراح رابط کاربری	One Page Love — تک‌صفحه‌ای‌ها	https://onepagelove.com/
+200	متخصص دیزاین سیستم	Design Systems Repo — دیزاین سیستم‌های واقعی	https://designsystemsrepo.com/
+200	متخصص دیزاین سیستم	Component Gallery — کامپوننت‌های واقعی	https://component.gallery/
+200	متخصص دیزاین سیستم	Material Design 3	https://m3.material.io/
+200	متخصص دیزاین سیستم	Polaris — دیزاین سیستم Shopify	https://polaris.shopify.com/
+200	موشن دیزاینر	Godly — موشن وب	https://godly.website/
+200	موشن دیزاینر	Awwwards — کتگوری انیمیشن	https://www.awwwards.com/websites/animation/
+200	موشن دیزاینر	Cubic-Beziers — منحنی‌های easing	https://cubic-bezier.com/
+200	موشن دیزاینر	Theatre.js — showcase	https://www.theatrejs.com/docs/latest
+200	موشن دیزاینر	Codrops — دموهای موشن	https://tympanus.net/codrops/
+403	کپی‌رایتر وب	Swiped.co — آرشیو کپی‌های کلاسیک	https://swiped.co/
+403	کپی‌رایتر وب	Copyhackers — مقالات و مثال‌ها	https://copyhackers.com/blog/
+403	کپی‌رایتر وب	Really Good Emails	https://reallygoodemails.com/
+200	کپی‌رایتر وب	Land-book — کپی لندینگ‌ها	https://land-book.com/
+403	مدیر محتوا	Content Marketing Institute	https://contentmarketinginstitute.com/articles/
+404	مدیر محتوا	HubSpot — قالب‌های تقویم محتوا	https://www.hubspot.com/marketing/calendar-templates
+200	مدیر محتوا	Ahrefs — مثال‌های استراتژی محتوا	https://ahrefs.com/blog/content-strategy/
+000	مدیر محتوا	Animalz — مثال‌های بلاگ B2B	https://animalz.com/
+429	عکاس و فیلم‌ساز محصول	Behance — عکاسی محصول	https://www.behance.net/search/projects?search=product%20photography
+200	عکاس و فیلم‌ساز محصول	PetaPixel	https://petapixel.com/
+200	عکاس و فیلم‌ساز محصول	ShotStash — مثال‌های استاک	https://shotstash.com/
+403	عکاس و فیلم‌ساز محصول	Videvo — فوتیج‌های ویدیویی	https://www.videvo.net/
+429	تولیدکننده محتوای گرافیکی	Behance — اینفوگرافیک	https://www.behance.net/search/projects?search=infographic
+000	تولیدکننده محتوای گرافیکی	Information is Beautiful	https://informationisbeautiful.net/
+200	تولیدکننده محتوای گرافیکی	Piktochart — قالب‌های اینفوگرافیک	https://piktochart.com/templates/
+200	تولیدکننده محتوای گرافیکی	FlowingData	https://flowingdata.com/
+403	توسعه‌دهنده فرانت‌اند	CodePen — الگوهای آماده	https://codepen.io/pens/popular
+200	توسعه‌دهنده فرانت‌اند	Frontend Mentor — چالش‌های واقعی	https://www.frontendmentor.io/challenges
+403	توسعه‌دهنده فرانت‌اند	CodeSandbox — قالب‌های شروع	https://codesandbox.io/templates
+200	توسعه‌دهنده فرانت‌اند	shadcn/ui — کامپوننت‌های کپی‌شدنی	https://ui.shadcn.com/
+200	توسعه‌دهنده ری‌اکت	React.gg — الگوهای تعاملی	https://react.gg/
+200	توسعه‌دهنده ری‌اکت	React Flow — مثال‌های کاربردی	https://reactflow.dev/examples
+200	توسعه‌دهنده ری‌اکت	Build UI — الگوهای انیمیشن ری‌اکت	https://buildui.com/recipes
+200	توسعه‌دهنده ری‌اکت	shadcn/ui — گالری کامپوننت	https://ui.shadcn.com/
+200	متخصص Next.js	Vercel Templates — قالب‌های رسمی	https://vercel.com/templates
+200	متخصص Next.js	Next.js Learn — پروژه‌های آموزشی	https://nextjs.org/learn
+200	متخصص Next.js	T3 Stack — قالب شروع	https://create.t3.gg/en/introduction
+200	متخصص Next.js	NextjsTemplates.com	https://nextjstemplates.com/
+200	توسعه‌دهنده انیمیشن وب	Codrops — دموهای تعاملی	https://tympanus.net/codrops/
+000	توسعه‌دهنده انیمیشن وب	Animista — انیمیشن‌های آماده	https://animista.net/
+200	توسعه‌دهنده انیمیشن وب	Theatre.js — Showcase	https://www.theatrejs.com/docs/latest
+200	توسعه‌دهنده انیمیشن وب	Lusion — مرزهای موشن	https://lusion.co/
+200	توسعه‌دهنده انیمیشن وب	GSAP — Showcase	https://gsap.com/showcase/
+403	متخصص دسترس‌پذیری فرانت‌اند	WebAIM — WAVE و مقالات	https://webaim.org/resources/
+200	متخصص دسترس‌پذیری فرانت‌اند	A11Y Project — چک‌لیست	https://www.a11yproject.com/checklist/
+200	متخصص دسترس‌پذیری فرانت‌اند	W3C WAI-ARIA — الگوهای رسمی	https://www.w3.org/WAI/ARIA/apg/patterns/
+404	متخصص دسترس‌پذیری فرانت‌اند	Google Chrome Developers — a11ycasts	https://www.youtube.com/@GoogleChromeDevelopers
+200	مهندس بک‌اند	RealWorld — مثال‌های واقعی backend	https://codebase.show/projects/realworld
+200	مهندس بک‌اند	Fastify — ریپوی رسمی	https://github.com/fastify/fastify
+200	مهندس بک‌اند	The Twelve-Factor App	https://12factor.net/
+200	مهندس بک‌اند	Roadmap.sh — Backend	https://roadmap.sh/backend
+200	توسعه‌دهنده Node.js	RealWorld — پیاده‌سازی Node	https://codebase.show/projects/realworld
+200	توسعه‌دهنده Node.js	Node.js Best Practices — ریپوی مرجع	https://github.com/goldbergyoni/nodebestpractices
+200	توسعه‌دهنده Node.js	Bulletproof React	https://github.com/alan2207/bulletproof-react
+200	توسعه‌دهنده پایتون وب	RealWorld — پیاده‌سازی FastAPI	https://github.com/gothinkster/realworld
+200	توسعه‌دهنده پایتون وب	FastAPI — مستندات رسمی	https://fastapi.tiangolo.com/
+200	توسعه‌دهنده پایتون وب	Django — مستندات و پروژه‌های نمونه	https://docs.djangoproject.com/en/stable/intro/tutorial01/
+200	توسعه‌دهنده پایتون وب	Awesome Python — کتابخانه‌ها	https://github.com/vinta/awesome-python
+200	توسعه‌دهنده PHP / لاراول	Laravel — مستندات رسمی	https://laravel.com/docs
+200	توسعه‌دهنده PHP / لاراول	Laracasts — ویدیوهای آموزشی	https://laracasts.com/
+200	توسعه‌دهنده PHP / لاراول	Spatie — پکیج‌های مرجع	https://spatie.be/open-source
+200	توسعه‌دهنده PHP / لاراول	RealWorld — پیاده‌سازی لاراول	https://codebase.show/projects/realworld
+200	توسعه‌دهنده Go	RealWorld — پیاده‌سازی Go	https://codebase.show/projects/realworld
+200	توسعه‌دهنده Go	Go Web Examples	https://gowebexamples.com/
+200	توسعه‌دهنده Go	Standard Go Project Layout	https://github.com/golang-standards/project-layout
+200	توسعه‌دهنده Go	Awesome Go	https://github.com/avelino/awesome-go
+404	طراح API	RealWorld — API Spec	https://github.com/gothinkster/realworld/tree/master/spec
+200	طراح API	Stripe API — مرجع طراحی	https://docs.stripe.com/api
+200	طراح API	Microsoft REST API Guidelines	https://github.com/microsoft/api-guidelines
+200	طراح API	Swagger — OpenAPI Specification	https://swagger.io/docs/specification/about/
+200	مهندس احراز هویت	Auth0 — الگوهای Auth	https://auth0.com/docs/get-started
+200	مهندس احراز هویت	OWASP Authentication Cheat Sheet	https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+200	مهندس احراز هویت	MITRE — ATT&CK Framework	https://attack.mitre.org/
+200	مهندس احراز هویت	WebAuthn.io — دموهای بدون رمز	https://webauthn.io/
+200	مدیر دیتابیس	PostgreSQL — مستندات رسمی	https://www.postgresql.org/docs/
+200	مدیر دیتابیس	Use The Index, Luke	https://use-the-index-luke.com/
+200	مدیر دیتابیس	pgExercises	https://pgexercises.com/
+200	مدیر دیتابیس	Supabase — مثال‌های ساختار	https://supabase.com/docs/guides/database/overview
+200	مدل‌ساز داده	Database Answers — مدل‌های نمونه	https://www.databaseanswers.org/data_models/
+200	مدل‌ساز داده	Kimball Group — مدل‌سازی ابعادی	https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/
+200	مدل‌ساز داده	Vertabelo — مثال‌های ERD	https://vertabelo.com/blog/
+200	مدل‌ساز داده	PostgreSQL — Data Types	https://www.postgresql.org/docs/current/datatype.html
+200	مهندس ORM و Data Access	Prisma — مستندات و مثال‌ها	https://www.prisma.io/docs
+200	مهندس ORM و Data Access	Use The Index, Luke	https://use-the-index-luke.com/
+200	مهندس ORM و Data Access	Drizzle ORM — مثال‌ها	https://orm.drizzle.team/docs/overview
+200	مهندس ORM و Data Access	RealWorld — لایه داده	https://codebase.show/projects/realworld
+200	توسعه‌دهنده فروشگاه آنلاین	Awwwards — کتگوری ecommerce	https://www.awwwards.com/websites/e-commerce/
+200	توسعه‌دهنده فروشگاه آنلاین	Baymard Institute	https://baymard.com/
+200	توسعه‌دهنده فروشگاه آنلاین	Mobbin — جریان‌های خرید	https://mobbin.com/
+200	توسعه‌دهنده فروشگاه آنلاین	Shopify Theme Store — قالب‌های مرجع	https://themes.shopify.com/
+200	متخصص پرداخت	Stripe Docs — payments	https://docs.stripe.com/payments
+200	متخصص پرداخت	Baymard — Checkout UX	https://baymard.com/checkout-usability
+200	متخصص پرداخت	PCI Security Standards	https://www.pcisecuritystandards.org/
+200	متخصص پرداخت	Zarinpal — درگاه ایرانی	https://www.zarinpal.com/
+200	متخصص امنیت وب	OWASP Top 10	https://owasp.org/www-project-top-ten/
+200	متخصص امنیت وب	OWASP Cheat Sheet Series	https://cheatsheetseries.owasp.org/
+403	متخصص امنیت وب	PortSwigger Web Security Academy	https://portswigger.net/web-security
+403	متخصص امنیت وب	HackerOne — Hacktivity	https://hackerone.com/hacktivity
+403	تستر نفوذ	PortSwigger Web Security Academy	https://portswigger.net/web-security
+200	تستر نفوذ	HackTheBox	https://www.hackthebox.com/
+200	تستر نفوذ	OWASP Web Security Testing Guide	https://owasp.org/www-project-web-security-testing-guide/
+200	تستر نفوذ	TryHackMe	https://tryhackme.com/
+404	مهندس پاسخ به رخداد	GitHub — Incident Reports (عظیم)	https://github.com/danluu/postmortems
+200	مهندس پاسخ به رخداد	NIST — Cybersecurity Framework	https://www.nist.gov/cyberframework
+200	مهندس پاسخ به رخداد	PagerDuty — Incident Response Docs	https://response.pagerduty.com/
+200	مهندس پاسخ به رخداد	SANS — Cheat Sheets	https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/
+200	مهندس تست خودکار	RealWorld — تست‌های e2e	https://codebase.show/projects/realworld
+200	مهندس تست خودکار	Playwright — مستندات و مثال	https://playwright.dev/docs/intro
+200	مهندس تست خودکار	Testing Trophy — Kent C. Dodds	https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications
+200	مهندس تست خودکار	GitHub — Awesome Testing	https://github.com/TheJambo/awesome-testing
+200	مهندس تست بار	Grafana k6 — مستندات	https://grafana.com/docs/k6/latest/
+403	مهندس تست بار	Gatling — مستندات	https://docs.gatling.io/
+200	مهندس تست بار	Locust — مثال‌ها	https://docs.locust.io/en/stable/writing-a-locustfile.html
+403	مهندس تست بار	AWS — Best Practices Load Testing	https://docs.aws.amazon.com/prescriptive-guidance/latest/testing-strategies/load-testing.html
+200	مهندس کیفیت دستی	Ministry of Testing	https://www.ministryoftesting.com/
+403	مهندس کیفیت دستی	Guru99 — مثال‌های تست کیس	https://www.guru99.com/test-case.html
+000	مهندس کیفیت دستی	Test Obsessed — تست اکتشافی	https://testobsessed.com/
+200	مهندس کیفیت دستی	OWASP WSTG — چک‌لیست تست	https://owasp.org/www-project-web-security-testing-guide/
+200	مهندس DevOps	Roadmap.sh — DevOps	https://roadmap.sh/devops
+200	مهندس DevOps	Google SRE Book (رایگان)	https://sre.google/books/
+200	مهندس DevOps	12-Factor App	https://12factor.net/
+200	مهندس DevOps	CNCF Landscape	https://landscape.cncf.io/
+200	مهندس پلتفرم	Platform Engineering — منابع	https://platformengineering.org/
+200	مهندس پلتفرم	Backstage — قالب‌ها	https://backstage.io/
+200	مهندس پلتفرم	Google SRE — سرویس‌های پلتفرم	https://sre.google/books/
+200	مهندس پلتفرم	CNCF Landscape	https://landscape.cncf.io/
+200	مهندس قابلیت اطمینان	Google SRE Books (رایگان)	https://sre.google/books/
+404	مهندس قابلیت اطمینان	Postmortems — آرشیو واقعی	https://github.com/danluu/postmortems
+200	مهندس قابلیت اطمینان	CNCF SLO — چارچوب	https://sre.google/workbook/implementing-slos/
+403	مهندس قابلیت اطمینان	Observability — honeycomb guide	https://www.honeycomb.io/learn
+200	مدیر وب‌سرور	NGINX — مستندات رسمی	https://nginx.org/en/docs/
+200	مدیر وب‌سرور	Let's Encrypt — راهنما	https://letsencrypt.org/docs/
+200	مدیر وب‌سرور	Mozilla SSL Config Generator	https://ssl-config.mozilla.org/
+200	مدیر وب‌سرور	Caddy — مستندات	https://caddyserver.com/docs/
+200	متخصص سئو فنی	Google Search Central	https://developers.google.com/search/docs
+200	متخصص سئو فنی	Ahrefs Blog — سئو فنی	https://ahrefs.com/blog/technical-seo/
+200	متخصص سئو فنی	Screaming Frog — راهنمای کراول	https://www.screamingfrog.co.uk/seo-spider/
+404	متخصص سئو فنی	Web.dev — سئو و Core Web Vitals	https://web.dev/learn/seo
+200	متخصص سئو محتوا	Ahrefs Blog — سئو محتوا	https://ahrefs.com/blog/seo-content/
+200	متخصص سئو محتوا	Backlinko — مطالعات موردی	https://backlinko.com/blog
+200	متخصص سئو محتوا	Google Search Quality Rater Guidelines	https://developers.google.com/search/blog/2022/12/google-raters-guidelines-e-e-a-t
+000	متخصص سئو محتوا	Animalz — بلاگ B2B	https://animalz.com/
+404	متخصص سئو محلی	Google Business Profile — راهنما	https://support.google.com/business/answer/3037816
+200	متخصص سئو محلی	Whitespark — Local Search Resources	https://whitespark.ca/blog/
+200	متخصص سئو محلی	Moz — Local Search Ranking Factors	https://moz.com/local-search-ranking-factors
+403	متخصص سئو محلی	BrightLocal — ابزار و منابع	https://www.brightlocal.com/learn/
+200	مهندس عملکرد وب	web.dev — Learn Performance	https://web.dev/learn/performance
+403	مهندس عملکرد وب	WebPageTest — نتایج واقعی	https://www.webpagetest.org/
+404	مهندس عملکرد وب	Chrome UX Report	https://developer.chrome.com/docs/chrome-ux-report/
+200	مهندس عملکرد وب	HTTP Archive — Web Almanac	https://almanac.httparchive.org/
+404	مهندس کش و CDN	web.dev — Caching	https://web.dev/learn/caching
+200	مهندس کش و CDN	Fastly — Learning Center	https://www.fastly.com/learning
+200	مهندس کش و CDN	Cloudflare — Developers Docs	https://developers.cloudflare.com/
+200	مهندس کش و CDN	MDN — HTTP Caching	https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching
+200	تحلیلگر داده وب	Google Analytics Academy — مرجع رسمی GA4	https://analytics.google.com/analytics/academy/
+200	تحلیلگر داده وب	Avinash Kaushik — Occam's Razor	https://www.kaushik.net/avinash/
+200	تحلیلگر داده وب	Looker Studio — گالری قالب‌ها	https://lookerstudio.google.com/gallery
+200	تحلیلگر داده وب	MeasureSchool — آموزش‌های ویدیویی	https://measureschool.com/
+200	متخصص بهینه‌سازی نرخ تبدیل	GoodUI — الگوهای تبدیل اثبات‌شده	https://goodui.org/
+200	متخصص بهینه‌سازی نرخ تبدیل	CXL — Institute	https://cxl.com/institute/
+200	متخصص بهینه‌سازی نرخ تبدیل	Baymard — Checkout Research	https://baymard.com/checkout-usability
+000	متخصص بهینه‌سازی نرخ تبدیل	Which Test Won — آرشیو تست‌ها	https://whichtestwon.com/
+200	متخصص بهینه‌سازی نرخ تبدیل	Nielsen Norman — مقالات تبدیل	https://www.nngroup.com/articles/?topic=conversion
+200	مشاور حقوقی دیجیتال	Iubenda — نمونه‌های سیاست‌ها	https://www.iubenda.com/en/
+200	مشاور حقوقی دیجیتال	Termly — قالب‌های رایگان	https://termly.io/
+000	مشاور حقوقی دیجیتال	GDPR.eu — راهنمای رسمی	https://gdpr.eu/
+200	مشاور حقوقی دیجیتال	ICANN — WHOIS و دامنه	https://www.icann.org/
+200	کارشناس پشتیبانی فنی	HelpScout — Blog	https://www.helpscout.com/blog/
+200	کارشناس پشتیبانی فنی	Chatwoot — دمو	https://www.chatwoot.com/
+200	کارشناس پشتیبانی فنی	Support Driven — جامعه	https://supportdriven.com/
+200	کارشناس پشتیبانی فنی	Groove HQ — Blog	https://www.groovehq.com/blog
+200	مدیر انجمن و مرکز کمک	Discourse — انجمن‌های نمونه	https://www.discourse.org/
+404	مدیر انجمن و مرکز کمک	Zendesk — قالب مرکز کمک	https://www.zendesk.com/templates/
+200	مدیر انجمن و مرکز کمک	Write the Docs — مستندسازی	https://www.writethedocs.org/
+404	مدیر انجمن و مرکز کمک	Nielsen Norman — FAQ UX	https://www.nngroup.com/articles/faqs/
+200	مهندس نگهداشت	Google SRE Books	https://sre.google/books/
+404	مهندس نگهداشت	Postmortems آرشیو	https://github.com/danluu/postmortems
+404	مهندس نگهداشت	Dan Luu — production checklists	https://github.com/danluu/postmortems
+200	مهندس نگهداشت	refactoring.guru — Design Patterns	https://refactoring.guru/design-patterns
+200	مدیر دیجیتال مارکتینگ	CXL — مقالات رشد	https://cxl.com/blog/
+404	مدیر دیجیتال مارکتینگ	HubSpot — Marketing Hub resources	https://www.hubspot.com/marketing-hub
+200	مدیر دیجیتال مارکتینگ	ProductLed — رشد محصول	https://www.productled.com/blog
+200	متخصص تبلیغات کلیکی	Google Ads Help	https://support.google.com/google-ads
+200	متخصص تبلیغات کلیکی	Meta Blueprint	https://www.facebook.com/business/learn
+403	متخصص تبلیغات کلیکی	Facebook Ad Library — آرشیو تبلیغات	https://www.facebook.com/ads/library/
+403	متخصص تبلیغات کلیکی	AdEspresso — مطالعات موردی	https://adespresso.com/blog/
+200	مدیر سوشال مدیا	Buffer — Social Media Blog	https://buffer.com/resources/
+200	مدیر سوشال مدیا	Later — راهنمای اینستاگرام	https://later.com/blog/
+429	مدیر سوشال مدیا	Behance — الگوهای بصری سوشال	https://www.behance.net/search/projects?search=social%20media%20kit
+200	مدیر سوشال مدیا	ContentCal/Planable — قالب تقویم	https://planable.io/
+403	متخصص ایمیل مارکتینگ	Really Good Emails	https://reallygoodemails.com/
+200	متخصص ایمیل مارکتینگ	Mailchimp — Guides	https://mailchimp.com/resources/
+200	متخصص ایمیل مارکتینگ	Litmus — Email Analytics	https://www.litmus.com/blog/
+200	متخصص ایمیل مارکتینگ	Stripo — گالری قالب ایمیل	https://stripo.email/templates/

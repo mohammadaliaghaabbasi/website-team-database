@@ -10,6 +10,7 @@ const path = require("path");
 
 const GH = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data", "gh_data.json"), "utf-8"));
 const stars = (r) => (GH[r] && GH[r].ok) ? GH[r].stars.toLocaleString("en-US") : "—";
+const INSPIRATION = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data", "inspiration_data.json"), "utf-8"));
 
 // ---------- رنگ‌ها (Dawn Mist Tech + بالای سفید) ----------
 const P = {
@@ -202,6 +203,26 @@ function specialistCard(spec, index) {
     }));
   }
 
+  // صفحات الهام و الگو — قبل از شروع کار از این‌ها ایده/الگو بگیر
+  const insp = INSPIRATION[spec.role] || [];
+  if (insp.length > 0) {
+    children.push(h3("صفحات الهام و الگو (قبل از شروع کار مرور شود)"));
+    for (const p of insp) {
+      children.push(rtlPara(
+        { alignment: AlignmentType.RIGHT, indent: { right: 280 }, spacing: { after: 40, line: 300 } },
+        [
+          fa("◄ ", { size: 18, color: P.accent }),
+          fa(p.name + " — ", { bold: true, size: 21, color: P.body }),
+          fa(p.note, { size: 21, color: P.body }),
+        ]
+      ));
+      children.push(new Paragraph({
+        alignment: AlignmentType.LEFT, indent: { left: 600 }, spacing: { after: 60 },
+        children: [t(p.url, { size: 17, color: "0B5394" })],
+      }));
+    }
+  }
+
   // مسیر رشد
   children.push(h3("مسیر رشد پیشنهادی"));
   spec.path.forEach((step, i) => {
@@ -242,14 +263,15 @@ children.push(rtlPara(
 ));
 children.push(rtlPara(
   { alignment: AlignmentType.RIGHT, spacing: { after: 200, line: 300 } },
-  [fa("۶۱ نقش تخصصی در ۱۹ مرحله از صفر تا صد — همراه پشته فناوری با ستاره‌های واقعی گیت‌هاب، پلتفرم تمرین و مسیر رشد", { size: 22, color: P.secondary })]
+  [fa("۶۱ نقش تخصصی در ۱۹ مرحله از صفر تا صد — همراه پشته فناوری با ستاره‌های واقعی گیت‌هاب، صفحات الهام و الگو، پلتفرم تمرین و مسیر رشد", { size: 22, color: P.secondary })]
 ));
 children.push(rtlPara(
   { alignment: AlignmentType.RIGHT, spacing: { after: 240, line: 300 },
     border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: P.accent, space: 10 } } },
   [fa("تاریخ گردآوری ستاره‌ها: ۲۰ نوامبر ۲۰۲۶ — منبع: github.com", { size: 18, color: P.secondary })]
 ));
-children.push(body("این سند نقشه کامل یک تیم طراحی سایت است؛ برای هر نقش، کارتی شامل مأموریت، مهارت‌های کلیدی، پشته فناوری برگزیده (با تعداد ستاره واقعی گیت‌هاب به‌عنوان معیار محبوبیت)، شبیه‌ساز یا پلتفرم تمرین، مسیر رشد گام‌به‌گام و یک سوال مصاحبه شبیه‌ساز آمده است. ترتیب نقش‌ها از استراتژی و مدیریت تا بازاریابی پس از راه‌اندازی چیده شده تا مسیر طبیعی ساخت یک سایت را از صفر تا صد دنبال کند."));
+children.push(body("این سند نقشه کامل یک تیم طراحی سایت است؛ برای هر نقش، کارتی شامل مأموریت، مهارت‌های کلیدی، پشته فناوری برگزیده (با تعداد ستاره واقعی گیت‌هاب به‌عنوان معیار محبوبیت)، صفحات الهام و الگو، شبیه‌ساز یا پلتفرم تمرین، مسیر رشد گام‌به‌گام و یک سوال مصاحبه شبیه‌ساز آمده است. ترتیب نقش‌ها از استراتژی و مدیریت تا بازاریابی پس از راه‌اندازی چیده شده تا مسیر طبیعی ساخت یک سایت را از صفر تا صد دنبال کند."));
+children.push(body("بخش «صفحات الهام و الگو» در هر کارت بر اساس این ایده ساخته شده که پیش از شروع هر کار باید از گالری‌ها و مراجع تخصصی همان حوزه بازدید کرد: نمونه واقعی دیدن، الگوی آماده گرفتن و ترند روز را شنیدن، بعد دست به کار شد. این رویکرد با الهام از پست «۲۱ سایت کاربردی برای ساخت سایت با هوش مصنوعی» در اینستاگرام (farshad_frhni، نوامبر ۲۰۲۵) گسترش یافته و به همه ۶۱ نقش تیم تعمیم داده شده است؛ برای هر نقش ۴ تا ۵ صفحه مرجع انتخاب شده تا هر عضو تیم قبل از شروع کارش، از بهترین نمونه‌های همان حوزه الگو بگیرد."));
 
 // فهرست بخش‌ها — هر بخش H1، هر متخصص کارت
 const sectionsMap = {};
