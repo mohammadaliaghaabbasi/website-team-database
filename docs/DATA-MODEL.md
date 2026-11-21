@@ -93,3 +93,28 @@ build_specialists.py ─▶ specialists_data.json ─▶ build_docx.js ─▶ و
 build_inspiration.py ─▶ inspiration_data.json ─▶ build_docx.js (سکشن الهام هر کارت)
 practice_data.py ────────────────────────────▶ build_xlsx.py (شیت ۲۱)
 ```
+
+## `workflow_data.json` — سیستم برنامه‌ریزی صفر تا صد
+
+```jsonc
+{
+  "meta":     { "title", "subtitle", "version", "date", "idea" },          // هویت سند
+  "phases":   [ { "name", "stages", "motto", "color" } ],                  // ۶ فاز
+  "rules":    [ { "title", "text" } ],                                     // ۶ قانون طلایی
+  "stages":   [ {                                                          // ۱۹ مرحله
+    "id", "title", "titleEn", "phase",
+    "goal",                                                                 // چرا این مرحله هست
+    "entry":  [ ... ],      // ورودی‌ها — چه می‌گیرد (از خروجی مراحل قبل)
+    "activities": [ ... ],  // فعالیت‌ها — چه می‌کند
+    "exit":   [ ... ],      // خروجی‌ها — چه تحویل می‌دهد (ورودی مراحل بعد)
+    "roles":  [ ... ],      // مسئولان — زیرمجموعه ۶۱ نقش specialists_data.json
+    "tools":  [ [repo, desc], ... ],  // ابزارها — زیرمجموعه sections_data.json
+    "gate",                 // معیار عبور قابل اندازه‌گیری
+    "duration", "parallel", // توالی و موازی‌سازی
+    "aiBrief"               // پرامپت شروع وایب‌کدینگ
+  } ]
+}
+```
+
+**قیدهای صحت (در build_workflow.py اعمال می‌شود):** هر نام در `roles` باید در `specialists_data.json` و هر ریپو در `tools` باید در `sections_data.json` موجود باشد — اسکریپت هنگام تولید خطا/گزارش می‌دهد.
+**مصرف‌کنندگان:** `WORKFLOW.md`، `scripts/build_workflow_docx.js`، `scripts/workflow_sheet.py` (شیت اکسل).

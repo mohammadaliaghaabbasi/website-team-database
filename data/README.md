@@ -9,6 +9,7 @@
 | `specialists_data.json` | ۶۱ کارت متخصص شبیه‌ساز | `scripts/build_specialists.py` | build_docx |
 | `practice_data.py` | ۲۱ تخصص × ۸۲ پلتفرم تمرین | دستی | build_xlsx (شیت تمرین) |
 | `inspiration_data.json` | ۶۱ نقش × ۲۶۸ صفحه الهام و الگو (شامل هر ۲۱ سایت راهنمای BUILD) | `scripts/build_inspiration.py` | build_docx (سکشن الهام هر کارت) |
+| `workflow_data.json` | سیستم برنامه‌ریزی صفر تا صد: ۶ فاز + ۱۹ مرحله × (ورودی/فعالیت/خروجی/مسئول/ابزار/معیار عبور/پرامپت) | `scripts/build_workflow.py` | WORKFLOW.md، build_workflow_docx، شیت اکسل برنامه‌ریزی |
 
 ساختار دقیق فیلدها: [`docs/DATA-MODEL.md`](../docs/DATA-MODEL.md)
 ⚠️ فایل‌های `deliverables/` را هرگز دستی ویرایش نکنید — بازتولید می‌شوند و تغییرات از بین می‌رود.
